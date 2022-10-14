@@ -1,15 +1,26 @@
 body{
     margin: 0;
 }
-header{
+main{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: grey;
-    width: 100vh;
-    height: 49px;
+    width: 100%;
 }
-.nav{
-    background-color: white;
-    width: 100vh;
+header{
+    
+    }
+nav{
+   
+}
+.carousel{
+  
+}
+.carousel img{
+    width: 100%;
+}
+.conteneurcarte{
+    width: 100%;
+    height: 1000px;
+    background-color: blue;
 }
