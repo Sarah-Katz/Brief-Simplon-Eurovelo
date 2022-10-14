@@ -1,0 +1,18 @@
+body{
+    background-color: grey;
+    margin: 0;
+    padding: 0;
+}
+
+.slider{
+    width: 100%;
+}
+
+.img-div {
+    height: 120vh;
+}
+
+.div1{
+    background: url(images\imagesCarousel\image1.jpg) no-repeat;
+    background-size: cover;
+}
