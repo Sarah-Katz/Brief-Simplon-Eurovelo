@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slider.css">
     <link rel="stylesheet" href="css/accueil.css".css>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,20 +16,36 @@
 <body>
 
     <header>
-        <nav></nav>
+        <nav>Navigation</nav>
+        <div class="slider">
+            <div class="img-div div1"></div>
+            <div class="img-div div2"></div>
+            <div class="img-div div3"></div>
+            <div class="img-div div4"></div>
+            <div class="img-div div5"></div>
+            <div class="img-div div6"></div>
+        </div>
     </header>
         
     <main>
-        <div class="carousel">p</div>
-        <div class="conteneurcarte">carte</div>
-        <div class="temoignages">ils l'on fait</div>
-        <div class="avis">avis</div>
-        <div class="articles">articles</div>
-        <div class="voyages">voyages</div>
+        <section class="conteneurcarte">
+            <div class="descriptif">
+                <h2>L'Eurovélo, 226.7 Km <br> à vélo à travers <br> les Hauts de France</h2>
+            </div>
+            <div class="carte">carte</div>
+        </section>
+        <section class="accueilvelo">accueil vélo</section>
+        <section class="temoignages">ils l'on fait</section>
+        <section class="avis">avis</section>
+        <section class="articles">articles</section>
+        <section class="voyages">voyages</section>
     </main>
 
     <footer>footer</footer>
 
-    
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.4.0.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/slider.js"></script>  
 </body>
 </html>
