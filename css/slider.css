@@ -1,5 +1,5 @@
 body{
-    background-color: grey;
+    background-color: rgb(255, 0, 0);
     margin: 0;
     padding: 0;
 }
@@ -9,10 +9,29 @@ body{
 }
 
 .img-div {
-    height: 120vh;
+    height: 95vh;
 }
-
 .div1{
-    background: url(images\imagesCarousel\image1.jpg) no-repeat;
+    background: url(/images/imagescarousel/image1.jpg) no-repeat center;
+    background-size: cover;
+}
+.div2{
+    background: url(/images/imagescarousel/image2.jpg) no-repeat center;
+    background-size: cover;
+}
+.div3{
+    background: url(/images/imagescarousel/image3.jpg) no-repeat center;
+    background-size: cover;
+}
+.div4{
+    background: url(/images/imagescarousel/image4.jpg) no-repeat center;
+    background-size: cover;
+}
+.div5{
+    background: url(/images/imagescarousel/image5.jpg) no-repeat center;
+    background-size: cover;
+}
+.div6{
+    background: url(/images/imagescarousel/image3.jpg) no-repeat center;
     background-size: cover;
 }
