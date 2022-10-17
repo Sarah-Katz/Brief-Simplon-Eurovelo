@@ -291,16 +291,62 @@ main{
 
 /*Footer*/
 
-footer{
+.footh{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     background-image: url(/images/imagescarousel/image2.jpg);
-    
     background-size: cover;
     width: 100%;
     height: 350px;
 }
+.qsn1 {
+    width: 65px;
+    height: 65px;
+}
+.qsn2 {
+    height: 65px;
+}
+.headfoot{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-left: 300px;
+    margin-right: 300px;
+    align-items: center;
+    justify-content: space-between;
+}
+.logod img{
+    width: 25px;
+    margin-right: 5px;
+    
+}
+.footm1{
+    width: 100%;
+    height: 158px;
+    background-color: aliceblue;
+}
+.footm2{
+    width: 100%;
+    height: 170px;
+}
+.footb{
+    width: 100%;
+    height: 70px;
+    background-color: black;
+}
+.fcontenu{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+.fcontenu p{
+    width: 55%;
+    line-height: 25px;
+}
+
 
 
 
