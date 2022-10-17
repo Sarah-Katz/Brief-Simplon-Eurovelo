@@ -205,30 +205,18 @@ header {
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    position: relative;
-    z-index: -1;
-}
-.timage img{
-    width: 100vw;
-    height: 97vh;
-}
-h1{
-    position: absolute;
-    top: 50%;
-    left: 42%;
-    color: white;
+    height: 96vh;
+    background: url(/images/imagescarousel/image1.jpg) no-repeat;
+    background-size: cover;
+  }
+  .timage p{
+    margin: auto;
+    color: #fff;
     font-size: 4em;
     font-weight: 700;
-}
-a.flechea{
-  width: 4em;
-  height: 4em;
-  position: absolute;
-  top: 82%;
-  left: 50%;
-  rotate: 90deg;
-}
-img.fleche{
-    width: 100%;
-    height: 100%;
-}
+  }
+  .timage a{
+   
+  }
+
+
