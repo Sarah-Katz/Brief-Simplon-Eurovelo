@@ -4,6 +4,8 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: gray;
   }
+
+  /*Header*/
   
   header {
     position: fixed;
@@ -140,19 +142,27 @@ body {
   li a:hover{
     color: #007c74;
   }
+  .espace img{
+    width: 27px;
+  }
+  .espace{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
   #loupe{
-    height: 40%;
+    height: 30%;
     margin-left: 45%;
-    margin-top: 20px;
+    margin-top: 30px;
   }
   #loupe.afficher {
     display: none;
   }
   #croix {
     display: none;
-    height: 40%;
+    height: 20%;
     margin-left: 45%;
-    margin-top: 20px;
+    margin-top: 33px;
   
   }
   #croix.afficher {
@@ -168,7 +178,7 @@ body {
   
   #search{
     width: 100%;
-    height: 80px;
+    height: 50px;
     background-color: black;
     padding: 1%;
     color: #fff;
@@ -183,7 +193,7 @@ body {
   }
 
 
-
+/*main*/
 
 
 main{
@@ -192,8 +202,14 @@ main{
     flex-wrap: wrap;
     width: 100%;
 }
-.carousel img{
+.carousel {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 100%;
+}
+.carousel img{
+    width: 100vw;
 }
 .conteneurcarte{
     display: flex;
@@ -272,6 +288,9 @@ main{
     width: 100%;
     height: 790px;
 }
+
+/*Footer*/
+
 footer{
     display: flex;
     flex-direction: row;
