@@ -7,193 +7,192 @@ body {
     background-color: gray;
   }
 
-/*Header*/
+ /*Header*/
   
-header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    transition: top ease 0.5s;
-    z-index: 1;
-  }
-  #header.cache {
-    top: -50px;
-  }
-  #head {
-    background: transparent;
-    margin: 0%;
-    padding: 0%;
-    display: flex;
-    height: 50px;
-    justify-content: space-between;
-  }
-  
-  .haut-gauche {
-    display: flex;
-  
-  }
-  
-  .haut-gauche a {
-    padding: 10px;
-    margin-right: 20px;
-    background-color: rgba(0, 0, 0, 0.1)
-  }
-  
-  .haut-gauche a:hover {
-    background-color: #007c74;
-  }
-  
-  form {
-    margin: auto;
-    color: #fff;
-  
-  }
-  
-  #email {
-    background-color: rgba(0, 0, 0, 0.2);
-    border: none;
-    border-radius: 5px5px;
-    padding: 10px;
-    width: 165px;
-    font-weight: 700;
-    font-size: 0.875rem;
-    color: #fff;
-  }
-  
-  #email::placeholder{
-    color: #fff;
-  }
-  
-  #submit {
-    margin: 0;
-    background-color: #007c74;
-    border: none;
-    font-weight: 600;
-    font-size: 0.875rem;
-    color: #fff;
-    padding: 10px;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 0;
-    border-top-left-radius: 0;
-    margin-left: -4px;
-  }
-  
-  .haut-droite{
-    display: flex;
-    justify-content: space-between;
-    width: 35%;
-  }
-  
-  .haut-droite a{
-    text-decoration: none;
-    color: #fff;
-    margin: auto;
-    padding-left: 20px;
-  }
-  .haut-droite a:hover{
-    color: #007c74;
-  }
-  .carnet{
-    background: url(image/icon/silhouette-de-forme-simple-de-coeur.png) no-repeat;
-    background-size: contain;
-  }
-  
-  .carnet:hover{
-    background: url(image/icon/silhouette-de-forme-simple-de-coeur2.png) no-repeat;
-    background-size: contain;
-  }
-  
-  .espace{
-    background: url(image/icon/profil.png) no-repeat;
-    background-size: contain;
-  }
-  .espace:hover{
-    background: url(image/icon/profil2.png) no-repeat;
-    background-size: contain;
-  }
-  .navigation {
-    background: #fff;
-    display: flex;
-    height: 80px;
-  }
-  
-  .euro {
-    height: 50px;
-    margin: 10%;
-    margin-top: 13px;
-  }
-  .eurovelo{
-    height: 50px;
-    margin-left: 10%;
-    margin-top: 13px;
-  }
-  ul{
-    width: 40%;
-    margin-top: 30px;
-    display: flex;
-    justify-content: space-between;
-  }
-  li{
-    display: inline;
-  }
-  li a{
-    text-decoration: none;
-    color: black;
-    font-weight: 600;
-  }
-  li a:hover{
-    color: #007c74;
-  }
-  .espace img{
-    width: 27px;
-  }
-  .espace{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-  #loupe{
-    height: 30%;
-    margin-left: 45%;
-    margin-top: 30px;
-  }
-  #loupe.afficher {
-    display: none;
-  }
-  #croix {
-    display: none;
-    height: 20%;
-    margin-left: 45%;
-    margin-top: 33px;
-  
-  }
-  #croix.afficher {
-    display: block;
-  }
-  #recherche {
-    display: none;
-  }
-  
-  #recherche.afficher {
-    display: block;
-  }
-  
-  #search{
-    width: 100%;
-    height: 50px;
-    background-color: black;
-    padding: 1%;
-    color: #fff;
-    font-weight: 600;
-    font-size: larger;
-    border: none;
-    border-radius: 5px;
-  }
-  
-  #search::placeholder{
-    color: #fff;
-  }
+ header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: top ease 0.5s;
+}
+#header.cache {
+  top: -50px;
+}
+#head {
+  background: transparent;
+  margin: 0%;
+  padding: 0%;
+  display: flex;
+  height: 50px;
+  justify-content: space-between;
+}
+
+.haut-gauche {
+  display: flex;
+
+}
+
+.haut-gauche a {
+  padding: 10px;
+  margin-right: 20px;
+  background-color: rgba(0, 0, 0, 0.1)
+}
+
+.haut-gauche a:hover {
+  background-color: #007c74;
+}
+
+form {
+  margin: auto;
+  color: #fff;
+}
+
+#email {
+  background-color: rgba(0, 0, 0, 0.2);
+  border: none;
+  border-radius: 5px 0 0 5px;
+  padding: 10px;
+  width: 165px;
+  font-weight: 700;
+  font-size: 0.875rem;
+  color: #fff;
+}
+
+#email::placeholder{
+  color: #fff;
+}
+
+#submit {
+  margin: 0;
+  background-color: #007c74;
+  border: none;
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: #fff;
+  padding: 10px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  margin-left: -4px;
+}
+
+.haut-droite{
+  display: flex;
+  justify-content: space-between;
+  width: 35%;
+}
+
+.haut-droite a{
+  text-decoration: none;
+  color: #fff;
+  margin: auto;
+  padding-left: 20px;
+}
+.haut-droite a:hover{
+  color: #007c74;
+}
+.carnet{
+  background: url(image/icon/silhouette-de-forme-simple-de-coeur.png) no-repeat;
+  background-size: contain;
+}
+
+.carnet:hover{
+  background: url(image/icon/silhouette-de-forme-simple-de-coeur2.png) no-repeat;
+  background-size: contain;
+}
+
+.espace{
+  background: url(image/icon/profil.png) no-repeat;
+  background-size: contain;
+}
+.espace:hover{
+  background: url(image/icon/profil2.png) no-repeat;
+  background-size: contain;
+}
+.navigation {
+  background: #fff;
+  display: flex;
+  height: 80px;
+}
+
+.euro {
+  height: 50px;
+  margin: 10%;
+  margin-top: 13px;
+}
+.eurovelo{
+  height: 50px;
+  margin-left: 15px;
+  margin-top: 13px;
+}
+.navigation ul{
+  margin-left: 35px;
+  width: 40%;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.navigation li{
+  display: inline;
+}
+.navigation li a{
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+.navigation li a:hover{
+  color: #007c74;
+}
+.espace img{
+  width: 27px;
+}
+.espace{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#loupe{
+  height: 30%;
+  margin-left: 45%;
+  margin-top: 30px;
+}
+#loupe.afficher {
+  display: none;
+}
+#croix {
+  display: none;
+  height: 20%;
+  margin-left: 45%;
+  margin-top: 33px;
+
+}
+#croix.afficher {
+  display: block;
+}
+#recherche {
+  display: none;
+}
+
+#recherche.afficher {
+  display: block;
+}
+
+#search{
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  padding: 1%;
+  color: #fff;
+  font-weight: 600;
+  font-size: larger;
+  border: none;
+  border-radius: 5px;
+}
+
+#search::placeholder{
+  color: #fff;
+}
 
 /* main */
 
