@@ -23,27 +23,21 @@ body {
     height: 50px;
     justify-content: space-between;
   }
-  
   .haut-gauche {
     display: flex;
-  
   }
-  
   .haut-gauche a {
     padding: 10px;
     margin-right: 20px;
     background-color: rgba(0, 0, 0, 0.1)
   }
-  
   .haut-gauche a:hover {
     background-color: #007c74;
   }
-  
   form {
     margin: auto;
     color: #fff;
   }
-  
   #email {
     background-color: rgba(0, 0, 0, 0.2);
     border: none;
@@ -54,11 +48,9 @@ body {
     font-size: 0.875rem;
     color: #fff;
   }
-  
   #email::placeholder{
     color: #fff;
   }
-  
   #submit {
     margin: 0;
     background-color: #007c74;
@@ -73,13 +65,11 @@ body {
     border-top-left-radius: 0;
     margin-left: -4px;
   }
-  
   .haut-droite{
     display: flex;
     justify-content: space-between;
     width: 35%;
   }
-  
   .haut-droite a{
     text-decoration: none;
     color: #fff;
@@ -92,28 +82,37 @@ body {
   .carnet{
     background: url(image/icon/silhouette-de-forme-simple-de-coeur.png) no-repeat;
     background-size: contain;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
-  
+  .carnet img{
+    margin-right: 2px;
+  }
   .carnet:hover{
     background: url(image/icon/silhouette-de-forme-simple-de-coeur2.png) no-repeat;
     background-size: contain;
   }
-  
+  .espace img{
+    width: 27px;
+  }
   .espace{
     background: url(image/icon/profil.png) no-repeat;
     background-size: contain;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
   .espace:hover{
     background: url(image/icon/profil2.png) no-repeat;
     background-size: contain;
   }
-  .navigation {
+  .navigation{
     background: #fff;
     display: flex;
     height: 80px;
   }
-  
-  .euro {
+  .euro{
     height: 50px;
     margin: 10%;
     margin-top: 13px;
@@ -141,14 +140,6 @@ body {
   .navigation li a:hover{
     color: #007c74;
   }
-  .espace img{
-    width: 27px;
-  }
-  .espace{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
   #loupe{
     height: 30%;
     margin-left: 45%;
@@ -162,7 +153,6 @@ body {
     height: 20%;
     margin-left: 45%;
     margin-top: 33px;
-  
   }
   #croix.afficher {
     display: block;
@@ -170,11 +160,9 @@ body {
   #recherche {
     display: none;
   }
-  
   #recherche.afficher {
     display: block;
   }
-  
   #search{
     width: 100%;
     height: 50px;
@@ -186,7 +174,6 @@ body {
     border: none;
     border-radius: 5px;
   }
-  
   #search::placeholder{
     color: #fff;
   }
@@ -308,7 +295,6 @@ main{
 .qsn2 {
     height: 65px;
     margin-left: 11px;
-    
 }
 .headfoot{
     display: flex;
