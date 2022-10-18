@@ -362,6 +362,10 @@ main{
     margin-top: 40px;
     box-shadow: 0px 0px 5px lightslategray;
 }
+.btnb p:hover{
+    box-shadow: 0px 0px 6px #007c74;
+
+}
 .btnv p{
     color: white;
     background-color: #007c74;
@@ -373,6 +377,9 @@ main{
     margin-left: 30px;
     margin-top: 40px;
     box-shadow: 0px 0px 5px lightslategray;
+}
+.btnv p:hover{
+    box-shadow: 0px 0px 6px white;
 }
 
 /* footer itinéraire */
@@ -436,31 +443,31 @@ main{
     width: 100%;
 }
 .veloacc{
-  width: 5%;
-  margin-left: 330px;
-  margin-top: 40px;
+    width: 5%;
+    margin-left: 330px;
+    margin-top: 40px;
 }
 .veloacc img{
-  width: 49px;
-  height: 71px;
+    width: 49px;
+    height: 71px;
 }
 .velotext{
-  width: 50%;
-  margin-top: 25px;
-  padding-left: 1%;
+    width: 50%;
+    margin-top: 25px;
+    padding-left: 1%;
 }
 .velotext p{
-  line-height: 25px;
-  font-size: 0.9em;
-  color: #585858;
+    line-height: 25px;
+    font-size: 0.9em;
+    color: #585858;
 }
 .velotext h4{
-  font-size: 1em;
+    font-size: 1em;
 }
 .boutons{
-  display: flex;
-  align-items: center;
-  margin-right: 330px;
+    display: flex;
+    align-items: center;
+    margin-right: 330px;
 }
 .btn1 p{
     color: black;
@@ -474,6 +481,9 @@ main{
     box-shadow: 0px 0px 5px lightgray;
     padding: 10px 20px;
 }
+.btn1 p:hover{
+    box-shadow: 0px 0px 6px gray;
+}
 .btn2 p{
     color: white;
     background-color: black;
@@ -485,6 +495,9 @@ main{
     box-shadow: 0px 0px 5px lightgray;
     padding: 10px 20px;
     margin-left: 30px;
+}
+.btn2 p:hover{
+    box-shadow: 0px 0px 6px gray;
 }
 .boutons a{
     text-decoration: none;
@@ -511,28 +524,28 @@ main{
     font-weight: bold;
     margin-top: 26px;
 }
+.realisation{
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: auto;
+    margin-left: 760px;
+    margin-right: 10px;
+}
+.logofvt img{
+    width: 145px;
+}
+.logofvt{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.simplon img{
+   width: 90px;
+}
 .simplon{
-  margin-top: auto;
-  margin-bottom: auto;
-  font-weight: bold;
-  color: black;
-  background-color: white;
-  display:block;
-  display: inline-block;
-  text-align:center;
-  padding: 0px 2px 3px 0px;
-  height: 15px;
-  
-}
-.simplon span{
-  color: white;
-  background-color: black;
-  display:block;
-  display: inline-block;
-  text-align:center;
-  padding-left: 3px;
-}
-
+    margin-top: auto;
+    margin-bottom: auto;}
 
 
 
