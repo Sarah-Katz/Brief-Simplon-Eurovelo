@@ -15,7 +15,7 @@ let texteEtape = document.getElementById("texteEtape")
 let montee = document.getElementById("montee")
 let descente = document.getElementById("descente")
 let distance = document.getElementById("distance")
-let gpxDownload = document.getElementById("gpsDownload")
+let gpxDownload = document.getElementById("gpxDownload")
 let image = document.getElementById("img")
 
 // Chargement des fichiers
@@ -45,61 +45,65 @@ function carte(etapes) {
                 shadowUrl: 'images/carte/pin-shadow.png',
             },
             etape: etape,
-            gpx_options: {
-                joinTrackSegments: false
-            }, polyline_options: {
+            polyline_options: {
                 color: '#C04300',
                 opacity: 1,
                 weight: 9,
                 lineCap: 'round'
             },
-        }).addTo(map).on('click', function (e) {
-            map.fitBounds(e.target.getBounds());
-            e.target.setStyle({
-                color: 'blue'
-            })
-            mouseoverToggle = false
-            mouseoutToggle = false
-            if (lastTrackClicked != null) {
-                lastTrackClicked.setStyle({ color: '#C04300' })
-            }
-            lastTrackClicked = e.target
-            titreEtape.innerHTML = e.target.options.etape.attributes.name;
-            texteEtape.innerHTML = e.target.options.etape.attributes.texteEtape;
-            distance.innerHTML = e.target.options.etape.attributes.distance;
-            montee.innerHTML = e.target.options.etape.attributes.montee;
-            descente.innerHTML = e.target.options.etape.attributes.descente;
-            image.src = e.target.options.etape.attributes.img;
-            gpxDownload.href = e.target.options.etape.attributes.url
-        }).on('mouseover mousemove', function (e) {
-            if (mouseoverToggle == true) {
-                this.setStyle({
-                    color: '#00246B'
-                }); L.popup()
-                    .setLatLng(e.latlng)
-                    .setContent(e.target.options.etape.attributes.name)
-                    .openOn(map)
-            }
-        }).on('mouseout', function () {
-            if (mouseoutToggle == true) {
-                map.closePopup();
-                this.setStyle({
-                    color: '#C04300'
+        }).addTo(map)
+            .on('click', function (e) {
+                map.fitBounds(e.target.getBounds());
+                e.target.setStyle({
+                    color: 'blue'
                 })
-            }
-            const bouton = document.getElementById("bouton");
-            bouton.addEventListener('click', function () {
-                map.setView([50.79067, 2.24964], 9);
-                mouseoutToggle = true;
-                mouseoverToggle = true;
-                lastTrackClicked.setStyle({ color: '#C04300' })
-                reset()
+                mouseoverToggle = false
+                mouseoutToggle = false
+                if (lastTrackClicked != null) {
+                    lastTrackClicked.setStyle({ color: '#C04300' })
+                }
+                lastTrackClicked = e.target
+                setArticle(data.target.options.etape.attributes)
+            }).on('mouseover mousemove', function (e) {
+                if (mouseoverToggle == true) {
+                    this.setStyle({
+                        color: '#00246B'
+                    }); L.popup()
+                        .setLatLng(e.latlng)
+                        .setContent(e.target.options.etape.attributes.name + "<br>" + e.target.options.etape.attributes.distance)
+                        .openOn(map)
+                }
+            }).on('mouseout', function () {
+                if (mouseoutToggle == true) {
+                    map.closePopup();
+                    this.setStyle({
+                        color: '#C04300'
+                    })
+                }
             });
-        })
     }
+    const bouton = document.getElementById("bouton");
+    bouton.addEventListener('click', function () {
+        reset()
+    })
+}
+
+function setArticle(data) {
+    console.log(e)
+    titreEtape.innerHTML = data.name;
+    texteEtape.innerHTML = data.texteEtape;
+    distance.innerHTML = data.distance;
+    montee.innerHTML = data.montee;
+    descente.innerHTML = data.descente;
+    image.src = data.img;
+    gpxDownload.href = data.url
 }
 
 function reset() {
+    map.setView([50.79067, 2.24964], 9);
+    mouseoutToggle = true;
+    mouseoverToggle = true;
+    lastTrackClicked.setStyle({ color: '#C04300' })
     titreEtape.innerHTML = "Eurovélo - Hauts de france"
     distance.innerHTML = "217,4km"
     montee.innerHTML = "1090m"
