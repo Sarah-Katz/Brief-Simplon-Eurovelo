@@ -281,7 +281,72 @@ body {
   }
 
 /* taille article en attente de thomas */
+.conteneur-temoignage{
+  background-color: white;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1%;
+  justify-content: space-between;
+  padding-left: 19%;
+  padding-right: 19%;
+}
 
+.article-child:hover img{
+  filter: blur(6px);
+  transition: .4s;
+  transform: scale(1.2);
+}
+
+.article-child:hover{
+  box-shadow: 4px 4px 4px rgb(75, 75, 75);
+}
+
+.article-child img{
+  transition: .4s;
+  border-radius: 2%;
+}
+
+.article-child{
+  margin-bottom: 3%;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+
+.article-child:first-child{
+  flex: 0 0 100%;
+}
+
+.article-child:nth-child(3){
+  flex: 0 0 65%;
+
+}
+
+.article-child:nth-child(2){
+  flex: 0 0 32%;
+}
+
+
+.article-child:first-child .image{
+  width: 100%;
+}
+
+h4 {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  transition: .5s;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.article-child:hover h4{
+ top: 70%;
+ transition: .4s;
+}
 
  /* image article */
 
