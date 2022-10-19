@@ -197,33 +197,47 @@ main{
 .carousel img{
     width: 100vw;
 }
+
+/*CARTE*/
+
 .conteneurcarte{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     width: 100%;
-    height: 1000px;
-    background-color: blue;
     box-sizing: border-box;
     margin-left: 300px;
     margin-right: 300px;
 }
 .descriptif{
-    background-color: aliceblue;
-    width: 600px;
-    height: 500px;
-    margin-top: 100px;
+    background-color: white;
+    width: 1000px;
+    height: 550px;
     text-align: center;
+    padding: 20px;
+    line-height: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
 .descriptif h2{
-    font-size: 2em;
+    font-size: 2.5em;
+    color: #231f20;
+    font-family: 'Poppins', sans-serif;
+    line-height: 40px;
 }
-.carte{
-    background-color: aliceblue;
-    width: 653px;
-    height: 800px;
-    margin-top: 100px;
-    margin-left: 50px;
+.descriptif p{
+    font-size: 1.1em;
+    color: #585858;
+    text-align: left;
+}
+.descriptif span{
+    color: #007c74;
+    font-weight: bold;
+}
+.descriptif img{
+    width: 230px;
 }
 .accueilvelo{
     display: flex;
@@ -274,6 +288,51 @@ main{
     width: 100%;
     height: 790px;
 }
+
+/*FORMULAIRE*/
+
+.formulaire{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 350px;
+    height: 400px;
+    background-color: #007c74;
+    border-radius: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    box-shadow: -3px 3px 8px lightslategray;
+}
+.formulaire p{
+    font-size: 2em;
+} 
+.valider a{
+    font-size: 1.1em;
+    background-color: black;
+    padding: 10px;
+    margin: auto;
+    border-radius: 4px;
+}
+.valider{
+  margin-top: 20px;
+}
+.conteneurcarte form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 30px;
+    font-size: 1em;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 45px;
+}
+.conteneurcarte form select{
+    margin-bottom: 15px;
+    padding: 15px 10px;
+    font-weight: bold;
+}
+ 
 
 /*Footer*/
 
