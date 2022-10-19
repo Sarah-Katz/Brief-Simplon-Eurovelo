@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+        integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
+    <link rel="stylesheet" href="css/map.css">
+    <title>Itinéraire</title>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="description">
+        <input id="bouton" type="button" value="dezoom">
+            <h2 id="titreEtape">Eurovélo - Hauts de france</h2>
+            <span id="distance">217,4km</span>
+            <img class="iconeEtape" src="" alt="">
+            <span id="montee">1090m</span>
+            <img class="iconeEtape" src="" alt="">
+            <span id="descente">1071m</span>
+            <img class="iconeEtape" src="" alt="">
+            <img id="img" src="" alt="">
+            <p id="texteEtape">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas rem nemo aut soluta,
+                minima, ex enim quae optio ipsam, impedit cum. Totam illum iusto earum id vel expedita veritatis omnis.
+                Inventore praesentium cupiditate asperiores autem reiciendis minima eius, mollitia neque ex quo at
+                cumque unde corrupti fugiat rerum, molestiae doloremque, a dicta nihil dignissimos! Odit, quas nobis!
+                Ipsam, reiciendis inventore.
+                Quas, vero. Illum libero magni provident, sint rem voluptatum inventore? Autem, nulla fugit enim
+                quibusdam debitis deserunt sint temporibus accusamus tenetur odio numquam et earum doloremque, dicta
+                ipsa, quod suscipit.</p>
+            <a id="gpxDownload" href=""></a>
+        </div>
+
+        <div id="map">
+        </div>
+    </div>
+
+
+
+    <script src="js/leaflet-1.9.2/leaflet.js"></script>
+    <script src="js/leaflet-gpx-1.7.0/gpx.js"></script>
+    <script src="js/scriptmapstrapi.js"></script>
+
+
+</body>
+
+</html>
