@@ -11,6 +11,7 @@ body {
     top: 0;
     width: 100%;
     transition: top ease 0.5s;
+    z-index: 1;
   }
   #header.cache {
     top: -50px;
@@ -80,32 +81,38 @@ body {
     color: #007c74;
   }
   .carnet{
-    background: url(image/icon/silhouette-de-forme-simple-de-coeur.png) no-repeat;
-    background-size: contain;
     display: flex;
     flex-direction: row;
     align-items: center;
   }
+  .carnet:hover .coeur1{
+    display: none;
+  }
+  .carnet:hover .coeur2{
+    display: block;
+  }
+  .coeur2{
+    display: none;
+  }
   .carnet img{
     margin-right: 2px;
-  }
-  .carnet:hover{
-    background: url(image/icon/silhouette-de-forme-simple-de-coeur2.png) no-repeat;
-    background-size: contain;
   }
   .espace img{
     width: 27px;
   }
   .espace{
-    background: url(image/icon/profil.png) no-repeat;
-    background-size: contain;
     display: flex;
     flex-direction: row;
     align-items: center;
   }
-  .espace:hover{
-    background: url(image/icon/profil2.png) no-repeat;
-    background-size: contain;
+  .espace:hover .profil1{
+    display: none;
+  }
+  .espace:hover .profil2{
+    display: block;
+  }
+  .profil2{
+    display: none;
   }
   .navigation{
     background: #fff;
@@ -212,7 +219,6 @@ main{
 .descriptif{
     background-color: white;
     width: 1000px;
-    height: 550px;
     text-align: center;
     padding: 20px;
     line-height: 25px;
@@ -245,7 +251,6 @@ main{
     flex-wrap: wrap;
     background-color: blanchedalmond;
     width: 100%;
-    height: 300px;
     margin-left: 300px;
     margin-right: 300px;
 }
@@ -256,7 +261,6 @@ main{
     background-image: url(/images/imagesbg/ilonfait.jpg);
     background-size: cover;
     width: 100%;
-    height: 690px;
     margin: 0;
 }
 .avis{
@@ -265,7 +269,6 @@ main{
     flex-wrap: wrap;
     background-color: blanchedalmond;
     width: 100%;
-    height: 690px;
     margin-left: 100px;
     margin-right: 100px;
 }
@@ -275,7 +278,6 @@ main{
     flex-wrap: wrap;
     background-color: aquamarine;
     width: 100%;
-    height: 1200px;
     margin-left: 100px;
     margin-right: 100px;
 }
@@ -286,7 +288,6 @@ main{
     background-image: url(/images/imagesbg/voyages.jpg);
     background-size: cover;
     width: 100%;
-    height: 790px;
 }
 
 /*FORMULAIRE*/
@@ -296,7 +297,6 @@ main{
     flex-direction: column;
     flex-wrap: wrap;
     width: 350px;
-    height: 400px;
     background-color: #007c74;
     border-radius: 2px;
     margin-left: auto;
@@ -344,7 +344,6 @@ main{
     backdrop-filter: blur(8px);
     background-size: cover;
     width: 100%;
-    height: 350px;
 }
 .qsn1 {
     width: 65px;
@@ -432,7 +431,6 @@ main{
 .footm1{
     display: flex;
     flex-direction: row;
-    height: 158px;
     background-color: white;
     margin-left: 290px;
     margin-right: 300px;
@@ -484,7 +482,6 @@ main{
     display: flex;
     flex-direction: row;
     background-color: #f4f4f4;
-    height: 170px;
     width: 100%;
 }
 .veloacc{
@@ -554,7 +551,6 @@ main{
 .footb{
     display: flex;
     width: 100%;
-    height: 70px;
     background-color: black;
 }
 .ml li,a{
@@ -591,6 +587,112 @@ main{
 .simplon{
     margin-top: auto;
     margin-bottom: auto;}
+
+/*Responsive*/
+
+@media screen and (max-width:480px){
+
+/*Header*/
+
+#header{
+  display: none;
+}
+.body{
+  width: auto;
+}
+.conteneurcarte{
+  margin: 0;
+  width: 100%;
+  flex-direction: initial;
+}
+.descriptif{
+  width: 100%;
+  padding: 1px 10px 1px 10px;
+}
+.descriptif img{
+  margin-top: 20px;
+}
+.descriptif p{
+  width: 100%;
+  margin: auto;
+  text-align: justify;
+}
+
+/*Footer*/
+
+.headfoot{
+  margin: 50px 0 0 0;
+}
+.fcontenu{
+  margin: 0;
+}
+.qsn1{
+  margin: 0;
+}
+.qsn2{
+  margin: 0 0 0 10px;
+}
+.logod{
+  margin-right: 10px;
+}
+.quisommesnous{
+  display: none;
+}
+.fboutons{
+  margin: auto;
+  width: auto;
+}
+.fboutons p{
+  margin: 40px  7px 50px 0;
+  width: auto;
+}
+.footm1{
+  flex-direction: column;
+  font-size: 1.4em;
+  margin: 0;
+}
+.presentation li{
+  margin: 0;
+}
+.suggestions{
+  margin: 0;
+  line-height: 1.20;
+}
+.conseils{
+  line-height: 1.20;
+}
+.footm2{
+  margin: auto;
+  flex-direction: column;
+}
+.veloacc{
+  display: none;
+}
+.velotext{
+  margin: auto;
+  text-align: center;
+  width: 100%;
+}
+.boutons{
+  margin: 0;
+}
+.btn1{
+  
+}
+.btn2{
+  
+}
+
+
+
+
+
+
+
+
+  
+}
+
 
 
 
