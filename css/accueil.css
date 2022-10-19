@@ -606,8 +606,12 @@ main{
   flex-direction: initial;
 }
 .descriptif{
+  margin-top: 10px;
   width: 100%;
   padding: 1px 10px 1px 10px;
+}
+.descriptif h2{
+  font-size: 1.75rem;
 }
 .descriptif img{
   margin-top: 20px;
@@ -630,10 +634,10 @@ main{
   margin: 0;
 }
 .qsn2{
-  margin: 0 0 0 10px;
+  margin: 0 0 0 5px;
 }
 .logod{
-  margin-right: 10px;
+  margin-right: 5px;
 }
 .quisommesnous{
   display: none;
@@ -643,23 +647,27 @@ main{
   width: auto;
 }
 .fboutons p{
-  margin: 40px  7px 50px 0;
+  margin: 40px  5px 50px 0;
   width: auto;
+  font-size: 0.9em;
 }
 .footm1{
   flex-direction: column;
-  font-size: 1.4em;
+  font-size: 1.3em;
   margin: 0;
+}
+.presentation{
+  line-height: 1.1;
 }
 .presentation li{
   margin: 0;
 }
 .suggestions{
   margin: 0;
-  line-height: 1.20;
+  line-height: 1.10;
 }
 .conseils{
-  line-height: 1.20;
+  line-height: 1.10;
 }
 .footm2{
   margin: auto;
@@ -671,17 +679,51 @@ main{
 .velotext{
   margin: auto;
   text-align: center;
-  width: 100%;
+  width: 90%;
 }
 .boutons{
+  margin: 0 15px 20px 20px;
+}
+.boutons p{
   margin: 0;
+  width: 110px;
 }
 .btn1{
-  
+  margin-right: 13px;
 }
 .btn2{
-  
+  margin-top: 12px;
 }
+.footb{
+ margin: 0;
+ display: flex;
+ flex-wrap: wrap;
+ flex-direction: row;
+
+}
+.ml{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+  width: 100%;}
+.ml ul{
+  margin: 5px  0  0 0;
+  text-align: left;
+}
+.ml li{
+  margin: 0;
+}
+.realisation{
+  margin: 23px 5px 0 10px;
+}
+.simplon{
+  margin: 20px 0px 0px 5px;
+}
+.logofvt{
+  margin-left: 0px;
+}
+
 
 
 

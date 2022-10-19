@@ -327,6 +327,7 @@ body {
   justify-content: space-between;
   padding-left: 19%;
   padding-right: 19%;
+  padding-top: 3%;
 }
 
 .article-child:hover img{
@@ -345,7 +346,7 @@ body {
 }
 
 .article-child{
-  margin-bottom: 3%;
+  margin-bottom: 4%;
   position: relative;
   text-align: center;
   overflow: hidden;
