@@ -38,7 +38,7 @@ body {
     margin: auto;
     color: #fff;
   }
-  .email {
+  #email {
     background-color: rgba(0, 0, 0, 0.2);
     border: none;
     border-radius: 5px 0 0 5px;
@@ -48,10 +48,10 @@ body {
     font-size: 0.875rem;
     color: #fff;
   }
-  .email::placeholder{
+  #email::placeholder{
     color: #fff;
   }
-  .submit {
+  #submit {
     margin: 0;
     background-color: #007c74;
     border: none;
@@ -170,7 +170,7 @@ body {
   #recherche.afficher {
     display: block;
   }
-  .search{
+  #search{
     width: 100%;
     height: 50px;
     background-color: black;
@@ -181,17 +181,8 @@ body {
     border: none;
     border-radius: 5px;
   }
-  .search::placeholder{
+  #search::placeholder{
     color: #fff;
-  }
-  #header_telephone{
-    display: none;
-  }
-  .nav-container{
-    display: none;
-  }
-  #container_search{
-    display: none;
   }
 
 
@@ -624,170 +615,8 @@ main{
 
 /*Header*/
 
-#header_ordi{
+#header{
   display: none;
-}
-.nav-container{
-  display: block;
-}
-#header_telephone{
-  display: flex;
-  width: 100%;
-  background-color: #fff;
-}
-#header.cache {
-  top: -80px;
-}
-#icon_menu{
-  width: 150%;
-}
-#menu figcaption{
-  margin-left: 0;
-  font-size: 65%;
-}
-
-#logo_telephone{
-  margin-left: 0%;
-}
-#loupe2{
-  width: 8%;
-  height: 8%;
-  margin: auto;
-
-}
-
-#menu{
-  width: 10%;
-  height: 10%;
-  margin: auto;
-}
-
-#recherche_mobile{
-  display: none;
-}
-.navm {
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  transition: 0.5s;
-  z-index: 2;
-  background:rgba(0, 0, 0, 0.95);
-  position: fixed;
-}
-#es_pro{
-  margin-left: 10% ;
-}
-
-.h2nav {
-  text-align: center;
-  font-size: 120%;
-  margin: 0;
-  margin-top: -15%;
-  margin-left: 5%;
-}
-
-.liennav {
-  font-size: 180%;
-}
-
-ul {
-  margin: 0;
-  margin-top: 15vh;
-  margin-left: -3vw;
-  padding: 0;
-}
-
-li{
-  text-align: center;
-  margin-bottom: 5%;
-}
-
-
-.checkbox {
-  position: fixed;
-  display: block;
-  height: 32px;
-  width: 32px;
-  top: 20px;
-  left: 20px;
-  z-index: 5;
-  opacity: 0;
-  cursor: pointer;
-}
-
-.nav-container input[type="checkbox"]:checked~.navm {
-  transform: translateX(100%);
-  transition: 0.5s;
-}
-
-
-
-.nav-container input[type="checkbox"]:checked {
-  transform: translateX(310px);
-  transition: 0.5s;
-}
-
-#croix_mobile{
-  background-color: #fff;
-  border-radius: 100%;
-  top: 20px;
-  left: 330px;
-  position: relative;
-  padding: 2px;
-}
-form{
-  display: inline-block;
-  margin-left: 10%;
-}
-form p{
-  text-align: center;
-}
-#container_search{
-  display: block;
-}
-#search_mobile{
-  left:  -100%;
-  width: 100%;
-  height: 8%;
-  top: 68px;
-  transition: 0.5s;
-  z-index: 2;
-  background:rgba(0, 0, 0);
-  position: absolute;
-}
-.search{
-  height: 100%;
-  background-color: black;
-}
-
-.checkbox2 {
-  position: fixed;
-  display: block;
-  height: 32px;
-  width: 32px;
-  top: 20px;
-  right: 20px;
-  z-index: 4;
-  opacity: 0;
-  cursor: pointer;
-}
-.checkbox2:checked~#search_mobile{
-  transform: translateX(100%);
-  transition: 0.5s;
-
-} 
-.checkbox2:checked{
-  transform: translateY(200%);
-  transition: 0.5s;
-
-}
-#croix_mobile2{
-  background-color: #fff;
-  border-radius: 100%;
-  bottom: 53px;
-  left: 330px;
-  position: relative;
-  padding: 2px;
 }
 .conteneurcarte{
   margin: 0;

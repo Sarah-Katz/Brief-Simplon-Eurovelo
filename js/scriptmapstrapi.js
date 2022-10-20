@@ -1,4 +1,4 @@
-// Déclaration carte
+// Créationc carte
 var map = L.map('map').setView([50.8, 2.6], 9);
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
@@ -6,7 +6,6 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 // Déclaration variables
-
 let mouseoverToggle = true
 let mouseoutToggle = true
 let lastTrackClicked = null
@@ -17,8 +16,9 @@ let descente = document.getElementById("descente")
 let distance = document.getElementById("distance")
 let gpxDownload = document.getElementById("gpxDownload")
 let image = document.getElementById("img")
+let url = 'http://195.14.105.123:1337'
 
-// Chargement des fichiers
+// Chargement des données
 fetch("http://195.14.105.123:1337/api/etapes?populate=*")
     .then(function (res) {
         if (res.ok) {
@@ -34,10 +34,10 @@ fetch("http://195.14.105.123:1337/api/etapes?populate=*")
     });
 
 
-
+// Création des tracés et fonctions de clics
 function carte(etapes) {
     for (let etape of etapes) {
-        new L.GPX(etape.attributes.url, {
+        new L.GPX(url + etape.attributes.gpx.data.attributes.url, {
             async: true, marker_options: {
                 startIconUrl: 'images/carte/wpt.png',
                 endIconUrl: 'images/carte/wpt.png',
@@ -62,6 +62,7 @@ function carte(etapes) {
                     lastTrackClicked.setStyle({ color: '#C04300' })
                 }
                 lastTrackClicked = e.target
+                // console.log(e)
                 setArticle(e)
             }).on('mouseover mousemove', function (e) {
                 if (mouseoverToggle == true) {
@@ -86,19 +87,18 @@ function carte(etapes) {
         reset()
     })
 }
-
-function setArticle(data) {
-    console.log(data)
-    titreEtape.innerHTML = data.target.options.etape.attributes.name;
-    texteEtape.innerHTML = data.target.options.etape.attributes.texteEtape;
-    distance.innerHTML = data.target.options.etape.attributes.distance;
-    montee.innerHTML = data.target.options.etape.attributes.montee;
-    descente.innerHTML = data.target.options.etape.attributes.descente;
-    image.src = data.target.options.etape.attributes.img;
-    gpxDownload.href = data.target.options.etape.attributes.url
+// Modification de la fiche article
+function setArticle(e) {
+    titreEtape.innerHTML = e.target.options.etape.attributes.name;
+    texteEtape.innerHTML = e.target.options.etape.attributes.texteEtape;
+    distance.innerHTML = e.target.options.etape.attributes.distance;
+    montee.innerHTML = e.target.options.etape.attributes.montee;
+    descente.innerHTML = e.target.options.etape.attributes.descente;
+    image.src = url + e.target.options.etape.attributes.img.data.attributes.url;
+    gpxDownload.href = url + e.target.options.etape.attributes.gpx.data.attributes.url
 }
-
-function reset() {
+// Retour au tracé complet
+function reset(e) {
     map.setView([50.79067, 2.24964], 9);
     mouseoutToggle = true;
     mouseoverToggle = true;
@@ -108,6 +108,6 @@ function reset() {
     montee.innerHTML = "1090m"
     descente.innerHTML = "1071m"
     texteEtape.innerHTML = "texte descriptif de l'étape générale"
-    image.innerHTML = "" //source image
-    gpxDownload.innerHTML = ""
+    image.src = "images/etapes/imageetape9.jpg";
+    gpxDownload.href = url + e.target.options.etape.attributes.gpx.data.attributes.url
 }
