@@ -201,9 +201,16 @@ main{
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
+    position: relative;
+    z-index: 0;
 }
-.carousel img{
-    width: 100vw;
+.carousel p{
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left:1em;
+  font-size: 1em;
+  color: white;
 }
 .slider div h2{
   margin: auto;
@@ -213,10 +220,10 @@ main{
   font-size: 5em;
   font-weight: 700;
   text-align: center;
-  line-height: 0.7;
+  line-height: 0.5;
 }
 .slider div h2 span{
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 100;
 }
 
