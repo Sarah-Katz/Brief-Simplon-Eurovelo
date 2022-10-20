@@ -657,9 +657,9 @@ main{
 }
 
 #menu{
-  width: 10%;
-  height: 10%;
-  margin: auto;
+  width: 8%;
+  height: 8%;
+  margin: auto 30px auto 30px;
 }
 
 #recherche_mobile{
@@ -704,12 +704,12 @@ li{
 
 
 .checkbox {
-  position: fixed;
+  position: absolute;
   display: block;
   height: 32px;
   width: 32px;
   top: 20px;
-  left: 20px;
+  left: 30px;
   z-index: 5;
   opacity: 0;
   cursor: pointer;
@@ -761,12 +761,12 @@ form p{
 }
 
 .checkbox2 {
-  position: fixed;
+  position: relative;
   display: block;
   height: 32px;
   width: 32px;
   top: 20px;
-  right: 20px;
+  left: 330px;
   z-index: 4;
   opacity: 0;
   cursor: pointer;
@@ -789,6 +789,8 @@ form p{
   position: relative;
   padding: 2px;
 }
+
+
 .conteneurcarte{
   margin: 0;
   width: 100%;
