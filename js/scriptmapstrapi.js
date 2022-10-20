@@ -28,7 +28,6 @@ fetch("http://195.14.105.123:1337/api/etapes?populate=*")
     .then(function (value) {
         let etapes = value.data
         carte(etapes)
-        console.log(etapes)
     })
     .catch(function (err) {
         //Une erreur est survenue
@@ -63,7 +62,7 @@ function carte(etapes) {
                     lastTrackClicked.setStyle({ color: '#C04300' })
                 }
                 lastTrackClicked = e.target
-                setArticle(data.target.options.etape.attributes)
+                setArticle(e)
             }).on('mouseover mousemove', function (e) {
                 if (mouseoverToggle == true) {
                     this.setStyle({
@@ -89,14 +88,14 @@ function carte(etapes) {
 }
 
 function setArticle(data) {
-    console.log(e)
-    titreEtape.innerHTML = data.name;
-    texteEtape.innerHTML = data.texteEtape;
-    distance.innerHTML = data.distance;
-    montee.innerHTML = data.montee;
-    descente.innerHTML = data.descente;
-    image.src = data.img;
-    gpxDownload.href = data.url
+    console.log(data)
+    titreEtape.innerHTML = data.target.options.etape.attributes.name;
+    texteEtape.innerHTML = data.target.options.etape.attributes.texteEtape;
+    distance.innerHTML = data.target.options.etape.attributes.distance;
+    montee.innerHTML = data.target.options.etape.attributes.montee;
+    descente.innerHTML = data.target.options.etape.attributes.descente;
+    image.src = data.target.options.etape.attributes.img;
+    gpxDownload.href = data.target.options.etape.attributes.url
 }
 
 function reset() {
