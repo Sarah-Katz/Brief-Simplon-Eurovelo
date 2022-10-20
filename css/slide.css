@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
 }
+/* début du slider */
 .slider {
   position: relative;
   overflow: hidden;
@@ -85,7 +86,7 @@ body {
 
 
 
-/* Background Images */
+/* Background Images du slider */
  
 .slide:first-child {
   background: url(/images/imagescarousel/image1.jpg) no-repeat
@@ -111,3 +112,5 @@ body {
   background: url(/images/imagescarousel/image6.jpg) no-repeat
     center center/cover;
 }
+
+/* fin du slider */
