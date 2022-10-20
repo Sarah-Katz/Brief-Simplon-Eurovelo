@@ -598,9 +598,6 @@ main{
 #header{
   display: none;
 }
-.body{
-  width: auto;
-}
 .conteneurcarte{
   margin: 0;
   width: 100%;
