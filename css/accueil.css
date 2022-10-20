@@ -38,7 +38,7 @@ body {
     margin: auto;
     color: #fff;
   }
-  #email {
+  .email {
     background-color: rgba(0, 0, 0, 0.2);
     border: none;
     border-radius: 5px 0 0 5px;
@@ -48,10 +48,10 @@ body {
     font-size: 0.875rem;
     color: #fff;
   }
-  #email::placeholder{
+  .email::placeholder{
     color: #fff;
   }
-  #submit {
+  .submit {
     margin: 0;
     background-color: #007c74;
     border: none;
@@ -170,7 +170,7 @@ body {
   #recherche.afficher {
     display: block;
   }
-  #search{
+  .search{
     width: 100%;
     height: 50px;
     background-color: black;
@@ -181,8 +181,11 @@ body {
     border: none;
     border-radius: 5px;
   }
-  #search::placeholder{
+  .search::placeholder{
     color: #fff;
+  }
+  #header_telephone{
+    display: none;
   }
   .nav-container{
     display: none;
@@ -654,8 +657,9 @@ main{
 }
 
 #menu{
-  width: 1%;
-  height: 1%;
+  width: 10%;
+  height: 10%;
+  margin: auto;
 }
 
 #recherche_mobile{
@@ -753,7 +757,9 @@ form p{
 }
 .search{
   height: 100%;
+  background-color: black;
 }
+
 .checkbox2 {
   position: fixed;
   display: block;
@@ -770,6 +776,19 @@ form p{
   transition: 0.5s;
 
 } 
+.checkbox2:checked{
+  transform: translateY(200%);
+  transition: 0.5s;
+
+}
+#croix_mobile2{
+  background-color: #fff;
+  border-radius: 100%;
+  bottom: 53px;
+  left: 330px;
+  position: relative;
+  padding: 2px;
+}
 .conteneurcarte{
   margin: 0;
   width: 100%;
