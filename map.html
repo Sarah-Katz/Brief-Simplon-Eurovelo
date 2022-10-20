@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
         integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
     <link rel="stylesheet" href="css/map.css">
@@ -59,13 +60,15 @@
     <div class="container">
         <div class="description">
             <h2 id="titreEtape">Eurovélo - Hauts de france</h2>
-            <input id="bouton" type="button" value="dezoom">
-            <span id="distance">217,4km</span>
-            <img class="iconeEtape" src="images/icon/" alt="icone distance">
-            <span id="montee">1090m</span>
-            <img class="iconeEtape" src="" alt="icone montée">
-            <span id="descente">1071m</span>
-            <img class="iconeEtape" src="" alt="icone descente">
+            <img id="bouton" src="images/icon/retour.png" alt="">
+            <div class="infos">
+                <span id="distance">217,4km<img class="iconeEtape" src="images/icon/distance.png"
+                        alt="icone distance"></span>
+                <span id="montee">1090m<img class="iconeEtape" src="images/icon/fleche-haut.png"
+                        alt="icone montée"></span>
+                <span id="descente">1071m<img class="iconeEtape" src="images/icon/fleche-bas.png"
+                        alt="icone descente"></span>
+            </div>
             <img id="img" src="images/etapes/imageetape9.jpg" alt="Illustration étape">
             <p id="texteEtape">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas rem nemo aut soluta,
                 minima, ex enim quae optio ipsam, impedit cum. Totam illum iusto earum id vel expedita veritatis omnis.
@@ -75,14 +78,14 @@
                 Quas, vero. Illum libero magni provident, sint rem voluptatum inventore? Autem, nulla fugit enim
                 quibusdam debitis deserunt sint temporibus accusamus tenetur odio numquam et earum doloremque, dicta
                 ipsa, quod suscipit.</p>
-            <a id="gpxDownload" href=""></a>
-        </div>
 
+        </div>
+        <div class="download">
+            <a id="gpxDownload" href=""><img src="images/icon/telecharger.png" alt="">Tracé GPX</a>
+        </div>
         <div id="map">
         </div>
     </div>
-
-
 
     <script src="js/leaflet-1.9.2/leaflet.js"></script>
     <script src="js/leaflet-gpx-1.7.0/gpx.js"></script>
