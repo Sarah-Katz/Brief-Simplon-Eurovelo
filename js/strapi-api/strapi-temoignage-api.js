@@ -44,7 +44,7 @@ fetch("http://195.14.105.123:1337/api/articles?populate=*")
     });
 
 
-/* Avis  */
+/* Avis  
 
 fetch("http://195.14.105.123:1337/api/articles?populate=*")
 .then(function (res) {
@@ -85,3 +85,4 @@ fetch("http://195.14.105.123:1337/api/articles?populate=*")
 .catch(function (err) {
 
 });
+*/
