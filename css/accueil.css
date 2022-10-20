@@ -622,6 +622,11 @@ main{
   margin: auto;
   text-align: justify;
 }
+/* slider */
+
+.slider{
+  height: 50vh;
+}
 
 /*Footer*/
 
@@ -723,18 +728,9 @@ main{
 }
 .logofvt{
   margin-left: 0px;
+}  
 }
 
-
-
-
-
-
-
-
-
-  
-}
 
 
 
