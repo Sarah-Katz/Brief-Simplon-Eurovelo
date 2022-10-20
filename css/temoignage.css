@@ -119,6 +119,7 @@ body {
   }
   .navigation{
     background: #fff;
+    box-shadow: 0 1px 5px gray;
     display: flex;
     height: 80px;
   }

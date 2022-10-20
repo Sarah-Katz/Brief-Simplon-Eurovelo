@@ -118,6 +118,7 @@ body {
     background: #fff;
     display: flex;
     height: 80px;
+    box-shadow: 0 1px 5px gray;
   }
   .euro{
     height: 50px;
