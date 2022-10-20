@@ -118,6 +118,7 @@ body {
     background: #fff;
     display: flex;
     height: 80px;
+    box-shadow: 0 1px 5px gray;
   }
   .euro{
     height: 50px;
@@ -597,9 +598,6 @@ main{
 #header{
   display: none;
 }
-.body{
-  width: auto;
-}
 .conteneurcarte{
   margin: 0;
   width: 100%;
@@ -620,6 +618,11 @@ main{
   width: 100%;
   margin: auto;
   text-align: justify;
+}
+/* slider */
+
+.slider{
+  height: 50vh;
 }
 
 /*Footer*/
@@ -722,18 +725,9 @@ main{
 }
 .logofvt{
   margin-left: 0px;
+}  
 }
 
-
-
-
-
-
-
-
-
-  
-}
 
 
 

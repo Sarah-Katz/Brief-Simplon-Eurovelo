@@ -119,6 +119,7 @@ body {
   }
   .navigation{
     background: #fff;
+    box-shadow: 0 1px 5px gray;
     display: flex;
     height: 80px;
   }
@@ -587,7 +588,7 @@ h4 {
   font-weight: bold;
   margin-top: 25px;
   margin-bottom: auto;
-  margin-left: 760px;
+  margin-left: 740px;
   margin-right: 10px;
 }
 .logofvt img{

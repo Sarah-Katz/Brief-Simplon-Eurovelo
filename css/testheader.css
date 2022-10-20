@@ -89,21 +89,21 @@ form {
   color: #007c74;
 }
 .carnet{
-  background: url(image/icon/silhouette-de-forme-simple-de-coeur.png) no-repeat;
+  background: url(/images/icon/silhouette-de-forme-simple-de-coeur.png) no-repeat;
   background-size: contain;
 }
 
 .carnet:hover{
-  background: url(image/icon/silhouette-de-forme-simple-de-coeur2.png) no-repeat;
+  background: url(/images/icon/silhouette-de-forme-simple-de-coeur2.png) no-repeat;
   background-size: contain;
 }
 
 .espace{
-  background: url(image/icon/profil.png) no-repeat;
+  background: url(/images/icon/profil.png) no-repeat;
   background-size: contain;
 }
 .espace:hover{
-  background: url(image/icon/profil2.png) no-repeat;
+  background: url(/images/icon/profil2.png) no-repeat;
   background-size: contain;
 }
 .navigation {
@@ -180,8 +180,3 @@ li a:hover{
 #search::placeholder{
   color: #fff;
 }
-
-
-
-
-
