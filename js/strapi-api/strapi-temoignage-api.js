@@ -17,7 +17,7 @@ fetch("http://195.14.105.123:1337/api/articles?populate=*")
             let eltArticle = document.createElement('article');
             eltConteneur.appendChild(eltArticle);
             eltArticle.classList.add('article-child');
-            console.log(article);
+             //console.log(article);
 
             let articleId = article.id
             let eltLien = document.createElement('a')
@@ -28,7 +28,7 @@ fetch("http://195.14.105.123:1337/api/articles?populate=*")
             let eltImage = document.createElement('img');
             eltLien.appendChild(eltImage);
             eltImage.src = url + article.attributes.Image.data.attributes.url;
-            console.log(eltImage)
+           // console.log(eltImage)
             eltImage.classList.add('image');
 
             let eltTitre = document.createElement('h4')
@@ -43,10 +43,9 @@ fetch("http://195.14.105.123:1337/api/articles?populate=*")
 
     });
 
+    /*avis*/
 
-/* Avis  
-
-fetch("http://195.14.105.123:1337/api/articles?populate=*")
+fetch("http://195.14.105.123:1337/api/avis?populate=*")
 .then(function (res) {
     if (res.ok) {
         return res.json();
@@ -54,35 +53,43 @@ fetch("http://195.14.105.123:1337/api/articles?populate=*")
 })
 .then(function (value) {
                               
-    let eltConteneur = document.querySelector('.conteneur-temoignage')   
-    for (let article of value.data)
+    let eltConteneur = document.querySelector('.conteneur-avis')   
+    for (let avis of value.data)
     {   
         let eltArticle = document.createElement('article');
         eltConteneur.appendChild(eltArticle);
-        eltArticle.classList.add('article-child');
-        console.log(article);
+        eltArticle.classList.add('avis-child');
+        console.log(avis);
 
-        let articleId = article.id
-        let eltLien = document.createElement('a')
-        eltArticle.appendChild(eltLien)
-        eltLien.classList.add('lien')
-        eltLien.href = 'temoignage-page-generate.html?id='+ articleId
+        let eltDate = document.createElement('p')
+        eltArticle.appendChild(eltDate);
+        eltDate.innerText = avis.attributes.date;
+        eltDate.classList.add('date');
 
-        let eltImage = document.createElement('img');
-        eltLien.appendChild(eltImage);
-        eltImage.src = url + article.attributes.Image.data.attributes.url;
-        console.log(eltImage)
-        eltImage.classList.add('image');
+        let eltTitreAvis = document.createElement('h4')
+        eltArticle.appendChild(eltTitreAvis);
+        eltTitreAvis.innerText = avis.attributes.Titre;
+        eltTitreAvis.classList.add('Avis-titre');
 
-        let eltTitre = document.createElement('h4')
-        eltLien.appendChild(eltTitre);
-        eltTitre.innerText = article.attributes.Titre;
-        eltTitre.classList.add('Titre');
-        url + article.attributes.Image.data.attributes.url
+        let eltPersonne = document.createElement('p')
+        eltArticle.appendChild(eltPersonne);
+        eltPersonne.innerText = avis.attributes.Personne;
+        eltPersonne.classList.add('personne');
+
+        let eltTitre2 = document.createElement('h4')
+        eltArticle.appendChild(eltTitre2);
+        eltTitre2.innerText = avis.attributes.Titre2;
+        eltTitre2.classList.add('Avis-titre2');
+
+        let eltTexte = document.createElement('p')
+        eltArticle.appendChild(eltTexte);
+        eltTexte.innerText = avis.attributes.Avis;
+        eltTexte.classList.add('Texte-Avis');
+
     }
 
 })
 .catch(function (err) {
 
 });
-*/
+
