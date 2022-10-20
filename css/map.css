@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 .container {
@@ -7,17 +8,45 @@ body {
     display: flex;
 }
 
+/* Article */
 .description {
+    overflow: scroll;
     align-self: flex-end;
+    justify-content: space-between;
     width: 40vw;
     height: 87vh;
     padding: 0 15px 0 15PX;
 }
 
+.infos {
+    display: flex;
+    justify-content: space-between;
+}
+
+#img {
+    width: 100%;
+}
+
+/* Fin article */
+.download {
+    display: flex;
+    border: solid black 1px;
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+}
+
 #bouton {
     position: fixed;
     left: 700px;
-    top: 148px;
+    top: 140px;
+    width: 50px;
+}
+
+#bouton:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
 }
 
 #map {
