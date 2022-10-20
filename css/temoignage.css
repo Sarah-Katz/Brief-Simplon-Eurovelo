@@ -327,6 +327,7 @@ body {
   justify-content: space-between;
   padding-left: 19%;
   padding-right: 19%;
+  padding-top: 3%;
 }
 
 .article-child:hover img{
@@ -337,18 +338,20 @@ body {
 
 .article-child:hover{
   box-shadow: 4px 4px 4px rgb(75, 75, 75);
+  transition: .3s
 }
 
 .article-child img{
   transition: .4s;
-  border-radius: 2%;
 }
 
 .article-child{
-  margin-bottom: 3%;
+  margin-bottom: 2%;
   position: relative;
   text-align: center;
   overflow: hidden;
+  transition: .3s;
+  border-radius: 1%;
 }
 
 .article-child:first-child{
@@ -356,17 +359,28 @@ body {
 }
 
 .article-child:nth-child(3){
-  flex: 0 0 65%;
+  flex: 0 0 66%;
 
 }
 
 .article-child:nth-child(2){
   flex: 0 0 32%;
 }
+.article-child .image{
+  width: 370px;
+  height: 370px;
+  border-radius: 0.9%;
+}
+
+.article-child:nth-child(3) .image{
+     width: 770px;
+     height: 370px;
+}
 
 
 .article-child:first-child .image{
-  width: 100%;
+  width: 1170px;
+  height: 565px;
 }
 
 h4 {
@@ -377,7 +391,7 @@ h4 {
   color: white;
   transition: .5s;
   font-weight: bolder;
-  font-size: 20px;
+  font-size: 22px;
 }
 
 .article-child:hover h4{
@@ -511,7 +525,7 @@ h4 {
   font-weight: bold;
   margin-top: 25px;
   margin-bottom: auto;
-  margin-left: 760px;
+  margin-left: 740px;
   margin-right: 10px;
 }
 .logofvt img{
