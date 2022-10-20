@@ -40,7 +40,13 @@ body {
 #bouton {
     position: fixed;
     left: 700px;
-    top: 148px;
+    top: 140px;
+    width: 50px;
+}
+
+#bouton:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
 }
 
 #map {
