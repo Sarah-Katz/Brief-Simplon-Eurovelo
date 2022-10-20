@@ -469,6 +469,49 @@ h4 {
   margin-top: 2%;
 }
 
+/* avis flex */
+
+.conteneur-avis h4{
+  color: black;
+  position: initial;
+  transform: none;
+}
+.conteneur-avis{
+  display: flex;
+  padding-left: 19%;
+  padding-right: 19%;
+  flex-wrap: wrap;
+	gap: 5%;
+  background-color: rgb(255, 255, 255);
+  padding-top: 3%;
+}
+
+.avis-child{
+  flex: 25%;
+  background-color: #908d8d;
+  margin-bottom: 3%;
+  padding: 2%
+}
+
+.date{
+  font-size: 16px;
+  margin-bottom: 2%;
+}
+
+.Avis-titre{
+  font-size: 22px;
+  margin-top: 0;
+  margin-bottom: 1%;
+}
+
+.personne{
+  margin-top: 0;
+  background-color: orange;
+  text-align: center;
+}
+
+
+
   /*Footer haut*/
 
 .footh{
