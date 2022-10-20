@@ -66,7 +66,7 @@ fetch("http://195.14.105.123:1337/api/avis?populate=*")
         eltDate.innerText = avis.attributes.date;
         eltDate.classList.add('date');
 
-        let eltTitreAvis = document.createElement('h4')
+        let eltTitreAvis = document.createElement('h5')
         eltArticle.appendChild(eltTitreAvis);
         eltTitreAvis.innerText = avis.attributes.Titre;
         eltTitreAvis.classList.add('Avis-titre');
@@ -76,7 +76,7 @@ fetch("http://195.14.105.123:1337/api/avis?populate=*")
         eltPersonne.innerText = avis.attributes.Personne;
         eltPersonne.classList.add('personne');
 
-        let eltTitre2 = document.createElement('h4')
+        let eltTitre2 = document.createElement('h5')
         eltArticle.appendChild(eltTitre2);
         eltTitre2.innerText = avis.attributes.Titre2;
         eltTitre2.classList.add('Avis-titre2');
@@ -85,6 +85,20 @@ fetch("http://195.14.105.123:1337/api/avis?populate=*")
         eltArticle.appendChild(eltTexte);
         eltTexte.innerText = avis.attributes.Avis;
         eltTexte.classList.add('Texte-Avis');
+       
+        let eltBas = document.createElement('div');
+        eltArticle.appendChild(eltBas);
+        eltBas.classList.add('bas');   
+        
+        let eltBasLeft = document.createElement('p');
+        eltBas.appendChild(eltBasLeft);
+        eltBasLeft.innerText = '0 réponse';
+        eltBasLeft.classList.add('bas-left');
+
+        let eltBasRight = document.createElement('p');
+        eltBas.appendChild(eltBasRight);
+        eltBasRight.innerText = 'LIRE';
+        eltBasRight.classList.add('bas-right');
 
     }
 
