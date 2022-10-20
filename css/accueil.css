@@ -205,6 +205,20 @@ main{
 .carousel img{
     width: 100vw;
 }
+.slider div h2{
+  margin: auto;
+  width: 40vw;
+  margin-top: 75vh;
+  color: #fff;
+  font-size: 5em;
+  font-weight: 700;
+  text-align: center;
+  line-height: 0.7;
+}
+.slider div h2 span{
+  font-size: 3rem;
+  font-weight: 100;
+}
 
 /*CARTE*/
 
