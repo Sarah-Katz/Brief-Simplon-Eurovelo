@@ -484,12 +484,12 @@ h4 {
 	gap: 5%;
   background-color: rgb(255, 255, 255);
   padding-top: 3%;
+  padding-bottom: 3%;
 }
 
 .avis-child{
   flex: 25%;
   background-color: #908d8d;
-  margin-bottom: 3%;
   padding: 2%
 }
 
