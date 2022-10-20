@@ -17,6 +17,7 @@ let descente = document.getElementById("descente")
 let distance = document.getElementById("distance")
 let gpxDownload = document.getElementById("gpxDownload")
 let image = document.getElementById("img")
+let url = 'http://195.14.105.123:1337'
 
 // Chargement des fichiers
 fetch("http://195.14.105.123:1337/api/etapes?populate=*")
@@ -37,7 +38,7 @@ fetch("http://195.14.105.123:1337/api/etapes?populate=*")
 
 function carte(etapes) {
     for (let etape of etapes) {
-        new L.GPX(etape.attributes.url, {
+        new L.GPX(url + etape.attributes.gpx.data.attributes.url, {
             async: true, marker_options: {
                 startIconUrl: 'images/carte/wpt.png',
                 endIconUrl: 'images/carte/wpt.png',
@@ -62,6 +63,7 @@ function carte(etapes) {
                     lastTrackClicked.setStyle({ color: '#C04300' })
                 }
                 lastTrackClicked = e.target
+                // console.log(e)
                 setArticle(e)
             }).on('mouseover mousemove', function (e) {
                 if (mouseoverToggle == true) {
@@ -87,15 +89,14 @@ function carte(etapes) {
     })
 }
 
-function setArticle(data) {
-    console.log(data)
-    titreEtape.innerHTML = data.target.options.etape.attributes.name;
-    texteEtape.innerHTML = data.target.options.etape.attributes.texteEtape;
-    distance.innerHTML = data.target.options.etape.attributes.distance;
-    montee.innerHTML = data.target.options.etape.attributes.montee;
-    descente.innerHTML = data.target.options.etape.attributes.descente;
-    image.src = data.target.options.etape.attributes.img;
-    gpxDownload.href = data.target.options.etape.attributes.url
+function setArticle(e) {
+    titreEtape.innerHTML = e.target.options.etape.attributes.name;
+    texteEtape.innerHTML = e.target.options.etape.attributes.texteEtape;
+    distance.innerHTML = e.target.options.etape.attributes.distance;
+    montee.innerHTML = e.target.options.etape.attributes.montee;
+    descente.innerHTML = e.target.options.etape.attributes.descente;
+    image.src = url + e.target.options.etape.attributes.img.data.attributes.url;
+    gpxDownload.href = url + e.target.options.etape.attributes.gpx.data.attributes.url
 }
 
 function reset() {
