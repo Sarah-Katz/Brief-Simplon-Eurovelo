@@ -764,6 +764,16 @@ body {
     height: 50vh;
   }
 
+  /* MAIN */
+
+  main{
+    margin-top: 25%;
+  }
+
+  section{
+    width: 70%;
+  }
+
   /* Footer qui sommes nous */
 
   .headfoot {
