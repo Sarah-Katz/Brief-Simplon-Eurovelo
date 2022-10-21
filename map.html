@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/map.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
     <title>Itinéraire</title>
 </head>
 
@@ -19,9 +19,12 @@
     <header id="header">
         <div id="head">
             <div class="haut-gauche">
-                <a href="https://www.instagram.com/ecfeurovelo/?hl=fr" target="_blank"><img src="images/icon/instagram.png" alt="icone instagram"></a>
-                <a href="https://www.youtube.com/c/EuroVeloECF/videos" target="_blank"><img src="images/icon/youtube.png" alt="icone youtube"></a>
-                <a href="https://www.facebook.com/EuroVelo" target="_blank"><img src="images/icon/facebook.png" alt="icone facebook"></a>
+                <a href="https://www.instagram.com/ecfeurovelo/?hl=fr" target="_blank"><img
+                        src="images/icon/instagram.png" alt="icone instagram"></a>
+                <a href="https://www.youtube.com/c/EuroVeloECF/videos" target="_blank"><img
+                        src="images/icon/youtube.png" alt="icone youtube"></a>
+                <a href="https://www.facebook.com/EuroVelo" target="_blank"><img src="images/icon/facebook.png"
+                        alt="icone facebook"></a>
                 <form>
                     <label for="email">
                         S'abonner à la newsletter
@@ -45,7 +48,7 @@
                 <li><a href="index.html">ACCUEIL</a></li>
                 <li><a href="map.html">L'ITINERAIRE</a></li>
                 <li><a href="temoignage.html">TEMOIGNAGES</a></li>
-                <li><a href="new.html">NEWS</a></li>
+                <li><a href="news.html">NEWS</a></li>
 
             </ul>
             <input type="image" src="images/icon/loupe.png" alt="loupe" id="loupe" onclick="afficher()">
@@ -60,14 +63,17 @@
     <div class="container">
         <div class="description">
             <h2 id="titreEtape">Eurovélo - Hauts de france</h2>
-            <img id="bouton" src="images/icon/retour.png" alt="">
+            <img id="bouton" src="images/icon/retour.png" alt="Bouton de retour à l'étape complete">
             <div class="infos">
-                <span id="distance">217,4km<img class="iconeEtape" src="images/icon/distance.png"
-                        alt="icone distance"></span>
-                <span id="montee">1090m<img class="iconeEtape" src="images/icon/fleche-haut.png"
-                        alt="icone montée"></span>
-                <span id="descente">1071m<img class="iconeEtape" src="images/icon/fleche-bas.png"
-                        alt="icone descente"></span>
+                <span id="distance">217,4km</span>
+                <img class="iconeEtape" src="images/icon/distance.png" alt="icone distance">
+                <span id="montee">1090m</span>
+                <img class="iconeEtape" src="images/icon/fleche-haut.png" alt="icone montée">
+                <span id="descente">1071m</span>
+                <img class="iconeEtape" src="images/icon/fleche-bas.png" alt="icone descente">
+                <div class="download">
+                    <a id="gpxDownload" href=""><img src="images/icon/telecharger.png" alt="Bouton de téléchargement du tracé">Tracé .GPX</a>
+                </div>
             </div>
             <img id="img" src="images/etapes/imageetape9.jpg" alt="Illustration étape">
             <p id="texteEtape">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas rem nemo aut soluta,
@@ -78,10 +84,6 @@
                 Quas, vero. Illum libero magni provident, sint rem voluptatum inventore? Autem, nulla fugit enim
                 quibusdam debitis deserunt sint temporibus accusamus tenetur odio numquam et earum doloremque, dicta
                 ipsa, quod suscipit.</p>
-
-        </div>
-        <div class="download">
-            <a id="gpxDownload" href=""><img src="images/icon/telecharger.png" alt="">Tracé GPX</a>
         </div>
         <div id="map">
         </div>

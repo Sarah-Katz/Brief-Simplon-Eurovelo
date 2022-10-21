@@ -9,39 +9,81 @@ body {
 }
 
 /* Article */
+#titreEtape {
+    padding-left: 15px;
+    color: #007c74;
+}
+
+#texteEtape {
+    padding: 0 15px 0 15px;
+}
+
 .description {
     overflow: scroll;
     align-self: flex-end;
     justify-content: space-between;
     width: 40vw;
     height: 87vh;
-    padding: 0 15px 0 15PX;
 }
 
 .infos {
+    background-color: #f59c00;
+    width: 41vw;
+    margin: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    margin-left: -1vw;
 }
 
 #img {
     width: 100%;
 }
 
+.infos span {
+    padding: 15px;
+    font-weight: 600;
+}
+
+.iconeEtape {
+    width: 25px;
+    height: 25px;
+    margin-left: -5px;
+}
+
 /* Fin article */
+/* Bouton download */
 .download {
     display: flex;
-    border: solid black 1px;
+    justify-content: center;
     background-color: #fff;
     position: fixed;
-    width: 100%;
+    width: 41vw;
+    margin-left: -1vw;
     bottom: 0px;
+    left: 0px;
+    box-shadow: 0 0 10px black;
 }
+
+.download a {
+    display: flex;
+    align-items: center;
+    color: #007c74;
+    text-decoration: none;
+    font-weight: 900;
+    font-family: Poppins, sans-serif;
+}
+
+.download a img {
+    width: 40px;
+}
+/* Fin bouton download */
 
 #bouton {
     position: fixed;
     left: 700px;
     top: 140px;
-    width: 50px;
+    width: 40px;
 }
 
 #bouton:hover {
@@ -81,7 +123,7 @@ header {
     top: 0;
     width: 100%;
     transition: top ease 0.5s;
-    box-shadow: 0 0 20px black;
+    box-shadow: 0 0 10px black;
 }
 
 #header.cache {
