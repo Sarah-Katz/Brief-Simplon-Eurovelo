@@ -215,8 +215,8 @@ body {
   font-size: 1.125rem;
   color: #585858;
   line-height: 1.5em;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 2%;
+  margin-bottom: 2%;
   font-family: "Mukta Mahee",sans-serif;
   font-weight: 500;
 }
@@ -230,22 +230,29 @@ body {
   flex-wrap: wrap;
 	gap: 4%;
   justify-content: space-between;
+  padding-bottom: 2%;
 }
 
 .article-child{
   flex: 25%;
   position: relative;
   text-align: center;
-  margin-bottom: 2%;
+  margin-bottom: 3%;
   overflow: hidden;
   transition: .3s;
-  border-radius: 1%;
+  border-radius: 3%;
+}
+
+.article-child:hover{
+  box-shadow: 4px 4px 4px rgb(75, 75, 75);
+  transition: .3s
 }
 
 .article-child img{
   width: 370px;
   height: 370px;
-  transition: .4s;
+  transition: .3s;
+  border-radius: 3%;
 }
 
 .article-child h4{
@@ -253,22 +260,22 @@ body {
     font-size: 14px;
     position: absolute;
     left: 18%;
+    right: 18%;
     color: white;
-    top: 84%;
+    top: 73%;
     font-size: 18px;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 .article-child:hover img{
   filter: blur(6px);
-  transition: .4s;
+  transition: .3s;
   transform: scale(1.2);
 }
 
 .article-child:hover h4{
-  top: 70%;
+  top: 65%;
   transition: 0.3s;
-  z-index: 1;
  }
  
   /*Footer*/
