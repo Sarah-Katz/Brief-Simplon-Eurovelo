@@ -53,8 +53,12 @@ body {
     margin-left: -5px;
 }
 
-#montee {
-    
+#iconm {
+    margin-bottom: 15px;
+}
+
+#icond {
+    margin-top: 15px;
 }
 /* Fin article */
 /* Bouton download */
@@ -646,9 +650,9 @@ form {
     /* Fin bouton download */
     /* Bouton retour */
     #bouton {
-        position: fixed;
+        position: absolute;
         left: 335px;
-        top: 370px;
+        top: 80px;
         width: 40px;
         background-color: rgba(255, 255, 255, 0.3);
         border-radius: 50%;
