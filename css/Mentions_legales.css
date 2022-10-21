@@ -758,6 +758,16 @@ body {
       margin: 0%;
   
     }
+
+    #lien{
+        display: none;
+    }
+
+    .eurovelo{
+        padding-bottom: 5%;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
     /* slider */
 
   .slider {
@@ -767,11 +777,11 @@ body {
   /* MAIN */
 
   main{
-    margin-top: 25%;
+    margin-top: 10%;
   }
 
   section{
-    width: 70%;
+    width: 90%;
   }
 
   /* Footer qui sommes nous */
