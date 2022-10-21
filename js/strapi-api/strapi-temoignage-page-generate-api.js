@@ -19,14 +19,12 @@ fetch("http://195.14.105.123:1337/api/articles/" + recup + "?populate=*")
             eltConteneur.appendChild(eltArticle);
             eltArticle.classList.add('article-child');
 
-            let eltTitre = document.createElement('h2')
-            eltArticle.appendChild(eltTitre);
+            let eltTitre = document.querySelector('h2')
             eltTitre.innerText = value.data.attributes.Titre;
             eltTitre.classList.add('Titre');
 
-            let eltImage = document.createElement('img');
-            eltArticle.appendChild(eltImage);
-            eltImage.src = url + value.data.attributes.Image.data.attributes.url;
+            let eltImage = document.querySelector('.timage');
+            eltImage.style.cssText += 'background:url(' +(url + value.data.attributes.ImageBack.data.attributes.url) + ') no-repeat;'
             eltImage.classList.add('image');
 
             let eltTitre2 = document.createElement('h2')
