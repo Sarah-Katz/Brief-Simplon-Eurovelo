@@ -429,7 +429,9 @@ h4 {
   width: 100%;
   background-color: #fff;
 }
-
+.liens-temoignages a{
+  text-decoration: none;
+}
 .btnPt a{
   text-decoration: none;
 }
