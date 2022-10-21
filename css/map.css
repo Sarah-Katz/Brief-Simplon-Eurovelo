@@ -421,6 +421,13 @@ form {
         top: 0;
     }
 
+    .navm form{
+        color: #fff;
+    }
+    .email::placeholder{
+        color: #fff;
+    }
+
     #es_pro {
         margin-left: 8%;
     }
@@ -558,8 +565,6 @@ form {
     .carnet_espace {
         text-decoration: none;
         color: white;
-        display: inline;
-        margin-left: 10px;
     }
     .eurovelo{
         padding-bottom: 5%;
