@@ -134,11 +134,10 @@ body {
     margin-top: 13px;
   }
   .navigation ul{
-    margin-left: 35px;
-    width: 40%;
-    margin-top: 30px;
-    display: flex;
-    justify-content: space-between;
+    width: 100%;
+    display: inline-block;
+    margin: auto;
+    text-align: center;
   }
   .navigation li{
     display: inline;
@@ -147,13 +146,14 @@ body {
     text-decoration: none;
     color: black;
     font-weight: 600;
+    margin-left: 10%;
   }
   .navigation li a:hover{
     color: #007c74;
   }
   #loupe{
     height: 30%;
-    margin-left: 45%;
+    margin-left: 20%;
     margin-top: 30px;
   }
   #loupe.afficher {
@@ -162,7 +162,7 @@ body {
   #croix {
     display: none;
     height: 20%;
-    margin-left: 45%;
+    margin-left: 20.5%;
     margin-top: 33px;
   }
   #croix.afficher {
@@ -195,6 +195,7 @@ body {
     font-weight: 600;
     font-size: 0.875rem;
     margin-left: 0%;
+    color: #fff;
   }
   #accueil{
     margin-left: 1%;
@@ -428,7 +429,9 @@ h4 {
   width: 100%;
   background-color: #fff;
 }
-
+.liens-temoignages a{
+  text-decoration: none;
+}
 .btnPt a{
   text-decoration: none;
 }
@@ -771,9 +774,14 @@ h4 {
     width: 100%;
     height: 100%;
     transition: 0.5s;
-    z-index: 2;
+    z-index: 4;
     background:rgba(0, 0, 0, 0.95);
     position: fixed;
+  }
+  .navm a{
+    text-decoration: none;
+    color: #fff;
+
   }
   #es_pro{
     margin-left: 10% ;
@@ -810,7 +818,7 @@ h4 {
     height: 32px;
     width: 32px;
     top: 20px;
-    left: 20px;
+    left: 30px;
     z-index: 5;
     opacity: 0;
     cursor: pointer;
@@ -824,7 +832,7 @@ h4 {
   
   
   .nav-container input[type="checkbox"]:checked {
-    transform: translateX(310px);
+    transform: translateX(304px);
     transition: 0.5s;
   }
   
@@ -867,8 +875,8 @@ h4 {
     height: 32px;
     width: 32px;
     top: 20px;
-    left: 330px;
-    z-index: 4;
+    left: 320px;
+    z-index: 3;
     opacity: 0;
     cursor: pointer;
   }
@@ -886,10 +894,15 @@ h4 {
     background-color: #fff;
     border-radius: 100%;
     bottom: 53px;
-    left: 330px;
+    left: 320px;
     position: relative;
     padding: 2px;
   }
+  .eurovelo{
+    padding-bottom: 5%;
+    margin-left: 5px;
+    margin-right: 5px;
+}
   
   
   .conteneurcarte{
