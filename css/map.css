@@ -273,11 +273,10 @@ form {
 }
 
 .navigation ul {
-    margin-left: 35px;
-    width: 40%;
-    margin-top: 30px;
-    display: flex;
-    justify-content: space-between;
+    width: 100%;
+    display: inline-block;
+    margin: auto;
+    text-align: center;
 }
 
 .navigation li {
@@ -288,6 +287,7 @@ form {
     text-decoration: none;
     color: black;
     font-weight: 600;
+    margin-left: 10%;
 }
 
 .navigation li a:hover {
@@ -296,7 +296,7 @@ form {
 
 #loupe {
     height: 30%;
-    margin-left: 45%;
+    margin-left: 20%;
     margin-top: 30px;
 }
 
