@@ -1,0 +1,912 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  /*Header*/
+  
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: top ease 0.5s;
+    z-index: 1;
+  }
+  #header.cache {
+    top: -50px;
+  }
+  #head {
+    background: transparent;
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+  }
+  .haut-gauche {
+    display: flex;
+  }
+  .haut-gauche a {
+    padding: 10px;
+    margin-right: 20px;
+    background-color: rgba(0, 0, 0, 0.1)
+  }
+  .haut-gauche a:hover {
+    background-color: #007c74;
+  }
+  form {
+    margin: auto;
+    color: #fff;
+  }
+  .email {
+    background-color: rgba(0, 0, 0, 0.2);
+    border: none;
+    border-radius: 5px 0 0 5px;
+    padding: 10px;
+    width: 165px;
+    font-weight: 700;
+    font-size: 0.875rem;
+    color: #fff;
+  }
+  .email::placeholder{
+    color: #fff;
+  }
+  .submit {
+    margin: 0;
+    background-color: #007c74;
+    border: none;
+    font-weight: 600;
+    font-size: 0.875rem;
+    color: #fff;
+    padding: 10px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    margin-left: -4px;
+  }
+  .haut-droite{
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+  }
+  .haut-droite a{
+    text-decoration: none;
+    color: #fff;
+    margin: auto;
+    padding-left: 20px;
+  }
+  .haut-droite a:hover{
+    color: #007c74;
+  }
+  .carnet{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .carnet:hover .coeur1{
+    display: none;
+  }
+  .carnet:hover .coeur2{
+    display: block;
+  }
+  .coeur2{
+    display: none;
+  }
+  .carnet img{
+    margin-right: 2px;
+  }
+  .espace img{
+    width: 27px;
+  }
+  .espace{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .espace:hover .profil1{
+    display: none;
+  }
+  .espace:hover .profil2{
+    display: block;
+  }
+  .profil2{
+    display: none;
+  }
+  .navigation{
+    background: #fff;
+    display: flex;
+    height: 80px;
+    box-shadow: 0 1px 5px gray;
+  }
+  .euro{
+    height: 50px;
+    margin: 10%;
+    margin-top: 13px;
+  }
+  .eurovelo{
+    height: 50px;
+    margin-left: 15px;
+    margin-top: 13px;
+  }
+  .navigation ul{
+    margin-left: 35px;
+    width: 40%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .navigation li{
+    display: inline;
+  }
+  .navigation li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+  }
+  .navigation li a:hover{
+    color: #007c74;
+  }
+  #loupe{
+    height: 30%;
+    margin-left: 45%;
+    margin-top: 30px;
+  }
+  #loupe.afficher {
+    display: none;
+  }
+  #croix {
+    display: none;
+    height: 20%;
+    margin-left: 45%;
+    margin-top: 33px;
+  }
+  #croix.afficher {
+    display: block;
+  }
+  #recherche {
+    display: none;
+  }
+  #recherche.afficher {
+    display: block;
+  }
+  .search{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    padding: 1%;
+    color: #fff;
+    font-weight: 600;
+    font-size: larger;
+    border: none;
+    border-radius: 5px;
+  }
+  .search::placeholder{
+    color: #fff;
+  }
+  #header_telephone{
+    display: none;
+  }
+  .nav-container{
+    display: none;
+  }
+  #container_search{
+    display: none;
+  }
+  #lien{
+    display: block;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    background-color: rgb(207, 207, 207);
+  }
+  #lien.cache{
+    display: none;
+  }
+ 
+  #lien ol{
+    padding: 0%;
+  }
+  #lien li{
+    display: inline;
+  }
+  #lien li a{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.875rem;
+    margin-left: 0%;
+  }
+  #accueil{
+    margin-left: 1%;
+  }
+  
+  #accueil::after{
+    content: ">";
+    color: #fff;
+    font-weight: 600;
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 0.8rem;
+  }
+
+  /*Main*/
+  main{
+    margin-top: 12%;
+  }
+
+  main img{
+    width: 100%;
+  }
+
+  h1{
+    text-align: center;
+  }
+
+  section{
+    margin: auto;
+    width: 50%;
+  }
+  main section a{
+    color: #007c74;
+    text-decoration: underline;
+    margin: 0%;
+  }
+  main section p{
+    color: #585858;
+  }
+
+
+
+
+
+  /*Footer*/
+
+.footh {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-image: url(/images/imagesbg/flou.jpg);
+    backdrop-filter: blur(8px);
+    background-size: cover;
+    width: 100%;
+  }
+  
+  .qsn1 {
+    width: 65px;
+    height: 65px;
+    margin-top: 40px;
+  }
+  
+  .qsn2 {
+    height: 65px;
+    margin-left: 11px;
+  }
+  
+  .headfoot {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-left: 300px;
+    margin-right: 300px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logod img {
+    width: 25px;
+    margin-right: 5px;
+  
+  }
+  
+  .fcontenu {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-left: 300px;
+    margin-right: 300px;
+  }
+  
+  .fcontenu p {
+    line-height: 28px;
+    font-weight: bold;
+  }
+  
+  .quisommesnous {
+    width: 60%;
+  }
+  
+  .quisommesnous h3 {
+    font-size: 1.8em;
+  }
+  
+  .fboutons {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  
+  .fboutons a {
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .btnb p {
+    color: #007c74;
+    background-color: white;
+    width: 140px;
+    display: block;
+    padding: 7px 20px 7px 20px;
+    text-align: center;
+    border-radius: 6px;
+    margin-left: 320px;
+    margin-top: 40px;
+    box-shadow: 0px 0px 5px lightslategray;
+  }
+  
+  .btnb p:hover {
+    box-shadow: 0px 0px 6px #007c74;
+  
+  }
+  
+  .btnv p {
+    color: white;
+    background-color: #007c74;
+    width: 240px;
+    display: block;
+    padding: 7px 20px 7px 20px;
+    text-align: center;
+    border-radius: 6px;
+    margin-left: 30px;
+    margin-top: 40px;
+    box-shadow: 0px 0px 5px lightslategray;
+  }
+  
+  .btnv p:hover {
+    box-shadow: 0px 0px 6px white;
+  }
+  
+  /* footer itinéraire */
+  
+  .footm1 {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    margin-left: 290px;
+    margin-right: 300px;
+  }
+  
+  .footm1 span {
+    color: black;
+    font-weight: bold;
+  }
+  
+  .presentation {
+    line-height: 30px;
+    font-weight: bold;
+    flex: 1;
+  }
+  
+  .presentation ul {
+    padding: 0;
+  }
+  
+  .presentation a,
+  li {
+    color: black;
+  }
+  
+  .suggestions {
+    line-height: 22px;
+    flex: 1;
+  }
+  
+  .suggestions a,
+  ul {
+    padding: 0;
+  }
+  
+  .suggestions a,
+  li {
+    color: #585858;
+  }
+  
+  .conseils {
+    line-height: 22px;
+    flex: 1;
+  }
+  
+  .conseils ul {
+    padding: 0;
+  }
+  
+  .conseils a,
+  li {
+    color: #585858;
+  }
+  
+  .footm1 a,
+  ul {
+    text-decoration: none;
+    list-style: none;
+  }
+  
+  /*footer Accueil Vélo */
+  
+  .footm2 {
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    background-color: #f4f4f4;
+    width: 100%;
+  }
+  
+  .veloacc {
+    width: 5%;
+    margin-left: 330px;
+    margin-top: 40px;
+  }
+  
+  .veloacc img {
+    width: 49px;
+    height: 71px;
+  }
+  
+  .velotext {
+    width: 50%;
+    margin-top: 25px;
+    padding-left: 1%;
+  }
+  
+  .velotext p {
+    line-height: 25px;
+    font-size: 0.9em;
+    color: #585858;
+  }
+  
+  .velotext h4 {
+    font-size: 1em;
+  }
+  
+  .boutons {
+    display: flex;
+    align-items: center;
+    margin-right: 330px;
+  }
+  
+  .btn1 p {
+    color: black;
+    background-color: white;
+    width: 150px;
+    display: block;
+    display: inline-block;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 6px;
+    box-shadow: 0px 0px 5px lightgray;
+    padding: 10px 20px;
+  }
+  
+  .btn1 p:hover {
+    box-shadow: 0px 0px 6px gray;
+  }
+  
+  .btn2 p {
+    color: white;
+    background-color: black;
+    width: 250px;
+    display: block;
+    display: inline-block;
+    text-align: center;
+    border-radius: 6px;
+    box-shadow: 0px 0px 5px lightgray;
+    padding: 10px 20px;
+    margin-left: 30px;
+  }
+  
+  .btn2 p:hover {
+    box-shadow: 0px 0px 6px gray;
+  }
+  
+  .boutons a {
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* footer mentions légales */
+  
+  .footb {
+    display: flex;
+    width: 100%;
+    background-color: black;
+  }
+  
+  .ml li,
+  a {
+    text-decoration: none;
+    color: white;
+    display: inline;
+    margin-left: 10px;
+  }
+  
+  .ml ul {
+    font-size: 12px;
+    margin-left: 280px;
+    font-weight: bold;
+    margin-top: 26px;
+  }
+  
+  .realisation {
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: auto;
+    margin-left: 760px;
+    margin-right: 10px;
+  }
+  
+  .logofvt img {
+    width: 145px;
+  }
+  
+  .logofvt {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  
+  .simplon img {
+    width: 90px;
+  }
+  
+  .simplon {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  /*Responsive*/
+
+@media screen and (max-width:480px) {
+
+    /*Header*/
+  
+    #header_ordi {
+      display: none;
+    }
+  
+    .nav-container {
+      display: block;
+    }
+  
+    #header_telephone {
+      display: flex;
+      width: 100%;
+      background-color: #fff;
+    }
+  
+    #header.cache {
+      top: -80px;
+    }
+  
+    #icon_menu {
+      width: 150%;
+    }
+  
+    #menu figcaption {
+      margin-left: 0;
+      font-size: 65%;
+    }
+  
+    #logo_telephone {
+      margin-left: 0%;
+    }
+  
+    #loupe2 {
+      width: 8%;
+      height: 8%;
+      margin: auto;
+  
+    }
+  
+    #menu {
+      width: 8%;
+      height: 8%;
+      margin: auto 30px auto 30px;
+    }
+  
+    #recherche_mobile {
+      display: none;
+    }
+  
+    .navm {
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      transition: 0.5s;
+      z-index: 2;
+      background: rgba(0, 0, 0, 0.95);
+      position: fixed;
+    }
+  
+    #es_pro {
+      margin-left: 8%;
+    }
+  
+    .h2nav {
+      text-align: center;
+      font-size: 120%;
+      margin: 0;
+      margin-top: -15%;
+      margin-left: 5%;
+    }
+  
+  
+  
+    #navm_ul {
+      margin: 0;
+      margin-top: 15vh;
+      margin-left: -3vw;
+      padding: 0;
+    }
+  
+    .liennav {
+      text-align: center;
+      margin-bottom: 5%;
+      font-size: 180%;
+    }
+  
+  
+    .checkbox {
+      position: absolute;
+      display: block;
+      height: 32px;
+      width: 32px;
+      top: 20px;
+      left: 20px;
+      z-index: 5;
+      opacity: 0;
+      cursor: pointer;
+    }
+  
+    .nav-container input[type="checkbox"]:checked~.navm {
+      transform: translateX(100%);
+      transition: 0.5s;
+    }
+  
+  
+  
+    .nav-container input[type="checkbox"]:checked {
+      transform: translateX(310px);
+      transition: 0.5s;
+    }
+  
+    #croix_mobile {
+      background-color: #fff;
+      border-radius: 100%;
+      top: 20px;
+      left: 330px;
+      position: relative;
+      padding: 2px;
+    }
+  
+    form {
+      display: inline-block;
+      margin-left: 10%;
+    }
+  
+    form p {
+      text-align: center;
+    }
+  
+    #container_search {
+      display: block;
+    }
+  
+    #search_mobile {
+      left: -100%;
+      width: 100%;
+      height: 8%;
+      top: 68px;
+      transition: 0.5s;
+      z-index: 2;
+      background: rgba(0, 0, 0);
+      position: absolute;
+    }
+  
+    .search {
+      height: 100%;
+      background-color: black;
+    }
+  
+    .checkbox2 {
+      position: relative;
+      display: block;
+      height: 32px;
+      width: 32px;
+      top: 20px;
+      left: 330px;
+      z-index: 4;
+      opacity: 0;
+      cursor: pointer;
+    }
+  
+    .checkbox2:checked~#search_mobile {
+      transform: translateX(100%);
+      transition: 0.5s;
+  
+    }
+  
+    .checkbox2:checked {
+      transform: translateY(200%);
+      transition: 0.5s;
+  
+    }
+  
+    #croix_mobile2 {
+      background-color: #fff;
+      border-radius: 100%;
+      bottom: 53px;
+      left: 330px;
+      position: relative;
+      padding: 2px;
+    }
+  
+    .carnet_espace {
+      display: flex;
+      width: 40%;
+      justify-content: space-around;
+      align-items: center;
+      margin: 0%;
+  
+    }
+    /* slider */
+
+  .slider {
+    height: 50vh;
+  }
+
+  /* MAIN */
+
+  main{
+    margin-top: 25%;
+  }
+
+  section{
+    width: 70%;
+  }
+
+  /* Footer qui sommes nous */
+
+  .headfoot {
+    margin: 50px 0 0 0;
+  }
+
+  .fcontenu {
+    margin: 0;
+  }
+
+  .qsn1 {
+    margin: 0;
+  }
+
+  .qsn2 {
+    margin: 0 0 0 5px;
+  }
+
+  .logod {
+    margin-right: 5px;
+  }
+
+  .quisommesnous {
+    display: none;
+  }
+
+  .fboutons {
+    margin: auto;
+    width: auto;
+  }
+
+  .fboutons p {
+    margin: 40px 5px 50px 0;
+    width: auto;
+    font-size: 0.9em;
+  }
+
+  /* footer présentation de l'itinéraire */
+
+  .footm1 {
+    flex-direction: column;
+    font-size: 1.3em;
+    margin: 0;
+
+  }
+
+  .presentation {
+    line-height: 1.1;
+  }
+
+  .presentation li {
+    margin: 0;
+  }
+
+  .suggestions {
+    margin: 0;
+    line-height: 1.10;
+  }
+
+  .conseils {
+    line-height: 1.10;
+  }
+
+  /* footer marque accueil vélo */
+
+  .footm2 {
+    margin: auto;
+    flex-direction: column;
+  }
+
+  .veloacc {
+    display: none;
+  }
+
+  .velotext {
+    margin: auto;
+    text-align: center;
+    width: 90%;
+  }
+
+  .boutons {
+    margin: 0 15px 20px 20px;
+  }
+
+  .boutons p {
+    margin: 0;
+    width: 110px;
+  }
+
+  .btn1 {
+    margin-right: 13px;
+  }
+
+  .btn2 {
+    margin-top: 12px;
+  }
+
+  /*footer */
+
+  .footb {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+  }
+
+  .ml {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+    width: 100%;
+  }
+
+  .ml ul {
+    margin: 5px 0 0 0;
+    text-align: left;
+  }
+
+  .ml li {
+    margin: 0;
+  }
+
+  .realisation {
+    margin: 23px 5px 0 10px;
+  }
+
+  .simplon {
+    margin: 20px 0px 0px 5px;
+  }
+
+  .logofvt {
+    margin-left: 0px;
+  }
+}

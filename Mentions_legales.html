@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/icon/vélo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/slide.css">
+    <link rel="stylesheet" href="css/Mentions_legales.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <!--font pour la fleche du slider -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eurovélo</title>
+</head>
+
+<body>
+    <header id="header">
+        <div id="header_ordi">
+          <div id="head">
+            <div class="haut-gauche">
+              <a href="https://www.instagram.com/ecfeurovelo/?hl=fr"><img src="images/icon/instagram.png" alt="icone instagram"></a>
+              <a href="https://www.youtube.com/c/EuroVeloECF/videos"><img src="images/icon/youtube.png" alt="icone youtube"></a>
+              <a href="https://www.facebook.com/EuroVelo"><img src="images/icon/facebook.png" alt="icone facebook"></a>
+              <form>
+                <label for="email">
+                  S'abonner à la newsletter
+                </label>
+                <input type="email" class="email" placeholder="Votre adresse mail" required id="email">
+                <input type="submit" value="JE M'INSCRIS" class="submit">
+              </form>
+            </div>
+            <div class="haut-droite">
+              <a href="#">Espace pro</a>
+              <a href="#" class="carnet"><img class="coeur1" src="images/icon/silhouette-de-forme-simple-de-coeur.png"
+                  alt="icone coeur"><img class="coeur2" src="images/icon/silhouette-de-forme-simple-de-coeur2.png"
+                  alt="icone coeur"> Carnet de voyage</a>
+              <a href="#" class="espace"><img class="profil1" src="images/icon/profil.png" alt="icone profil"><img
+                  class="profil2" src="images/icon/profil2.png" alt="icone profil"> Espace personnel</a>
+            </div>
+          </div>
+          <nav class="navigation">
+            <a href=""><img src="images/icon/ed210af3-1631-4702-b9f0-dfdffbdfedc8.png" alt="logo eurovelo" class="euro"></a>
+            <a href="index.html"><img src="images/Logo_EuroVelo_RGB-jpg.jpg" alt="logo eurovelo" class="eurovelo"></a>
+            <ul>
+              <li><a href="map.html">L'ITINERAIRE</a></li>
+              <li><a href="temoignage.html">TEMOIGNAGES</a></li>
+              <li><a href="">NEWS</a></li>
+            </ul>
+            <input type="image" src="images/icon/loupe.png" alt="loupe" id="loupe" onclick="afficher()">
+            <input type="image" src="images/icon/signe-de-la-croix.png" alt="croix" id="croix" onclick="desafficher()">
+          </nav>
+          <div id="recherche">
+            <input type="search" placeholder="Rechercher..." class="search">
+          </div>
+        </div>
+        <div id="header_telephone">
+          <img src="images/icon/menu.png" alt="icon menu" id="menu">
+    
+          <a href="" id="logo_telephone"><img src="images/icon/ed210af3-1631-4702-b9f0-dfdffbdfedc8.png" alt="logo eurovelo"
+              class="eurovelo"><img src="images/Logo_EuroVelo_RGB-jpg.jpg" alt="logo eurovelo" class="eurovelo"></a>
+          <img src="images/icon/loupe.png" alt="icon de loupe" id="loupe2">
+        </div>
+        <div id="lien">
+            <ol>
+              <li id="accueil"><a href="index.html">Accueil</a></li>
+              <li id="temoignages"><a href="temoignage.html">Mentions légales</a></li>
+            </ol>
+          </div>
+    
+      </header>
+      <nav class="nav-container">
+        <input class="checkbox" type="checkbox" name="check" id="check">
+        <div class="navm">
+          <img src="images/icon/signe-de-la-croix.png" alt="icon de croix" id="croix_mobile">
+          <ul id="navm_ul">
+            <li class="liennav"><a  href="">Accueil</a></li>
+            <li class="liennav"><a  href="">L'itinéraire</a></li>
+            <li class="liennav"><a  href="">Témoignages</a></li>
+            <li class="liennav"><a  href="">News</a></li>
+          </ul>
+          <hr>
+          <a href="" id="es_pro">Espace pro</a>
+          <hr>
+          <a href="" class="carnet_espace"><img src="images/icon/silhouette-de-forme-simple-de-coeur.png"
+              alt="icon de coeur"> Carnet de voyage</a>
+          <hr>
+          <a href="" class="carnet_espace"><img src="images/icon/profil.png" alt="icon de profil"> Espace personnel</a>
+          <hr>
+          <form>
+            <p>
+              S'abonner à la newsletter
+            </p>
+            <input type="email" class="email" placeholder="Votre adresse mail" required>
+            <input type="submit" value="JE M'INSCRIS" class="submit">
+          </form>
+    
+        </div>
+    
+      </nav>
+      <div id="container_search">
+        <input class="checkbox2" type="checkbox" name="check2" id="check2">
+        <div id="search_mobile">
+          <input type="search" placeholder="Rechercher..." class="search">
+          <img src="images/icon/signe-de-la-croix.png" alt="" id="croix_mobile2">
+        </div>
+      </div>
+      <main>
+        <h1>Mentions légales</h1>
+        <section>
+            <h2>Droits d'auteur</h2>
+            <p><span> Le site internet www.lavelodyssee.com est la propriété de Charentes Tourisme.</span></p>
+            <p>Comité départemental du tourisme des Charentes - 85, boulevard de la République - 17076 La Rochelle Cedex 9</p>
+            <p>Conformément au Code de la Propriété Intellectuelle, toute exploitation (reproduction, représentation, diffusion, modification, concession) de tout ou partie du site internet est strictement interdite sauf autorisation expresse et préalable de Charentes Tourisme.</p>
+        </section>
+        <section>
+            <h2>Crédits</h2>
+            <h3>Conception du site :</h3>
+            <p>France Vélo Tourisme - 5 rue Santeuil - 44000 Nantes </p>
+            <a href="www.francevelotourisme.com">www.francevelotourisme.com</a>
+
+
+            <h3>Design et réalisation technique :</h3>
+            <ul>
+                <li>Moustic Multimédia</li>
+                <li>2, avenue du Commandant Lysiack</li>
+                <li>17440 AYTRE (La Rochelle Sud)</li>
+                <li>FRANCE</li>
+                <li>Tél. : 05 46 41 47 87</li>
+            </ul>
+            <a href="http://www.moustic.biz/">http://www.moustic.biz/</a>
+
+            <h3>Administration technique, gestion du site : </h3>
+            <p>Charentes Tourisme - 85, boulevard de la République - 17076 La Rochelle Cedex 9</p>
+            <a href="https://www.infiniment-charentes.com/">https://www.infiniment-charentes.com/</a>
+
+            <h3>Directeur de la publication : </h3>
+            <p>Olivier Amblard, directeur de Charentes Tourisme</p>
+
+            <h3>Webmaster : </h3>
+            <p>Corentin NIORT, chargé de communication La Vélodyssée - Atlantic Coast Route - EV1 - <a href="mailto:communication@lavelodyssee.com">Le contacter</a></p>
+
+            <h3>Conseils Ux, marketing et analytics :</h3>
+            <p>Redpoint</p>
+            <a href="http://www.redpoint.fr/">http://www.redpoint.fr/</a>
+
+            <h3>Cartographie : </h3>
+            <p>© les contributeurs d’OpenStreetMap </p>
+            <a href="https://www.openstreetmap.org/copyright/fr">https://www.openstreetmap.org/copyright/fr</a>
+
+            <h3>Hébergement :</h3>
+            <p>OVH - 2 rue Kellermann - 59100 Roubaix</p>
+            <a href="http://www.ovh.com/">http://www.ovh.com/</a>
+
+            <h3>Photos :</h3>
+            <p>© J. Damase - A. Lamoureux - A.Stapf - La Vélodyssée - Charentes Tourisme
+                Lorsque les auteurs sont différents, le crédit est placé en bas de page.</p>
+
+        </section>
+
+        <section>
+            <h2>Confidentialité et données personnelles</h2>
+            <p>Pour consulter la politique de confidentialité, rendez-vous <a href="https://www.lavelodyssee.com/politique-de-confidentialite">ici</a>.</p>
+        </section>
+
+        <section>
+            <h2>Responsabilité</h2>
+            <p>La responsabilité de Charentes Tourisme ne saurait être engagée pour tous les inconvénients ou dommages inhérents à l'utilisation du réseau Internet, notamment une rupture du service, une intrusion extérieure ou la présence de virus informatiques, ou de tout fait qualifié de force majeure, conformément à la jurisprudence.</p>
+            <p>Charentes Tourisme ne garantit pas l'exactitude et l'exhaustivité de l'information diffusée sur le site et ne saurait donc être tenu pour responsable des dommages directs ou indirects, subis par les utilisateurs ou par des tiers qui trouveraient leur source dans l'information diffusée sur le site, relative aux offres de séjour, ainsi que dans la relation commerciale éventuellement engagée avec les prestataires de services chargés de la commercialisation de ces offres.</p>
+            <p>Charentes Tourisme n'exerce par ailleurs aucune surveillance sur les sites web reliés à www.velodyssee.com par le biais de liens hypertexte, et décline toute responsabilité liée à ces sites et aux contenus qui s'y trouvent.</p>
+        </section>
+
+        <section>
+            <h2>Cookies</h2>
+            <p>Pour faciliter l'utilisation du site web et le rendre plus agréable, Charentes Tourisme utilisent des cookies d'analyse statistiques. Les cookies sont de petits fichiers de données qui permettent à Charentes Tourisme de comparer les nouveaux visiteurs avec les anciens, de comprendre comment les utilisateurs naviguent sur le site, de collecter des informations relatives à leur navigation sur le site à des fins statistiques.</p>
+            <p>Les cookies ne gardent aucune trace des informations personnelles sur un utilisateur et les données identifiables ne seront jamais enregistrées. Si vous ne souhaitez pas utiliser de cookies, vous devez configurer les paramètres de votre ordinateur afin d’effacer tous les cookies de sites Web et/ou recevoir une notification si des cookies sont stockés.
+                En utilisant ce site Web, vous acceptez de recevoir ce type de cookies sur votre dispositif. Plus d'information sur le site de la <a href="http://www.cnil.fr/vos-droits/vos-traces/les-cookies/">CNIL</a>.</p>
+            <p>Vous pouvez vous opposer à l'enregistrement de cookies, ou être prévenu avant d'accepter les cookies, en configurant votre ordinateur de la manière suivante :</p>
+            
+            <h3>Pour Microsoft Internet Explorer 6 et au-delà :</h3>
+            <ol>
+                <li>Choisissez le menu " Outils " (ou " Tools "), puis " Options Internet " (ou " Internet Options ")</li>
+                <li>Cliquez sur l'onglet " Confidentialité " (ou " Confidentiality ")</li>
+                <li>Sélectionnez le niveau souhaité à l'aide du curseur ou cliquez sur le bouton " avancé " pour personnaliser votre gestion des cookies</li>
+            </ol>
+
+            <h3>Pour Microsoft Internet Explorer 5 :</h3>
+            <ol>
+                <li>Choisissez le menu " Outils " (ou " Tools "), puis " Option Internet " (ou " Internet Options ")</li>
+                <li>Cliquez sur l'onglet " Sécurité " (ou " Security ")</li>
+                <li>Sélectionnez " Internet " puis " Personnaliser le niveau " (ou " Custom Level ")</li>
+                <li>Repérez la rubrique " cookies " et choisissez l'option qui vous convient</li>
+            </ol>
+
+            <h3>Pour Firefox :</h3>
+            <ol>
+                <li>Choisissez le menu " Outils "> " Options "</li>
+                <li>Cliquez sur l'option " Vie privée "</li>
+                <li>Rubrique " Cookies "</li>
+            </ol>
+
+            <h3>Pour Opéra :</h3>
+            <ol>
+                <li>Choisissez le menu " Fichier "> " Préférences "</li>
+                <li>Vie privée</li>
+            </ol>
+
+            <h3>Pour Google Chrome : </h3>
+            <ol>
+                <li>Cliquez sur l'icône représentant une clé à molette qui est située dans la barre d'outils du navigateur.</li>
+                <li>Sélectionnez Options (Préférences sous Mac et Linux, Paramètres sur un Chromebook).</li>
+                <li>Choisissez l'onglet Options avancées.</li>
+                <li>Cliquez sur l'option Paramètres de contenu de la section "Confidentialité".
+                    Dans la boîte de dialogue Paramètres de contenu qui s'affiche, cliquez sur l'onglet Cookies.</li>
+            </ol>
+
+            <h3>Pour Safari</h3>
+            <ol>
+                <li>Choisissez Préférences, puis cliquez sur Confidentialité pour définir les cookies et les données de sites web acceptés.</li>
+                <li>Sélectionnez une option relative aux « Cookies et données de site web ».</li>
+            </ol>
+
+            <p><span>Ce projet est cofinancé par le Fonds européen de développement régional à travers le programme Interreg Espace Atlantique</span></p>
+            <img src="images/icon/Logo_Interreg-Atlantic-Area_COLOR-FULL.png" alt="Icon de Interreg">
+        </section>
+    
+      </main>
+      <footer>
+        <section class="footh">
+          <div class="headfoot">
+          <div class="logog">
+              <a href=""><img class="qsn1" src="images/icon/ed210af3-1631-4702-b9f0-dfdffbdfedc8.png" alt="qsn1"></a>
+              <a href="index.html"><img class="qsn2" src="images/Logo_EuroVelo_RGB-jpg.jpg" alt="qsn2"></a>
+          </div>
+          <div class="logod">
+              <a href="https://www.instagram.com/ecfeurovelo/?hl=fr" target="_blank"><img class="qsninsta" src="/images/icon/qsninstagram.png" alt="instagram"></a>
+              <a href="https://www.youtube.com/c/EuroVeloECF/videos" target="_blank"><img class="qsnyou" src="/images/icon/qsnyoutube.png" alt="youtube"></a>
+              <a href="https://www.facebook.com/EuroVelo" target="_blank"><img class="qsnfb" src="/images/icon/qsnfacebook.png" alt="facebook"></a>
+          </div>
+          </div>
+            <div class="fcontenu">
+              <div class="quisommesnous">
+                <h3>Qui sommes-nous ?</h3>
+                <p>La Vélodyssée est un projet porté collectivement par 3 Régions et 9 Départements réunis autour
+                  d'une ambition commune : positionner La Vélodyssée comme un itinéraire d'excellence du tourisme à vélo en
+                  France et à l'étranger.</p>
+              </div>
+              <div class="fboutons">
+                <a class="btnb" href="">
+                <p>EN SAVOIR PLUS</p>
+                </a>
+                <a class="btnv" href="">
+                <p>NOUS CONTACTER</p>
+                </a>
+              </div>
+            </div>
+        </section>
+        <section class="footm1">
+          <div class="presentation">
+            <ul>
+              <li><a href="">Présentation de l'itinéraire</a></li>
+              <li><a href="">Un itinéraire vélo européen</a></li>
+              <li><a href="">Louer un vélo</a></li>
+              <li><a href="">Voyages organisés</a></li>
+              </ul>
+          </div>
+            <div class="suggestions">
+              <ul>
+                <li><a href=""><span>Les suggestions de parcours</span></a></li>
+                <li><a href="">Séjours</a></li>
+                <li><a href="">Inspirations</a></li>
+                <li><a href="">Etapes</a></li>
+                <li><a href="">Boucles</a></li>
+              </ul>
+            </div>
+            <div class="conseils">
+              <ul>
+                <li><a href=""><span>Conseils</span></a></li>
+                <li><a href="">Guides</a></li>
+                <li><a href="">Voyager en famille</a></li>
+                <li><a href="">Foire Aux Questions</a></li>
+              </ul>
+            </div>
+          </section>
+          <section class="footm2">
+            <div class="veloacc"><img src="images/icon/accueilvelo.png" alt="accueilvelo"></div>
+            <div class="velotext">
+              <h4>La marque Accueil Vélo qu'est ce que c'est ?</h4>
+              <p>Accueil Vélo est une marque nationale qui garantit un accueil et des services de qualité auprès des cyclistes
+                le long des itinéraires cyclables.</p>
+            </div>
+            <div class="boutons">
+              <a class="btn1" href="">
+                <p>EN SAVOIR PLUS</p>
+              </a>
+              <a class="btn2" href="">
+                <p>DEVENIR ACCUEIL VELO</p>
+              </a>
+            </div>
+          </section>
+          <section class="footb">
+            <div class="ml">
+              <ul>
+                <li><a href="">Presse </a></li>
+                <li><a href="">FAQ </a></li>
+                <li><a href="">Mentions légales </a></li>
+                <li><a href="">Politique de confidentialité</a></li>
+                <li><a href="">Gestion des cookies</a></li>
+              </ul>
+            </div>
+            <div class="realisation">Réalisation</div>
+            <div class="simplon"><img src="images/icon/logo-simplon.png" alt="logosimplon"></div>
+            <div class="logofvt"><img src="images/icon/logoFVT.png" alt="francevelotourisme"></div>
+          </section>
+        </footer>
+        <script src="js/slider.js"></script>
+        <script src="js/header.js"></script>
+
+</body>
+
+</html>

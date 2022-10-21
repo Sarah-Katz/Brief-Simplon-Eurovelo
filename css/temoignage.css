@@ -663,7 +663,6 @@ h4 {
 .footb{
   display: flex;
   width: 100%;
-  height: 70px;
   background-color: black;
 }
 .ml li,a{
@@ -958,4 +957,76 @@ h4 {
  .logofvt{
    margin-left: 0px;
  }
+
+/* main */
+ main .timage{
+  height: 50vh;
+ }
+ main .timage div{
+  margin:auto;
+  font-size: 2em;
+  height: 0;
+ }
+ main .timage div img{
+  display: none;
+}
+ .conteneur-temoignage{
+  padding: 0;
+  padding-top: 1em;
+  padding-bottom: 1em;
+ }
+main .aventure div{
+  width: 100%;
+}
+
+
+/* article */
+main div.conteneur-temoignage .article-child{
+  flex: 100%;
+  height: auto;
+}
+.article-child a{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.article-child .image{
+  width: 370px;
+  height: auto;
+}
+.article-child:first-child .image{
+  width: 370px;
+  height: auto;
+}
+.article-child:nth-child(3) .image{
+  width: 370px;
+  height: auto;
+}
+.article-child .lien h4{
+  top:65%;
+}
+/* btn article */
+.liens-temoignages{
+  padding-top: 5em;
+  flex-direction: column;
+  padding-right: 0%;
+  padding-left: auto;
+}
+.liens-temoignages a{
+  margin: 0;
+}
+/* avis titre */
+div.avis-titre p{
+  width: auto;
+  padding: 1px;
+}
+
+/* avis */
+
+div.conteneur-avis{
+  padding: 0;
+}
+div.conteneur-avis .avis-child{
+  flex: 100%;
+}
+
 }
