@@ -5,11 +5,12 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="images/icon/vélo.png" type="image/x-icon">
   <link rel="stylesheet" href="css/slide.css">
   <link rel="stylesheet" href="css/index.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"> <!--font pour la fleche du slider -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+  <!--font pour la fleche du slider -->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,9 +22,12 @@
     <div id="header_ordi">
       <div id="head">
         <div class="haut-gauche">
-          <a href="https://www.instagram.com/ecfeurovelo/?hl=fr" target="_blank"><img src="images/icon/instagram.png" alt="icone instagram"></a>
-          <a href="https://www.youtube.com/c/EuroVeloECF/videos" target="_blank"><img src="images/icon/youtube.png" alt="icone youtube"></a>
-          <a href="https://www.facebook.com/EuroVelo" target="_blank"><img src="images/icon/facebook.png" alt="icone facebook"></a>
+          <a href="https://www.instagram.com/ecfeurovelo/?hl=fr" target="_blank"><img src="images/icon/instagram.png"
+              alt="icone instagram"></a>
+          <a href="https://www.youtube.com/c/EuroVeloECF/videos" target="_blank"><img src="images/icon/youtube.png"
+              alt="icone youtube"></a>
+          <a href="https://www.facebook.com/EuroVelo" target="_blank"><img src="images/icon/facebook.png"
+              alt="icone facebook"></a>
           <form>
             <label for="email">
               S'abonner à la newsletter
@@ -64,17 +68,17 @@
           class="eurovelo"><img src="images/Logo_EuroVelo_RGB-jpg.jpg" alt="logo eurovelo" class="eurovelo"></a>
       <img src="images/icon/loupe.png" alt="icon de loupe" id="loupe2">
     </div>
-
   </header>
+  <!-- Barre ne navigation -->
   <nav class="nav-container">
     <input class="checkbox" type="checkbox" name="check" id="check">
     <div class="navm">
       <img src="images/icon/signe-de-la-croix.png" alt="icon de croix" id="croix_mobile">
       <ul id="navm_ul">
-        <li class="liennav"><a  href="index.html">Accueil</a></li>
-        <li class="liennav"><a  href="map.html">L'itinéraire</a></li>
-        <li class="liennav"><a  href="temoignage.html">Témoignages</a></li>
-        <li class="liennav"><a  href="new.html">News</a></li>
+        <li class="liennav"><a href="index.html">Accueil</a></li>
+        <li class="liennav"><a href="map.html">L'itinéraire</a></li>
+        <li class="liennav"><a href="temoignage.html">Témoignages</a></li>
+        <li class="liennav"><a href="news.html">News</a></li>
       </ul>
       <hr>
       <a href="" id="es_pro">Espace pro</a>
@@ -91,9 +95,7 @@
         <input type="email" class="email" placeholder="Votre adresse mail" required>
         <input type="submit" value="JE M'INSCRIS" class="submit">
       </form>
-
     </div>
-
   </nav>
   <div id="container_search">
     <input class="checkbox2" type="checkbox" name="check2" id="check2">
@@ -102,8 +104,7 @@
       <img src="images/icon/signe-de-la-croix.png" alt="" id="croix_mobile2">
     </div>
   </div>
-  
-<main>
+  <main>
     <section class="carousel">
       <p>&copy; Eurovélo 5 - Hauts-de-France</p>
       <!-- slider -->
@@ -137,13 +138,13 @@
           <h2>Eurovélo 5<br>
             <span>Hauts-de-France</span>
           </h2>
+        </div>
       </div>
-    </div>
-    <div class="buttons">
-      <button id="prev"><i class="fas fa-arrow-left"></i></button>
-      <button id="next"><i class="fas fa-arrow-right"></i></button>
-    </div>
-    <!-- fin du slider -->
+      <div class="buttons">
+        <button id="prev"><i class="fas fa-arrow-left"></i></button>
+        <button id="next"><i class="fas fa-arrow-right"></i></button>
+      </div>
+      <!-- fin du slider -->
     </section>
     <section class="conteneurcarte">
       <div class="descriptif">
@@ -168,30 +169,30 @@
         <img src="images/icon/oizoavelo.jpg" alt="oiseauvelo">
       </div>
       <div class="formulaire">
-          <form action="get">
-            <p>Pédalez selon vos envies</p>
-            <select name="difficultés" size="1">
-              <option value="tout">Toutes les difficultés</option>
-              <option value="famille">Je débute / En famille</option>
-            </select>
-            <select name="durée" size="1">
-              <option value="tout">Toutes les durées</option>
-              <option value="journee">Journée</option>
-              <option value="semaine">A la semaine</option>
-              <option value="sejour">Court séjour (3 à 5 jours)</option>
-            </select>
-            <select name="thematiques" size="1">
-              <option value="toutes">Toutes les thématiques</option>
-              <option value="littoral">Le littoral</option>
-              <option value="nature">Nature et patrimoine</option>
-              <option value="foret">Forêts et landes</option>
-              <option value="eau">Au fil de l'eau</option>
-              <option value="enfamille">En famille</option>
-              <option value="vignoble">Vignobles et Gastronomie</option>
-              <option value="panorama">Panoramas</option>
-            </select>
+        <form action="get">
+          <p>Pédalez selon vos envies</p>
+          <select name="difficultés" size="1">
+            <option value="tout">Toutes les difficultés</option>
+            <option value="famille">Je débute / En famille</option>
+          </select>
+          <select name="durée" size="1">
+            <option value="tout">Toutes les durées</option>
+            <option value="journee">Journée</option>
+            <option value="semaine">A la semaine</option>
+            <option value="sejour">Court séjour (3 à 5 jours)</option>
+          </select>
+          <select name="thematiques" size="1">
+            <option value="toutes">Toutes les thématiques</option>
+            <option value="littoral">Le littoral</option>
+            <option value="nature">Nature et patrimoine</option>
+            <option value="foret">Forêts et landes</option>
+            <option value="eau">Au fil de l'eau</option>
+            <option value="enfamille">En famille</option>
+            <option value="vignoble">Vignobles et Gastronomie</option>
+            <option value="panorama">Panoramas</option>
+          </select>
           <div class="valider"><a href="map.html">TROUVER MON PARCOURS IDEAL</a></div>
-          </form>
+        </form>
       </div>
     </section>
     <section class="accueilvelo">accueil vélo</section>
@@ -199,20 +200,24 @@
     <section class="avis">avis</section>
     <section class="articles">articles</section>
     <section class="voyages">voyages</section>
-</main>
-<footer>
-  <section class="footh">
-    <div class="headfoot">
-    <div class="logog">
-        <a href=""><img class="qsn1" src="images/icon/ed210af3-1631-4702-b9f0-dfdffbdfedc8.png" alt="qsn1"></a>
-        <a href="index.html"><img class="qsn2" src="images/Logo_EuroVelo_RGB-jpg.jpg" alt="qsn2"></a>
-    </div>
-    <div class="logod">
-        <a href="https://www.instagram.com/ecfeurovelo/?hl=fr" target="_blank"><img class="qsninsta" src="/images/icon/qsninstagram.png" alt="instagram"></a>
-        <a href="https://www.youtube.com/c/EuroVeloECF/videos" target="_blank"><img class="qsnyou" src="/images/icon/qsnyoutube.png" alt="youtube"></a>
-        <a href="https://www.facebook.com/EuroVelo" target="_blank"><img class="qsnfb" src="/images/icon/qsnfacebook.png" alt="facebook"></a>
-    </div>
-    </div>
+  </main>
+  <!--  Footer  -->
+  <footer>
+    <section class="footh">
+      <div class="headfoot">
+        <div class="logog">
+          <a href=""><img class="qsn1" src="images/icon/ed210af3-1631-4702-b9f0-dfdffbdfedc8.png" alt="qsn1"></a>
+          <a href="index.html"><img class="qsn2" src="images/Logo_EuroVelo_RGB-jpg.jpg" alt="qsn2"></a>
+        </div>
+        <div class="logod">
+          <a href="https://www.instagram.com/ecfeurovelo/?hl=fr" target="_blank"><img class="qsninsta"
+              src="/images/icon/qsninstagram.png" alt="instagram"></a>
+          <a href="https://www.youtube.com/c/EuroVeloECF/videos" target="_blank"><img class="qsnyou"
+              src="/images/icon/qsnyoutube.png" alt="youtube"></a>
+          <a href="https://www.facebook.com/EuroVelo" target="_blank"><img class="qsnfb"
+              src="/images/icon/qsnfacebook.png" alt="facebook"></a>
+        </div>
+      </div>
       <div class="fcontenu">
         <div class="quisommesnous">
           <h3>Qui sommes-nous ?</h3>
@@ -222,23 +227,23 @@
         </div>
         <div class="fboutons">
           <a class="btnb" href="">
-          <p>EN SAVOIR PLUS</p>
+            <p>EN SAVOIR PLUS</p>
           </a>
           <a class="btnv" href="">
-          <p>NOUS CONTACTER</p>
+            <p>NOUS CONTACTER</p>
           </a>
         </div>
       </div>
-  </section>
-  <section class="footm1">
-    <div class="presentation">
-      <ul>
-        <li><a href="">Présentation de l'itinéraire</a></li>
-        <li><a href="">Un itinéraire vélo européen</a></li>
-        <li><a href="">Louer un vélo</a></li>
-        <li><a href="">Voyages organisés</a></li>
+    </section>
+    <section class="footm1">
+      <div class="presentation">
+        <ul>
+          <li><a href="">Présentation de l'itinéraire</a></li>
+          <li><a href="">Un itinéraire vélo européen</a></li>
+          <li><a href="">Louer un vélo</a></li>
+          <li><a href="">Voyages organisés</a></li>
         </ul>
-    </div>
+      </div>
       <div class="suggestions">
         <ul>
           <li><a href=""><span>Les suggestions de parcours</span></a></li>
