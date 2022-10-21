@@ -81,7 +81,7 @@ body {
 }
 
 /* Fin bouton download */
-
+/* Bouton retour */
 #bouton {
     position: fixed;
     left: 700px;
@@ -94,6 +94,7 @@ body {
     border-radius: 50%;
 }
 
+/* Fin du bouton retour */
 #map {
     z-index: 0;
     align-self: flex-end;
@@ -574,7 +575,7 @@ form {
         align-self: flex-end;
         width: 100vw;
         height: 29vh;
-        top: 5vh;
+        top: 65px;
         border-bottom: solid black 2px;
     }
 
@@ -603,9 +604,9 @@ form {
     }
 
     #titreEtape {
-        padding: 0 15 0 15pxpx;
+        padding: 0 15px 0 15px;
         text-align: center;
-        margin-bottom: 0;
+        margin: 0;
         font-size: 1.5em;
     }
 
@@ -628,5 +629,16 @@ form {
     .download a img {
         width: 40px;
     }
+
     /* Fin bouton download */
+    /* Bouton retour */
+    #bouton {
+        position: fixed;
+        left: 335px;
+        top: 370px;
+        width: 40px;
+        background-color: rgba(255, 255, 255, 0.3);
+        border-radius: 50%;
+    }
+    /* Fin du bouton retour */
 }
