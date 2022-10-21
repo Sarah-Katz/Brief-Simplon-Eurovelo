@@ -1008,8 +1008,12 @@ main div.conteneur-temoignage .article-child{
 .liens-temoignages{
   padding-top: 5em;
   flex-direction: column;
+  padding-right: 0%;
+  padding-left: auto;
 }
-
+.liens-temoignages a{
+  margin: 0;
+}
 /* avis titre */
 div.avis-titre p{
   width: auto;
