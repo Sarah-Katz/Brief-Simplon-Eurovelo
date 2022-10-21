@@ -471,9 +471,8 @@ h4 {
 
 /* avis flex */
 
-.conteneur-avis h4{
+.conteneur-avis h5{
   color: black;
-  position: initial;
   transform: none;
 }
 .conteneur-avis{
@@ -484,33 +483,74 @@ h4 {
 	gap: 5%;
   background-color: rgb(255, 255, 255);
   padding-top: 3%;
+  padding-bottom: 3%;
 }
 
-.avis-child{
+.conteneur-avis .avis-child{
   flex: 25%;
   background-color: #f4f4f4;
-  margin-bottom: 3%;
-  padding: 2%
+  padding: 2%;
+  margin-bottom: 2%;
+  padding-top: 1%;
 }
 
-.date{
-  font-size: 16px;
+.conteneur-avis .date{
+  font-size: 13px;
   margin-bottom: 2%;
 }
 
-.Avis-titre{
-  font-size: 22px;
+.conteneur-avis .Avis-titre{
+  font-size: 21px;
   margin-top: 0;
-  margin-bottom: 1%;
+  margin-bottom: 3%;
 }
 
-.personne{
-  margin-top: 0;
+.conteneur-avis .personne{
+  margin: 0;
   background-color: orange;
   text-align: center;
+  color: white ;
+  font-size: 13px;
+  text-align: center;
+  padding: 1%;
+  margin-right: 60%;
+  font-weight: bold;
+  margin-bottom: 5%;
 }
 
+.Avis-titre2{
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 5%;
+}
 
+.Texte-Avis{
+  margin: 0;
+  font-size: 14px;
+  color: #585858;
+  line-height: 20px;
+  font-weight: 600;
+}
+
+.bas{
+  display: flex;
+  justify-content: space-between;
+  margin: 2%;
+  margin-top: 0;
+}
+
+.bas-right{
+  color: #007c74;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.bas-left{
+  color: #585858;
+  font-size: 16px;
+  font-weight: 700;
+}
 
   /*Footer haut*/
 

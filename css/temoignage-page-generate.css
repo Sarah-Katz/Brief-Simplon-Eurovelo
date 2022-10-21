@@ -1,0 +1,318 @@
+html{
+    scroll-behavior: smooth;
+  }
+  body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: gray;
+    }
+  
+    /*Header*/
+    
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      transition: top ease 0.5s;
+      z-index: 1;
+    }
+    #header.cache {
+      top: -50px;
+    }
+    #head {
+      background: transparent;
+      margin: 0%;
+      padding: 0%;
+      display: flex;
+      height: 50px;
+      justify-content: space-between;
+    }
+    .haut-gauche {
+      display: flex;
+    }
+    .haut-gauche a {
+      padding: 10px;
+      margin-right: 20px;
+      background-color: rgba(0, 0, 0, 0.1)
+    }
+    .haut-gauche a:hover {
+      background-color: #007c74;
+    }
+    form {
+      margin: auto;
+      color: #fff;
+    }
+    #email {
+      background-color: rgba(0, 0, 0, 0.2);
+      border: none;
+      border-radius: 5px 0 0 5px;
+      padding: 10px;
+      width: 165px;
+      font-weight: 700;
+      font-size: 0.875rem;
+      color: #fff;
+    }
+    #email::placeholder{
+      color: #fff;
+    }
+    #submit {
+      margin: 0;
+      background-color: #007c74;
+      border: none;
+      font-weight: 600;
+      font-size: 0.875rem;
+      color: #fff;
+      padding: 10px;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      border-bottom-left-radius: 0;
+      border-top-left-radius: 0;
+      margin-left: -4px;
+    }
+    .haut-droite{
+      display: flex;
+      justify-content: space-between;
+      width: 35%;
+    }
+    .haut-droite a{
+      text-decoration: none;
+      color: #fff;
+      margin: auto;
+      padding-left: 20px;
+    }
+    .haut-droite a:hover{
+      color: #007c74;
+    }
+    .carnet{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    .carnet:hover .coeur1{
+      display: none;
+    }
+    .carnet:hover .coeur2{
+      display: block;
+    }
+    .coeur2{
+      display: none;
+    }
+    .carnet img{
+      margin-right: 2px;
+    }
+    .espace img{
+      width: 27px;
+    }
+    .espace{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    .espace:hover .profil1{
+      display: none;
+    }
+    .espace:hover .profil2{
+      display: block;
+    }
+    .profil2{
+      display: none;
+    }
+    .navigation{
+      background: #fff;
+      box-shadow: 0 1px 5px gray;
+      display: flex;
+      height: 80px;
+    }
+    .euro{
+      height: 50px;
+      margin: 10%;
+      margin-top: 13px;
+    }
+    .eurovelo{
+      height: 50px;
+      margin-left: 15px;
+      margin-top: 13px;
+    }
+    .navigation ul{
+      margin-left: 35px;
+      width: 40%;
+      margin-top: 30px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .navigation li{
+      display: inline;
+    }
+    .navigation li a{
+      text-decoration: none;
+      color: black;
+      font-weight: 600;
+    }
+    .navigation li a:hover{
+      color: #007c74;
+    }
+    #loupe{
+      height: 30%;
+      margin-left: 43%;
+      margin-top: 30px;
+    }
+    #loupe.afficher {
+      display: none;
+    }
+    #croix {
+      display: none;
+      height: 20%;
+      margin-left: 43%;
+      margin-top: 33px;
+    }
+    #croix.afficher {
+      display: block;
+    }
+    #recherche {
+      display: none;
+      position: fixed;
+      z-index: 2;
+      width: 100%;
+    }
+    #recherche.afficher {
+      display: block;
+    }
+    #search{
+      width: 100%;
+      height: 70px;
+      background-color: black;
+      padding: 1%;
+      color: #fff;
+      font-weight: 600;
+      font-size: larger;
+      border: none;
+      border-radius: 5px;
+    }
+    #search::placeholder{
+      color: #fff;
+    }
+    #lien{
+      display: block;
+      position: fixed;
+      width: 100%;
+      z-index: 1;
+    }
+    #lien.cache{
+      display: none;
+    }
+   
+    #lien ol{
+      padding: 0%;
+    }
+    #lien li{
+      display: inline;
+    }
+    #lien li a{
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.875rem;
+      margin-left: 0%;
+    }
+    #accueil{
+      margin-left: 1%;
+    }
+    
+    #accueil::after{
+      content: ">";
+      color: #fff;
+      font-weight: 600;
+      display: inline-block;
+      margin-left: 5px;
+      font-size: 0.8rem;
+    }
+
+    /* main */
+
+  main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+/* section .timage img ils l'ont fait */
+.timage {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    background-size: 70%;
+  }
+  .timage div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50vh;
+    align-items: center;
+    margin: auto;
+    margin-top: 40vh;
+    color: #fff;
+    font-size: 4em;
+    font-weight: 700;
+  }
+  .timage div a{
+    z-index: 0;
+  }
+  .timage div a img{
+    width: 1em;
+    transform:rotate(90deg);
+  }
+
+/* section .aventure  */
+
+  .aventure{
+    width: 100%;
+    text-align: center;
+    background-color: #fff;
+  }
+  .aventure div{
+    width: 50%;
+    margin: auto;
+  }
+  .aventure h2{
+    margin-top: 10%;
+    font-size: 2.6em;
+    font-weight: 300;
+  }
+   .aventure h2 span{
+    color:#007c74;
+  }
+  .aventure p{
+    color: #585858;
+    line-height: 1.5em;
+    font-size: 1.1em;
+    font-weight: 500;
+  }
+
+/* div.divarticle  */
+  div.divarticle{
+    margin: auto;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1em;
+  }
+  div.divarticle article.article1{
+    flex:100%;
+  }
+  div.divarticle article.article2{
+    flex:25%;
+  }
+  div.divarticle article.article3{
+    flex:72%;
+  }
+  div.divarticle article.article4{
+    flex:31%;
+  }
+  div.divarticle article.article5{
+    flex:31%;
+  }
+  div.divarticle article.article6{
+    flex:31%;
+  }
