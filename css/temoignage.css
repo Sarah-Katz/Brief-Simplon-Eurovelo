@@ -576,6 +576,7 @@ h4 {
   background-size: cover;
   width: 100%;
   height: 350px;
+  overflow: hidden;
 }
 .qsn1 {
   width: 65px;
@@ -622,9 +623,17 @@ h4 {
   flex-direction: row;
   width: 100%;
 }
-.fboutons a{
+.fboutons div{
   text-decoration: none;
   font-weight: bold;
+}
+.btnb div{
+  margin-left: 320px;
+  margin-top: 40px;
+}
+.btnb a{
+  margin-left: 0;
+  text-decoration: none;
 }
 .btnb p{
   color: #007c74;
@@ -634,13 +643,10 @@ h4 {
   padding: 7px 20px 7px 20px;
   text-align:center;
   border-radius: 6px;
-  margin-left: 320px;
-  margin-top: 40px;
   box-shadow: 0px 0px 5px lightslategray;
 }
 .btnb p:hover{
   box-shadow: 0px 0px 6px #007c74;
-
 }
 .btnv p{
   color: white;
@@ -657,6 +663,11 @@ h4 {
 .btnv p:hover{
   box-shadow: 0px 0px 6px white;
 }
+.btnv a{
+  margin-left: 0;
+  text-decoration: none;
+}
+
 
 /* footer mentions légales */
 
@@ -665,7 +676,13 @@ h4 {
   width: 100%;
   background-color: black;
 }
-.ml li,a{
+.footb .ml a{
+  text-decoration: none;
+  color: white;
+  display: inline;
+  margin-left: 10px;
+}
+.footb .ml li{
   text-decoration: none;
   color: white;
   display: inline;
