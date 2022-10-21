@@ -663,7 +663,6 @@ h4 {
 .footb{
   display: flex;
   width: 100%;
-  height: 70px;
   background-color: black;
 }
 .ml li,a{
@@ -958,4 +957,27 @@ h4 {
  .logofvt{
    margin-left: 0px;
  }
+
+/* main */
+ main .timage{
+  height: 50vh;
+ }
+ main .timage div{
+  margin-top: 30vh;
+  font-size: 2em;
+  height: 0;
+ }
+ .conteneur-temoignage{
+  padding: 0;
+  padding-top: 1em;
+  padding-bottom: 1em;
+ }
+main .aventure div{
+  width: 100%;
+}
+
+/* article */
+main div.conteneur-temoignage .article-child{
+  flex: 100%;
+}
 }
