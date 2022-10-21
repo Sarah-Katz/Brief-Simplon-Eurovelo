@@ -108,6 +108,6 @@ function reset(e) {
     montee.innerHTML = "1090m"
     descente.innerHTML = "1071m"
     texteEtape.innerHTML = "texte descriptif de l'étape générale"
-    image.src = "images/etapes/imageetape9.jpg";
-    gpxDownload.href = url + e.target.options.etape.attributes.gpx.data.attributes.url
+    image.src = "images/etapes/imageetape9.jpg"
+    gpxDownload.href = "js/fulltrack.gpx"
 }
