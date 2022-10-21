@@ -676,7 +676,7 @@ main{
   position: fixed;
 }
 #es_pro{
-  margin-left: 10% ;
+  margin-left: 8% ;
 }
 
 .h2nav {
@@ -687,20 +687,19 @@ main{
   margin-left: 5%;
 }
 
-.liennav {
-  font-size: 180%;
-}
 
-ul {
+
+#navm_ul {
   margin: 0;
   margin-top: 15vh;
   margin-left: -3vw;
   padding: 0;
 }
 
-li{
+.liennav {
   text-align: center;
   margin-bottom: 5%;
+  font-size: 180%;
 }
 
 
@@ -790,6 +789,14 @@ form p{
   position: relative;
   padding: 2px;
 }
+.carnet_espace{ 
+display: flex;
+width: 40%;
+justify-content: space-around;
+align-items: center;
+margin: 0%;
+  
+}
 
 
 .conteneurcarte{
@@ -848,10 +855,14 @@ form p{
   width: auto;
   font-size: 0.9em;
 }
+
+/* footer 2 */
+
 .footm1{
   flex-direction: column;
   font-size: 1.3em;
   margin: 0;
+
 }
 .presentation{
   line-height: 1.1;
@@ -866,6 +877,9 @@ form p{
 .conseils{
   line-height: 1.10;
 }
+
+/*footer 3*/
+
 .footm2{
   margin: auto;
   flex-direction: column;
@@ -891,6 +905,9 @@ form p{
 .btn2{
   margin-top: 12px;
 }
+
+/*footer */
+
 .footb{
  margin: 0;
  display: flex;

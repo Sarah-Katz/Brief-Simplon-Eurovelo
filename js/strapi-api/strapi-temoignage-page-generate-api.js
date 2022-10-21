@@ -32,18 +32,23 @@ fetch("http://195.14.105.123:1337/api/articles/" + recup + "?populate=*")
             eltTitre2.innerText = value.data.attributes.Titre2;
             eltTitre2.classList.add('Titre2');
 
+
             let eltTexte = document.createElement('p')
             eltArticle.appendChild(eltTexte);
             eltTexte.innerText = value.data.attributes.Texte;
             eltTexte.classList.add('Texte');
 
+            let eltDiv = document.createElement('div')
+            eltArticle.appendChild(eltDiv);
+            eltDiv.classList.add('Div-avis');
+
             let eltImage2 = document.createElement('img');
-            eltArticle.appendChild(eltImage2);
+            eltDiv.appendChild(eltImage2);
             eltImage2.src = url + value.data.attributes.Image2.data.attributes.url;
             eltImage2.classList.add('image2');
 
             let eltTexte2 = document.createElement('p')
-            eltArticle.appendChild(eltTexte2);
+            eltDiv.appendChild(eltTexte2);
             eltTexte2.innerText = value.data.attributes.Texte;
             eltTexte2.classList.add('Texte2');
        
