@@ -194,6 +194,83 @@ body {
     display: none;
   }
 
+  /* main*/
+.blanc{
+  background-color: white;
+  height: 8em;
+  width: 100%;
+}
+
+.Titre-Haut h3{
+  margin-top: 3%;
+  font-size: 2.6em;
+  font-weight: 300;
+}
+
+.Titre-Haut{
+  text-align: center;
+}
+
+.Titre-Haut p{
+  font-size: 1.125rem;
+  color: #585858;
+  line-height: 1.5em;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-family: "Mukta Mahee",sans-serif;
+  font-weight: 500;
+}
+
+/* actualité */
+
+.conteneur{
+  display: flex;
+  padding-left: 18%;
+  padding-right: 18%;
+  flex-wrap: wrap;
+	gap: 4%;
+  justify-content: space-between;
+}
+
+.article-child{
+  flex: 25%;
+  position: relative;
+  text-align: center;
+  margin-bottom: 2%;
+  overflow: hidden;
+  transition: .3s;
+  border-radius: 1%;
+}
+
+.article-child img{
+  width: 370px;
+  height: 370px;
+  transition: .4s;
+}
+
+.article-child h4{
+    color: rgb(23, 21, 21);
+    font-size: 14px;
+    position: absolute;
+    left: 18%;
+    color: white;
+    top: 84%;
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+.article-child:hover img{
+  filter: blur(6px);
+  transition: .4s;
+  transform: scale(1.2);
+}
+
+.article-child:hover h4{
+  top: 70%;
+  transition: 0.3s;
+  z-index: 1;
+ }
+ 
   /*Footer*/
 
 .footh{
