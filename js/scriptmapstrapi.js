@@ -45,7 +45,7 @@ function carte(etapes) {
             },
             etape: etape,
             polyline_options: {
-                color: '#C04300',
+                color: '#f59c00',
                 opacity: 1,
                 weight: 9,
                 lineCap: 'round'
@@ -59,7 +59,7 @@ function carte(etapes) {
                 mouseoverToggle = false
                 mouseoutToggle = false
                 if (lastTrackClicked != null) {
-                    lastTrackClicked.setStyle({ color: '#C04300' })
+                    lastTrackClicked.setStyle({ color: '#f59c00' })
                 }
                 lastTrackClicked = e.target
                 // console.log(e)
@@ -77,7 +77,7 @@ function carte(etapes) {
                 if (mouseoutToggle == true) {
                     map.closePopup();
                     this.setStyle({
-                        color: '#C04300'
+                        color: '#f59c00'
                     })
                 }
             });
@@ -102,7 +102,7 @@ function reset(e) {
     map.setView([50.79067, 2.24964], 9);
     mouseoutToggle = true;
     mouseoverToggle = true;
-    lastTrackClicked.setStyle({ color: '#C04300' })
+    lastTrackClicked.setStyle({ color: '#f59c00' })
     titreEtape.innerHTML = "Eurovélo - Hauts de france"
     distance.innerHTML = "217,4km"
     montee.innerHTML = "1090m"

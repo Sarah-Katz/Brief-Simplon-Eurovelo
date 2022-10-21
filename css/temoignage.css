@@ -42,7 +42,7 @@ body {
     margin: auto;
     color: #fff;
   }
-  #email {
+  .email {
     background-color: rgba(0, 0, 0, 0.2);
     border: none;
     border-radius: 5px 0 0 5px;
@@ -52,10 +52,10 @@ body {
     font-size: 0.875rem;
     color: #fff;
   }
-  #email::placeholder{
+  .email::placeholder{
     color: #fff;
   }
-  #submit {
+  .submit {
     margin: 0;
     background-color: #007c74;
     border: none;
@@ -119,9 +119,9 @@ body {
   }
   .navigation{
     background: #fff;
-    box-shadow: 0 1px 5px gray;
     display: flex;
     height: 80px;
+    box-shadow: 0 1px 5px gray;
   }
   .euro{
     height: 50px;
@@ -153,7 +153,7 @@ body {
   }
   #loupe{
     height: 30%;
-    margin-left: 43%;
+    margin-left: 45%;
     margin-top: 30px;
   }
   #loupe.afficher {
@@ -162,7 +162,7 @@ body {
   #croix {
     display: none;
     height: 20%;
-    margin-left: 43%;
+    margin-left: 45%;
     margin-top: 33px;
   }
   #croix.afficher {
@@ -170,26 +170,9 @@ body {
   }
   #recherche {
     display: none;
-    position: fixed;
-    z-index: 2;
-    width: 100%;
   }
   #recherche.afficher {
     display: block;
-  }
-  #search{
-    width: 100%;
-    height: 70px;
-    background-color: black;
-    padding: 1%;
-    color: #fff;
-    font-weight: 600;
-    font-size: larger;
-    border: none;
-    border-radius: 5px;
-  }
-  #search::placeholder{
-    color: #fff;
   }
   #lien{
     display: block;
@@ -224,6 +207,36 @@ body {
     display: inline-block;
     margin-left: 5px;
     font-size: 0.8rem;
+  }
+
+  #lien li a{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.875rem;
+    margin-left: 0%;
+  }
+  .search{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    padding: 1%;
+    color: #fff;
+    font-weight: 600;
+    font-size: larger;
+    border: none;
+    border-radius: 5px;
+  }
+  .search::placeholder{
+    color: #fff;
+  }
+  #header_telephone{
+    display: none;
+  }
+  .nav-container{
+    display: none;
+  }
+  #container_search{
+    display: none;
   }
 
 /* main */
@@ -650,7 +663,6 @@ h4 {
 .footb{
   display: flex;
   width: 100%;
-  height: 70px;
   background-color: black;
 }
 .ml li,a{
@@ -687,3 +699,285 @@ h4 {
 .simplon{
   margin-top: auto;
   margin-bottom: auto;}
+
+
+
+  /*Responsive*/
+
+@media screen and (max-width:480px){
+
+  /*Header*/
+  
+  #header_ordi{
+    display: none;
+  }
+  .nav-container{
+    display: block;
+  }
+  #header_telephone{
+    display: flex;
+    width: 100%;
+    background-color: #fff;
+  }
+  #header.cache {
+    top: -80px;
+  }
+  #icon_menu{
+    width: 150%;
+  }
+  #menu figcaption{
+    margin-left: 0;
+    font-size: 65%;
+  }
+  
+  #logo_telephone{
+    margin-left: 0%;
+  }
+  #loupe2{
+    width: 8%;
+    height: 8%;
+    margin: auto;
+  
+  }
+  
+  #menu{
+    width: 8%;
+    height: 8%;
+    margin: auto 30px auto 30px;
+  }
+  
+  #recherche_mobile{
+    display: none;
+  }
+  .navm {
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    z-index: 2;
+    background:rgba(0, 0, 0, 0.95);
+    position: fixed;
+  }
+  #es_pro{
+    margin-left: 10% ;
+  }
+  
+  .h2nav {
+    text-align: center;
+    font-size: 120%;
+    margin: 0;
+    margin-top: -15%;
+    margin-left: 5%;
+  }
+  
+  .liennav {
+    font-size: 180%;
+  }
+  
+  ul {
+    margin: 0;
+    margin-top: 15vh;
+    margin-left: -3vw;
+    padding: 0;
+  }
+  
+  li{
+    text-align: center;
+    margin-bottom: 5%;
+  }
+  
+  
+  .checkbox {
+    position: absolute;
+    display: block;
+    height: 32px;
+    width: 32px;
+    top: 20px;
+    left: 20px;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .nav-container input[type="checkbox"]:checked~.navm {
+    transform: translateX(100%);
+    transition: 0.5s;
+  }
+  
+  
+  
+  .nav-container input[type="checkbox"]:checked {
+    transform: translateX(310px);
+    transition: 0.5s;
+  }
+  
+  #croix_mobile{
+    background-color: #fff;
+    border-radius: 100%;
+    top: 20px;
+    left: 330px;
+    position: relative;
+    padding: 2px;
+  }
+  form{
+    display: inline-block;
+    margin-left: 10%;
+  }
+  form p{
+    text-align: center;
+  }
+  #container_search{
+    display: block;
+  }
+  #search_mobile{
+    left:  -100%;
+    width: 100%;
+    height: 8%;
+    top: 68px;
+    transition: 0.5s;
+    z-index: 2;
+    background:rgba(0, 0, 0);
+    position: absolute;
+  }
+  .search{
+    height: 100%;
+    background-color: black;
+  }
+  
+  .checkbox2 {
+    position: relative;
+    display: block;
+    height: 32px;
+    width: 32px;
+    top: 20px;
+    left: 330px;
+    z-index: 4;
+    opacity: 0;
+    cursor: pointer;
+  }
+  .checkbox2:checked~#search_mobile{
+    transform: translateX(100%);
+    transition: 0.5s;
+  
+  } 
+  .checkbox2:checked{
+    transform: translateY(200%);
+    transition: 0.5s;
+  
+  }
+  #croix_mobile2{
+    background-color: #fff;
+    border-radius: 100%;
+    bottom: 53px;
+    left: 330px;
+    position: relative;
+    padding: 2px;
+  }
+  
+  
+  .conteneurcarte{
+    margin: 0;
+    width: 100%;
+    flex-direction: initial;
+  }
+  .descriptif{
+    margin-top: 10px;
+    width: 100%;
+    padding: 1px 10px 1px 10px;
+  }
+  .descriptif h2{
+    font-size: 1.75rem;
+  }
+  .descriptif img{
+    margin-top: 20px;
+  }
+  .descriptif p{
+    width: 100%;
+    margin: auto;
+    text-align: justify;
+  }
+
+  /*Footer 1*/
+
+.headfoot{
+  margin: 50px 0 0 0;
+}
+.fcontenu{
+  margin: 0;
+}
+.qsn1{
+  margin: 0;
+}
+.qsn2{
+  margin: 0 0 0 5px;
+}
+.logod{
+  margin-right: 5px;
+}
+.quisommesnous{
+  display: none;
+}
+.fboutons{
+  margin: auto;
+  width: auto;
+}
+.fboutons p{
+  margin: 40px  5px 50px 0;
+  width: auto;
+  font-size: 0.9em;
+}
+/*footer 2*/
+
+.footb{
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+ 
+ }
+ .ml{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   margin: 0;
+   width: 100%;}
+ .ml ul{
+   margin: 5px  0  0 0;
+   text-align: left;
+ }
+ .ml li{
+   margin: 0;
+ }
+ .realisation{
+   margin: 23px 5px 0 10px;
+ }
+ .simplon{
+   margin: 20px 0px 0px 5px;
+ }
+ .logofvt{
+   margin-left: 0px;
+ }
+
+/* main */
+ main .timage{
+  height: 50vh;
+ }
+ main .timage div{
+  margin-top: 30vh;
+  font-size: 2em;
+  height: 0;
+ }
+ .conteneur-temoignage{
+  padding: 0;
+  padding-top: 1em;
+  padding-bottom: 1em;
+ }
+main .aventure div{
+  width: 100%;
+}
+
+/* article */
+main div.conteneur-temoignage .article-child{
+  flex: 100%;
+}
+}
