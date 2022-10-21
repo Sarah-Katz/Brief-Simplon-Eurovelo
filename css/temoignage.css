@@ -134,11 +134,10 @@ body {
     margin-top: 13px;
   }
   .navigation ul{
-    margin-left: 35px;
-    width: 40%;
-    margin-top: 30px;
-    display: flex;
-    justify-content: space-between;
+    width: 100%;
+    display: inline-block;
+    margin: auto;
+    text-align: center;
   }
   .navigation li{
     display: inline;
@@ -147,13 +146,14 @@ body {
     text-decoration: none;
     color: black;
     font-weight: 600;
+    margin-left: 10%;
   }
   .navigation li a:hover{
     color: #007c74;
   }
   #loupe{
     height: 30%;
-    margin-left: 45%;
+    margin-left: 20%;
     margin-top: 30px;
   }
   #loupe.afficher {
@@ -162,7 +162,7 @@ body {
   #croix {
     display: none;
     height: 20%;
-    margin-left: 45%;
+    margin-left: 20.5%;
     margin-top: 33px;
   }
   #croix.afficher {
@@ -195,6 +195,7 @@ body {
     font-weight: 600;
     font-size: 0.875rem;
     margin-left: 0%;
+    color: #fff;
   }
   #accueil{
     margin-left: 1%;
