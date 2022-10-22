@@ -102,6 +102,7 @@ body {
 }
 
 /* Fin du bouton retour */
+/* Style carte */
 #map {
     z-index: 0;
     align-self: flex-end;
@@ -110,23 +111,19 @@ body {
 }
 
 .leaflet-popup-content-wrapper {
-    background-color: black;
-    opacity: 0.7;
+    background-color: hsla(176, 100%, 24%, 0.8);
 }
 
 .leaflet-popup-content-wrapper .leaflet-popup-content {
     color: white;
+    text-align: center;
+    margin: 5px 15px 5px 15px;
 }
 
 .leaflet-popup-tip {
-    background-color: black;
-    opacity: 0.7;
+    background-color: hsla(176, 100%, 24%, 0.8);
 }
-
-#trackTitle {
-    color: red;
-}
-
+/* Fin style carte */
 /*Header*/
 
 header {

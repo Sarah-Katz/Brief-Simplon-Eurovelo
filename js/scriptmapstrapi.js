@@ -40,6 +40,9 @@ function carte(etapes) {
         new L.GPX(url + etape.attributes.gpx.data.attributes.url, {
             async: true, marker_options: {
                 startIconUrl: 'images/carte/wpt.png',
+                iconSize:     [25, 25],
+                iconAnchor:   [12, 12],
+                shadowSize:   [0, 0],
                 endIconUrl: 'images/carte/wpt.png',
                 shadowUrl: 'images/carte/pin-shadow.png',
             },
