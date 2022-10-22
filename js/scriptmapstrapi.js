@@ -1,4 +1,4 @@
-// Créationc carte
+// Création carte
 var map = L.map('map').setView([50.8, 2.6], 9);
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
@@ -32,7 +32,6 @@ fetch("http://195.14.105.123:1337/api/etapes?populate=*")
     .catch(function (err) {
         //Une erreur est survenue
     });
-
 
 // Création des tracés et fonctions de clics
 function carte(etapes) {
@@ -101,7 +100,7 @@ function setArticle(e) {
     gpxDownload.href = url + e.target.options.etape.attributes.gpx.data.attributes.url
 }
 // Retour au tracé complet
-function reset(e) {
+function reset() {
     map.setView([50.79067, 2.24964], 9);
     mouseoutToggle = true;
     mouseoverToggle = true;
