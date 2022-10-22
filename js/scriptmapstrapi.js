@@ -28,6 +28,8 @@ fetch("http://195.14.105.123:1337/api/etapes?populate=*")
     .then(function (value) {
         let etapes = value.data
         carte(etapes)
+        console.log(etapes)
+        setTitle()
     })
     .catch(function (err) {
         //Une erreur est survenue
@@ -39,9 +41,9 @@ function carte(etapes) {
         new L.GPX(url + etape.attributes.gpx.data.attributes.url, {
             async: true, marker_options: {
                 startIconUrl: 'images/carte/wpt.png',
-                iconSize:     [25, 25],
-                iconAnchor:   [12, 12],
-                shadowSize:   [0, 0],
+                iconSize: [25, 25],
+                iconAnchor: [12, 12],
+                shadowSize: [0, 0],
                 endIconUrl: 'images/carte/wpt.png',
                 shadowUrl: 'images/carte/pin-shadow.png',
             },
@@ -112,4 +114,20 @@ function reset() {
     texteEtape.innerHTML = "texte descriptif de l'étape générale"
     image.src = "images/etapes/imageetape9.jpg"
     gpxDownload.href = "js/fulltrack.gpx"
+}
+
+
+// Génération boutons précedents/suivant
+
+
+
+
+function getTracks(e) {
+    setTitle()
+           
+}
+
+function setTitle() {
+    const etapeSuivante = document.createElement("p");
+    etapeSuivante.id = "etapeSuivante";
 }
