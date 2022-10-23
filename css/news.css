@@ -196,7 +196,7 @@ body {
 
   /* main*/
 .blanc{
-  background-color: white;
+  background-color: rgba(70, 66, 66, 0.664);
   height: 8em;
   width: 100%;
 }
@@ -249,8 +249,8 @@ body {
 }
 
 .article-child img{
-  width: 370px;
-  height: 370px;
+  width: 100%;
+  height: 100%;
   transition: .3s;
   border-radius: 3%;
 }
@@ -531,3 +531,400 @@ body {
 .simplon{
     margin-top: auto;
     margin-bottom: auto;}
+
+
+/*Responsive*/
+
+@media screen and (max-width:480px) {
+
+  /*Header*/
+
+  #header_ordi {
+    display: none;
+  }
+
+  .nav-container {
+    display: block;
+  }
+
+  #header_telephone {
+    display: flex;
+    width: 100%;
+    background-color: #fff;
+  }
+
+  #header.cache {
+    top: -80px;
+  }
+
+  #icon_menu {
+    width: 150%;
+  }
+
+  #menu figcaption {
+    margin-left: 0;
+    font-size: 65%;
+  }
+
+  #logo_telephone {
+    margin-left: 0%;
+  }
+
+  #loupe2 {
+    width: 8%;
+    height: 8%;
+    margin: auto;
+
+  }
+
+  #menu {
+    width: 8%;
+    height: 8%;
+    margin: auto 30px auto 30px;
+  }
+
+  #recherche_mobile {
+    display: none;
+  }
+
+  .navm {
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    z-index: 4;
+    background: rgba(0, 0, 0, 0.95);
+    position: fixed;
+  }
+
+  #es_pro {
+    margin-left: 8%;
+  }
+
+  .h2nav {
+    text-align: center;
+    font-size: 120%;
+    margin: 0;
+    margin-top: -15%;
+    margin-left: 5%;
+  }
+
+
+
+  #navm_ul {
+    margin: 0;
+    margin-top: 15vh;
+    margin-left: -3vw;
+    padding: 0;
+  }
+
+  .liennav {
+    text-align: center;
+    margin-bottom: 5%;
+    font-size: 180%;
+  }
+
+
+  .checkbox {
+    position: absolute;
+    display: block;
+    height: 32px;
+    width: 32px;
+    top: 20px;
+    left: 30px;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  .nav-container input[type="checkbox"]:checked~.navm {
+    transform: translateX(100%);
+    transition: 0.5s;
+  }
+
+
+
+  .nav-container input[type="checkbox"]:checked {
+    transform: translateX(303px);
+    transition: 0.5s;
+  }
+
+  #croix_mobile {
+    background-color: #fff;
+    border-radius: 100%;
+    top: 20px;
+    left: 330px;
+    position: relative;
+    padding: 2px;
+  }
+
+  form {
+    display: inline-block;
+    margin-left: 10%;
+  }
+
+  form p {
+    text-align: center;
+  }
+
+  #container_search {
+    display: block;
+  }
+
+  #search_mobile {
+    left: -100%;
+    width: 100%;
+    height: 8%;
+    top: 68px;
+    transition: 0.5s;
+    z-index: 2;
+    background: rgba(0, 0, 0);
+    position: absolute;
+  }
+
+  .search {
+    height: 100%;
+    background-color: black;
+  }
+
+  .checkbox2 {
+    position: relative;
+    display: block;
+    height: 32px;
+    width: 32px;
+    top: 20px;
+    left: 320px;
+    z-index: 3;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  .checkbox2:checked~#search_mobile {
+    transform: translateX(100%);
+    transition: 0.5s;
+
+  }
+
+  .checkbox2:checked {
+    transform: translateY(200%);
+    transition: 0.5s;
+
+  }
+
+  #croix_mobile2 {
+    background-color: #fff;
+    border-radius: 100%;
+    bottom: 53px;
+    left: 320px;
+    position: relative;
+    padding: 2px;
+  }
+
+  .carnet_espace {
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0%;
+
+  }
+  .eurovelo{
+    padding-bottom: 5%;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
+  .conteneurcarte {
+    margin: 0;
+    width: 100%;
+    flex-direction: initial;
+  }
+
+  .descriptif {
+    margin-top: 10px;
+    width: 100%;
+    padding: 1px 10px 1px 10px;
+  }
+
+  .descriptif h2 {
+    font-size: 1.75rem;
+  }
+
+  .descriptif img {
+    margin-top: 20px;
+  }
+
+  .descriptif p {
+    width: 100%;
+    margin: auto;
+    text-align: justify;
+  }
+
+  /* slider */
+
+  .slider {
+    height: 50vh;
+  }
+
+
+/* haut back*/
+.blanc{
+  background-color: rgba(255, 255, 255, 0.664);
+  height: 2em;
+  width: 100%;
+}
+
+  /*NEWS */
+
+   .conteneur{
+    padding-left: 6%;
+    padding-right: 6%;
+   }
+
+  .article-child{
+    flex: 100%;
+    margin-bottom: 10%;
+  }
+
+  .article-child h4{
+    font-size: 24px;
+    margin-top: 1%;
+  }
+
+  /* Footer qui sommes nous */
+
+  .headfoot {
+    margin: 50px 0 0 0;
+  }
+
+  .fcontenu {
+    margin: 0;
+  }
+
+  .qsn1 {
+    margin: 0;
+  }
+
+  .qsn2 {
+    margin: 0 0 0 5px;
+  }
+
+  .logod {
+    margin-right: 5px;
+  }
+
+  .quisommesnous {
+    display: none;
+  }
+
+  .fboutons {
+    margin: auto;
+    width: auto;
+  }
+
+  .fboutons p {
+    margin: 40px 5px 50px 0;
+    width: auto;
+    font-size: 0.9em;
+  }
+
+  /* footer présentation de l'itinéraire */
+
+  .footm1 {
+    flex-direction: column;
+    font-size: 1.3em;
+    margin: 0;
+
+  }
+
+  .presentation {
+    line-height: 1.1;
+  }
+
+  .presentation li {
+    margin: 0;
+  }
+
+  .suggestions {
+    margin: 0;
+    line-height: 1.10;
+  }
+
+  .conseils {
+    line-height: 1.10;
+  }
+
+  /* footer marque accueil vélo */
+
+  .footm2 {
+    margin: auto;
+    flex-direction: column;
+  }
+
+  .veloacc {
+    display: none;
+  }
+
+  .velotext {
+    margin: auto;
+    text-align: center;
+    width: 90%;
+  }
+
+  .boutons {
+    margin: 0 15px 20px 20px;
+  }
+
+  .boutons p {
+    margin: 0;
+    width: 110px;
+  }
+
+  .btn1 {
+    margin-right: 13px;
+  }
+
+  .btn2 {
+    margin-top: 12px;
+  }
+
+  /*footer */
+
+  .footb {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+  }
+
+  .ml {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+    width: 100%;
+  }
+
+  .ml ul {
+    margin: 5px 0 0 0;
+    text-align: left;
+  }
+
+  .ml li {
+    margin: 0;
+  }
+
+  .realisation {
+    margin: 23px 5px 0 10px;
+  }
+
+  .simplon {
+    margin: 20px 0px 0px 5px;
+  }
+
+  .logofvt {
+    margin-left: 0px;
+  }
+}

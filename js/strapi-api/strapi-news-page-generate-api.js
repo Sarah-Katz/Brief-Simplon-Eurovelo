@@ -49,7 +49,7 @@ fetch("http://195.14.105.123:1337/api/news/" + recup + "?populate=*")
 
             let eltTexte2 = document.createElement('p')
             eltDiv.appendChild(eltTexte2);
-            eltTexte2.innerText = value.data.attributes.Texte;
+            eltTexte2.innerText = value.data.attributes.Texte2;
             eltTexte2.classList.add('Texte2');
        
 

@@ -291,8 +291,12 @@ html{
 
 /* Actu */
 .conteneur{
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
   padding-bottom: 3%;
+}
+
+.Titre{
+  text-align: center;
 }
 
 .article-child .Titre2{
@@ -327,6 +331,7 @@ html{
 
 .Div-avis img{
   position: relative;
+  width: 90%;
 }
 
 
