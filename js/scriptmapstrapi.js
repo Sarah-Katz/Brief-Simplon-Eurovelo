@@ -28,8 +28,8 @@ fetch("http://195.14.105.123:1337/api/etapes?populate=*")
     .then(function (value) {
         let etapes = value.data
         carte(etapes)
-        console.log(etapes)
-        setTitle()
+        createButtonNext(etapes)
+        // console.log(etapes)
     })
     .catch(function (err) {
         //Une erreur est survenue
@@ -66,7 +66,6 @@ function carte(etapes) {
                     lastTrackClicked.setStyle({ color: '#f59c00' })
                 }
                 lastTrackClicked = e.target
-                // console.log(e)
                 setArticle(e)
             }).on('mouseover mousemove', function (e) {
                 if (mouseoverToggle == true) {
@@ -74,7 +73,7 @@ function carte(etapes) {
                         color: '#00246B'
                     }); L.popup()
                         .setLatLng(e.latlng)
-                        .setContent(e.target.options.etape.attributes.name + "<br>" + e.target.options.etape.attributes.distance)
+                        .setContent(etape.attributes.name + "<br>" + etape.attributes.distance)
                         .openOn(map)
                 }
             }).on('mouseout', function () {
@@ -106,28 +105,38 @@ function reset() {
     map.setView([50.79067, 2.24964], 9);
     mouseoutToggle = true;
     mouseoverToggle = true;
-    lastTrackClicked.setStyle({ color: '#f59c00' })
-    titreEtape.innerHTML = "Eurovélo - Hauts de france"
-    distance.innerHTML = "217,4km"
-    montee.innerHTML = "1090m"
-    descente.innerHTML = "1071m"
-    texteEtape.innerHTML = "texte descriptif de l'étape générale"
-    image.src = "images/etapes/imageetape9.jpg"
-    gpxDownload.href = "js/fulltrack.gpx"
+    lastTrackClicked.setStyle({ color: '#f59c00' });
+    titreEtape.innerHTML = "Eurovélo - Hauts de france";
+    distance.innerHTML = "217,4km";
+    montee.innerHTML = "1090m";
+    descente.innerHTML = "1071m";
+    texteEtape.innerHTML = "texte descriptif de l'étape générale";
+    image.src = "images/etapes/imageetape9.jpg";
+    gpxDownload.href = "js/fulltrack.gpx";
 }
 
 
 // Génération boutons précedents/suivant
 
 
-
-
-function getTracks(e) {
-    setTitle()
-           
-}
-
-function setTitle() {
-    const etapeSuivante = document.createElement("p");
+function createButtonNext() {
+    const download = document.getElementsByClassName(".download")
+    console.log(download)
+    const etapeSuivante = document.createElement("a");
     etapeSuivante.id = "etapeSuivante";
+    etapeSuivante.href = url + e.target.options.etape.attributes.gpx.data.attributes.url;
+    download.appendChild(etapeSuivante)
 }
+
+
+
+
+
+
+
+// function createButtonNext(e) {
+//     const etapeSuivante = document.createElement("a");
+//     etapeSuivante.id = "etapeSuivante";
+//     etapeSuivante.href = url + e.target.options.etape.attributes.gpx.data.attributes.url;
+//     document.body.insertBefore(etapeSuivante, gpxDownload);
+// }
