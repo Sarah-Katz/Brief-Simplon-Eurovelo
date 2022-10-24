@@ -28,6 +28,7 @@ header {
 
 .haut-gauche {
   display: flex;
+  width: 50%;
 }
 
 .haut-gauche a {
@@ -43,6 +44,10 @@ header {
 form {
   margin: auto;
   color: #fff;
+  width: 100%;
+}
+#label{
+  margin-left: 10%;
 }
 
 .email {
@@ -54,6 +59,7 @@ form {
   font-weight: 700;
   font-size: 0.875rem;
   color: #fff;
+  margin-left: 1%;
 }
 
 .email::placeholder {
@@ -190,7 +196,7 @@ form {
 
 #croix {
   display: none;
-  height: 20%;
+  height: 30%;
   margin-left: 20%;
   margin-right: 1%;
   margin-top: 33px;
@@ -234,6 +240,31 @@ form {
 
 #container_search {
   display: none;
+}
+#lien{
+  display: block;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+#lien.cache{
+  display: none;
+}
+
+#lien ol{
+  padding: 0%;
+}
+#lien li{
+  display: inline;
+}
+#lien li a{
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.875rem;
+  margin-left: 0%;
+}
+#accueil{
+  margin-left: 1%;
 }
 
 
