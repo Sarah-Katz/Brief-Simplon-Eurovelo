@@ -67,7 +67,7 @@ body {
     box-shadow: 0 0 10px black;
 }
 
-.download a {
+.download a, .download p {
     display: flex;
     align-items: center;
     color: #007c74;
@@ -76,10 +76,27 @@ body {
     font-family: Poppins, sans-serif;
 }
 
-.download a img {
+.download a img, .download p img {
     width: 40px;
 }
 
+#etapePrecedente {
+    order: -1;
+    display: none;
+}
+
+#iconePrecedente {
+    order: -1;
+    padding-right: 5px;
+}
+
+#etapeSuivante {
+    display: none;
+}
+#iconeSuivante {
+    padding-left: 5px;
+    order: 1;
+}
 /* Fin bouton download */
 /* Bouton retour */
 #bouton {

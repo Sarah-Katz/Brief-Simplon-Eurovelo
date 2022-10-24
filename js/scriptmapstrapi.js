@@ -17,6 +17,9 @@ let distance = document.getElementById("distance")
 let gpxDownload = document.getElementById("gpxDownload")
 let image = document.getElementById("img")
 let url = 'http://195.14.105.123:1337'
+let etapes = null
+let etapeSuivante = document.getElementById("etapeSuivante")
+let etapePrecedente = document.getElementById("etapePrecedente")
 
 // Chargement des données
 fetch("http://195.14.105.123:1337/api/etapes?populate=*")
@@ -26,12 +29,10 @@ fetch("http://195.14.105.123:1337/api/etapes?populate=*")
         }
     })
     .then(function (value) {
-        let etapes = value.data
-        carte(etapes)
-        setButtons(etapes)
-        createButtonNext(etapes)
-        createButtonPrecedent(etapes)
+        etapes = value.data
         // console.log(etapes)
+        carte(etapes)
+        setButtons()
     })
     .catch(function (err) {
         //Une erreur est survenue
@@ -68,6 +69,7 @@ function carte(etapes) {
                     lastTrackClicked.setStyle({ color: '#f59c00' })
                 }
                 lastTrackClicked = e.target
+                // console.log(lastTrackClicked)
                 setArticle(e)
             }).on('mouseover mousemove', function (e) {
                 if (mouseoverToggle == true) {
@@ -100,7 +102,8 @@ function setArticle(e) {
     montee.innerHTML = e.target.options.etape.attributes.montee;
     descente.innerHTML = e.target.options.etape.attributes.descente;
     image.src = url + e.target.options.etape.attributes.img.data.attributes.url;
-    gpxDownload.href = url + e.target.options.etape.attributes.gpx.data.attributes.url
+    gpxDownload.href = url + e.target.options.etape.attributes.gpx.data.attributes.url;
+    setButtons()
 }
 // Retour au tracé complet
 function reset() {
@@ -115,36 +118,37 @@ function reset() {
     texteEtape.innerHTML = "texte descriptif de l'étape générale";
     image.src = "images/etapes/imageetape9.jpg";
     gpxDownload.href = "js/fulltrack.gpx";
+    setButtonNext(false)
+    setButtonPrevious(false)
 }
 
 
 // Génération boutons précedents/suivant
-function setButtons(e) {
-    let etapeId = e.options.etapeId
-    console.log(etapeId)
+function setButtons() {
+    if (lastTrackClicked == null) {
+        return;
+    }
+    if (etapes[etapes.length - 1].attributes.etapeId != lastTrackClicked.options.etape.attributes.etapeId) {
+        setButtonNext(true)
+    } else {
+        setButtonNext(false)
+    }
+    if (etapes[0].attributes.etapeId != lastTrackClicked.options.etape.attributes.etapeId) {
+        setButtonPrevious(true)
+    } else {
+        setButtonPrevious(false)
+    }
 }
 
-function createButtonNext() {
-    let download = document.querySelector(".download");
-    let etapeSuivante = document.createElement("a");
-    let iconeSuivante = document.createElement("img");
-    etapeSuivante.id = "etapeSuivante";
-    etapeSuivante.innerText = "Etape suivante";
-    iconeSuivante.src = "images/icon/suivant.png";
-    iconeSuivante.style.cssText = "padding-left: 5px;";
-    download.appendChild(etapeSuivante);
-    etapeSuivante.appendChild(iconeSuivante);
+function setButtonNext(visible) {
+    if (visible == true) {
+        etapeSuivante.style.display = "flex"
+    } else {
+        etapeSuivante.style.display = "none"
+    }
 }
 
-function createButtonPrecedent() {
-    let download = document.querySelector(".download");
-    let etapePrecedente = document.createElement("a");
-    let iconePrecedente = document.createElement("img");
-    etapePrecedente.id = "etapePrecedente";
-    etapePrecedente.innerText = "Etape précédente";
-    etapePrecedente.style.cssText = "order: -1;";
-    iconePrecedente.src = "images/icon/precedent.png";
-    iconePrecedente.style.cssText = "order: -1; padding-right: 5px;";
-    download.appendChild(etapePrecedente);
-    etapePrecedente.appendChild(iconePrecedente);
+function setButtonPrevious(visible) {
+    etapePrecedente.style.display = (visible == true) ? "flex" : "none";
 }
+
