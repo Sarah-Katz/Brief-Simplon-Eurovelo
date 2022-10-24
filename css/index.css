@@ -764,6 +764,7 @@ ul {
 .ml a {
   color: white;
   text-decoration: none;
+  margin: 0;
 }
 
 .ml ul {
@@ -771,6 +772,7 @@ ul {
   margin-left: 280px;
   font-weight: bold;
   margin-top: 26px;
+  padding-left: 10px;
 }
 
 .realisation {
