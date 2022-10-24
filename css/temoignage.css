@@ -418,6 +418,7 @@ h4 {
   transition: .5s;
   font-weight: bolder;
   font-size: 22px;
+  text-shadow: 1px 1px 2px #007c74;
 }
 
 .article-child:hover h4{
@@ -854,6 +855,7 @@ a.btnb{
   form{
     display: inline-block;
     margin-left: 10%;
+    width: 80%;
   }
   form p{
     text-align: center;
