@@ -438,8 +438,7 @@ main {
   width: 350px;
   background-color: #007c74;
   border-radius: 2px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   margin-bottom: 30px;
   box-shadow: -3px 3px 8px lightslategray;
 }
@@ -449,13 +448,16 @@ main {
 }
 
 .valider a {
-  font-size: 1.1em;
+  font-size: 1em;
   background-color: black;
   padding: 10px;
   margin: auto;
   border-radius: 4px;
   color: white;
   text-decoration: none;
+}
+form{
+  width: 330px;
 }
 
 .valider {
@@ -468,7 +470,6 @@ main {
   text-align: center;
   line-height: 30px;
   font-size: 1em;
-  margin-left: 10px;
   margin-right: 10px;
   margin-bottom: 45px;
 }
@@ -1190,6 +1191,7 @@ ul {
   .ml ul {
     margin: 5px 0 0 0;
     text-align: left;
+    padding-left: 0;
   }
 
   .ml li {
