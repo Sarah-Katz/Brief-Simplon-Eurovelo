@@ -949,6 +949,7 @@ a.btnb{
 .fboutons{
   margin: auto;
   width: auto;
+  display: block;
 }
 .fboutons p{
   margin: 40px  5px 50px 0;
@@ -957,6 +958,9 @@ a.btnb{
 }
 .btnb{
   margin-left: auto;
+}
+.fboutons p{
+  margin: 0;
 }
 /*footer 2*/
 
@@ -977,7 +981,7 @@ a.btnb{
    margin: 5px  0  0 0;
    text-align: left;
  }
- .ml li{
+ .footb .ml li{
    margin: 0;
  }
  .realisation{
@@ -1038,10 +1042,9 @@ main div.conteneur-temoignage .article-child{
 }
 /* btn article */
 .liens-temoignages{
-  padding-top: 5em;
+  padding-top: 1em;
   flex-direction: column;
-  padding-right: 0%;
-  padding-left: auto;
+  padding-right: 0;
 }
 .liens-temoignages a{
   margin: 0;
