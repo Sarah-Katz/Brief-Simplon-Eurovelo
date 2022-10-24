@@ -476,6 +476,7 @@ form{
 
 .conteneurcarte form select {
   margin-bottom: 15px;
+  margin-left: 20px;
   padding: 15px 10px;
   font-weight: bold;
 }
@@ -936,6 +937,9 @@ ul {
     display: inline-block;
     margin-left: 10%;
     width: 80%;
+  }
+  .conteneurcarte form select{
+    margin-left: 8px;
   }
 
   form p {
