@@ -492,6 +492,44 @@ html{
 
 @media screen and (max-width:480px) {
 
+  /* Actu */
+.conteneur{
+  background-color: rgb(255, 255, 255);
+}
+
+.Titre{
+  text-align: center;
+  font-size: 40px;
+}
+
+.article-child .Texte{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.Div-avis{
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.Div-avis p{
+  position: initial;
+  background-color: rgb(255, 175, 16);
+  width: 90%;
+  border-radius: 5px;
+  line-height: 25px;
+  margin-left: 2%;
+  color: white;
+  box-shadow: 1px 1px 3px  #262626;
+}
+
+.Div-avis img{
+  position: static;
+  width: 100%;
+}
+
   /*Header*/
 
   #header_ordi {
