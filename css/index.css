@@ -46,7 +46,8 @@ form {
   color: #fff;
   width: 100%;
 }
-#label{
+
+#label {
   margin-left: 10%;
 }
 
@@ -163,9 +164,9 @@ form {
 
 .navigation ul {
   width: 100%;
-    display: inline-block;
-    margin: auto;
-    text-align: center;
+  display: inline-block;
+  margin: auto;
+  text-align: center;
 }
 
 .navigation li {
@@ -241,29 +242,34 @@ form {
 #container_search {
   display: none;
 }
-#lien{
+
+#lien {
   display: block;
   position: fixed;
   width: 100%;
   z-index: 1;
 }
-#lien.cache{
+
+#lien.cache {
   display: none;
 }
 
-#lien ol{
+#lien ol {
   padding: 0%;
 }
-#lien li{
+
+#lien li {
   display: inline;
 }
-#lien li a{
+
+#lien li a {
   text-decoration: none;
   font-weight: 600;
   font-size: 0.875rem;
   margin-left: 0%;
 }
-#accueil{
+
+#accueil {
   margin-left: 1%;
 }
 
@@ -358,6 +364,7 @@ main {
 .descriptif img {
   width: 230px;
 }
+
 .temoignages {
   display: flex;
   flex-direction: row;
@@ -366,21 +373,25 @@ main {
   margin: 50px 350px 80px 350px;
   justify-content: space-around;
 }
-.temoignages img{
+
+.temoignages img {
   border-radius: 1.2%;
   width: 400px;
   height: 350px;
 }
-.imgnew{
+
+.imgnew {
   position: relative;
   overflow: hidden;
   border-radius: 1.2%;
 }
-.imgnew a{
+
+.imgnew a {
   overflow: hidden;
 
 }
-.imgnew p{
+
+.imgnew p {
   text-align: center;
   top: 80%;
   left: 50%;
@@ -393,20 +404,24 @@ main {
   font-size: 26px;
   font-weight: bolder;
 }
-.imgnew:hover p{
+
+.imgnew:hover p {
   top: 70%;
   transition: 0.4s;
 }
-.imgnew:hover img{
+
+.imgnew:hover img {
   filter: blur(6px);
   transition: 0.4s;
   transform: scale(1.2);
 }
-.imgnew:hover{
+
+.imgnew:hover {
   box-shadow: 2px 2px 7px rgb(75, 75, 75);
   transition: .3s;
 }
-.imgnew img{
+
+.imgnew img {
   transition: .4s;
 }
 
@@ -466,7 +481,7 @@ main {
 
 /*Footer*/
 
-.footh{
+.footh {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -477,16 +492,19 @@ main {
   height: 350px;
   overflow: hidden;
 }
+
 .qsn1 {
   width: 65px;
   height: 65px;
   margin-top: 40px;
 }
+
 .qsn2 {
   height: 65px;
   margin-left: 11px;
 }
-.headfoot{
+
+.headfoot {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -495,46 +513,54 @@ main {
   align-items: center;
   justify-content: space-between;
 }
-.logod img{
+
+.logod img {
   width: 25px;
   margin-right: 5px;
-  
+
 }
-.fcontenu{
+
+.fcontenu {
   display: flex;
   flex-direction: row;
   width: 100%;
   margin-left: 300px;
   margin-right: 300px;
 }
-.fcontenu p{
+
+.fcontenu p {
   line-height: 28px;
   font-weight: bold;
 }
-.quisommesnous{
+
+.quisommesnous {
   width: 60%;
 }
-.quisommesnous h3{
+
+.quisommesnous h3 {
   font-size: 1.8em;
 }
-.fboutons{
+
+.fboutons {
   display: flex;
   flex-direction: row;
   width: 100%;
 }
-a.btnb{
+
+a.btnb {
   margin-left: 320px;
   text-decoration: none;
   width: 180px;
 }
-.fboutons a{
+
+.fboutons a {
   text-decoration: none;
   font-weight: bold;
   height: min-content;
   margin-top: 40px;
 }
 
-.btnb p{
+.btnb p {
   color: #007c74;
   background-color: white;
   width: 140px;
@@ -548,7 +574,8 @@ a.btnb{
 .btnb p:hover {
   box-shadow: 0px 0px 6px #007c74;
 }
-.btnv p{
+
+.btnv p {
   color: white;
   background-color: #007c74;
   width: 240px;
@@ -558,10 +585,12 @@ a.btnb{
   border-radius: 6px;
   box-shadow: 0px 0px 5px lightslategray;
 }
-.btnv{
+
+.btnv {
   width: 280px;
   margin-left: 30px;
 }
+
 .btnv p:hover {
   box-shadow: 0px 0px 6px white;
 }
@@ -593,7 +622,8 @@ a.btnb{
   padding: 0;
 }
 
-.presentation a, .presentation li {
+.presentation a,
+.presentation li {
   color: black;
 }
 
@@ -722,11 +752,12 @@ ul {
   background-color: black;
 }
 
-.ml li{
+.ml li {
   display: inline;
   margin-left: 10px;
 }
-.ml a{
+
+.ml a {
   color: white;
   text-decoration: none;
 }
@@ -961,11 +992,12 @@ ul {
     margin: 0%;
 
   }
-  .eurovelo{
+
+  .eurovelo {
     padding-bottom: 5%;
     margin-left: 5px;
     margin-right: 5px;
-}
+  }
 
 
   .conteneurcarte {
@@ -1002,19 +1034,21 @@ ul {
 
   /* Temognages et news */
 
-  .temoignages{
+  .temoignages {
     margin: 0 0 30px 0;
   }
-  .imgnew img{
+
+  .imgnew img {
     width: 95%;
     margin-top: 30px;
     margin-bottom: 25px;
     margin-left: 10px;
   }
-  .imgnew p{
+
+  .imgnew p {
     padding-bottom: 20px;
   }
-  
+
   /* Footer qui sommes nous */
 
   .headfoot {
@@ -1134,7 +1168,8 @@ ul {
     margin: 0;
     width: 100%;
   }
-  .ml a{
+
+  .ml a {
     margin-left: 10px;
     color: white;
     text-decoration: none;
