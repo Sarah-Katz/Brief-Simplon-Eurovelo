@@ -665,6 +665,7 @@ html{
   form {
     display: inline-block;
     margin-left: 10%;
+    width: 80%;
   }
 
   form p {
