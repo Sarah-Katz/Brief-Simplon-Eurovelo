@@ -854,6 +854,7 @@ a.btnb{
   form{
     display: inline-block;
     margin-left: 10%;
+    width: 80%;
   }
   form p{
     text-align: center;
