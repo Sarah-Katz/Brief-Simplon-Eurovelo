@@ -321,12 +321,14 @@ html{
 
 .Div-avis p{
   position: absolute;
-  background-color: #fff;
+  background-color: rgb(255, 175, 16);
   width: 28%;
   margin-left: 31%;
   padding: 3%;
   border-radius: 5px;
   line-height: 25px;
+  color: white;
+  box-shadow: 1px 1px 3px  #262626;
 }
 
 .Div-avis img{
