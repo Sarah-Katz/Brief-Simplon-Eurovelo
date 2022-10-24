@@ -28,6 +28,7 @@ header {
 
 .haut-gauche {
   display: flex;
+  width: 50%;
 }
 
 .haut-gauche a {
@@ -43,6 +44,10 @@ header {
 form {
   margin: auto;
   color: #fff;
+  width: 100%;
+}
+#label{
+  margin-left: 10%;
 }
 
 .email {
@@ -54,6 +59,7 @@ form {
   font-weight: 700;
   font-size: 0.875rem;
   color: #fff;
+  margin-left: 1%;
 }
 
 .email::placeholder {
@@ -190,7 +196,7 @@ form {
 
 #croix {
   display: none;
-  height: 20%;
+  height: 30%;
   margin-left: 20%;
   margin-right: 1%;
   margin-top: 33px;
@@ -234,6 +240,32 @@ form {
 
 #container_search {
   display: none;
+}
+#lien{
+  display: block;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+#lien.cache{
+  display: none;
+}
+
+#lien ol{
+  padding: 0%;
+}
+#lien li{
+  display: inline;
+}
+#lien li a{
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.875rem;
+  margin-left: 0%;
+  color: #fff;
+}
+#accueil{
+  margin-left: 1%;
 }
 
 
@@ -407,6 +439,8 @@ main {
   padding: 10px;
   margin: auto;
   border-radius: 4px;
+  color: white;
+  text-decoration: none;
 }
 
 .valider {
@@ -433,28 +467,27 @@ main {
 
 /*Footer*/
 
-.footh {
+.footh{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  background-image: url(/images/imagesbg/flou.jpg);
+  background-image: url(/images/imagesbg/flou3.jpg);
   backdrop-filter: blur(8px);
   background-size: cover;
   width: 100%;
+  height: 350px;
+  overflow: hidden;
 }
-
 .qsn1 {
   width: 65px;
   height: 65px;
   margin-top: 40px;
 }
-
 .qsn2 {
   height: 65px;
   margin-left: 11px;
 }
-
-.headfoot {
+.headfoot{
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -463,46 +496,46 @@ main {
   align-items: center;
   justify-content: space-between;
 }
-
-.logod img {
+.logod img{
   width: 25px;
   margin-right: 5px;
-
+  
 }
-
-.fcontenu {
+.fcontenu{
   display: flex;
   flex-direction: row;
   width: 100%;
   margin-left: 300px;
   margin-right: 300px;
 }
-
-.fcontenu p {
+.fcontenu p{
   line-height: 28px;
   font-weight: bold;
 }
-
-.quisommesnous {
+.quisommesnous{
   width: 60%;
 }
-
-.quisommesnous h3 {
+.quisommesnous h3{
   font-size: 1.8em;
 }
-
-.fboutons {
+.fboutons{
   display: flex;
   flex-direction: row;
   width: 100%;
 }
-
-.fboutons a {
+a.btnb{
+  margin-left: 320px;
+  text-decoration: none;
+  width: 180px;
+}
+.fboutons a{
   text-decoration: none;
   font-weight: bold;
+  height: min-content;
+  margin-top: 40px;
 }
 
-.btnb p {
+.btnb p{
   color: #007c74;
   background-color: white;
   width: 140px;
@@ -510,17 +543,13 @@ main {
   padding: 7px 20px 7px 20px;
   text-align: center;
   border-radius: 6px;
-  margin-left: 320px;
-  margin-top: 40px;
   box-shadow: 0px 0px 5px lightslategray;
 }
 
 .btnb p:hover {
   box-shadow: 0px 0px 6px #007c74;
-
 }
-
-.btnv p {
+.btnv p{
   color: white;
   background-color: #007c74;
   width: 240px;
@@ -528,11 +557,12 @@ main {
   padding: 7px 20px 7px 20px;
   text-align: center;
   border-radius: 6px;
-  margin-left: 30px;
-  margin-top: 40px;
   box-shadow: 0px 0px 5px lightslategray;
 }
-
+.btnv{
+  width: 280px;
+  margin-left: 30px;
+}
 .btnv p:hover {
   box-shadow: 0px 0px 6px white;
 }
@@ -556,14 +586,15 @@ main {
   line-height: 30px;
   font-weight: bold;
   flex: 1;
+  margin-left: 10px;
 }
+
 
 .presentation ul {
   padding: 0;
 }
 
-.presentation a,
-li {
+.presentation a, .presentation li {
   color: black;
 }
 
@@ -573,12 +604,12 @@ li {
 }
 
 .suggestions a,
-ul {
+.suggestions ul {
   padding: 0;
 }
 
 .suggestions a,
-li {
+.suggestions li {
   color: #585858;
 }
 
@@ -592,7 +623,7 @@ li {
 }
 
 .conseils a,
-li {
+.conseils li {
   color: #585858;
 }
 
@@ -692,12 +723,13 @@ ul {
   background-color: black;
 }
 
-.ml li,
-a {
-  text-decoration: none;
-  color: white;
+.ml li{
   display: inline;
   margin-left: 10px;
+}
+.ml a{
+  color: white;
+  text-decoration: none;
 }
 
 .ml ul {
@@ -742,6 +774,9 @@ a {
   /*Header*/
 
   #header_ordi {
+    display: none;
+  }
+  #lien{
     display: none;
   }
 
@@ -801,6 +836,8 @@ a {
 
   #es_pro {
     margin-left: 8%;
+    color: #fff;
+    text-decoration: none;
   }
 
   .h2nav {
@@ -825,7 +862,10 @@ a {
     margin-bottom: 5%;
     font-size: 180%;
   }
-
+  .liennav a{   
+    color: #fff;
+    text-decoration: none;
+  }
 
   .checkbox {
     position: absolute;
@@ -863,6 +903,7 @@ a {
   form {
     display: inline-block;
     margin-left: 10%;
+    width: 80%;
   }
 
   form p {
@@ -928,6 +969,8 @@ a {
     justify-content: space-around;
     align-items: center;
     margin: 0%;
+    text-decoration: none;
+    color: white;
 
   }
   .eurovelo{
@@ -978,6 +1021,7 @@ a {
     width: 95%;
     margin-top: 30px;
     margin-bottom: 25px;
+    margin-left: 10px;
   }
   .imgnew p{
     padding-bottom: 20px;
@@ -994,7 +1038,8 @@ a {
   }
 
   .qsn1 {
-    margin: 0;
+    margin-left: 10px;
+    margin-top: auto;
   }
 
   .qsn2 {
@@ -1012,10 +1057,11 @@ a {
   .fboutons {
     margin: auto;
     width: auto;
+    display: block;
   }
 
   .fboutons p {
-    margin: 40px 5px 50px 0;
+    margin: 0;
     width: auto;
     font-size: 0.9em;
   }
@@ -1026,11 +1072,13 @@ a {
     flex-direction: column;
     font-size: 1.3em;
     margin: 0;
+    margin-left: 10px;
 
   }
 
   .presentation {
     line-height: 1.1;
+    margin-left: 0;
   }
 
   .presentation li {
@@ -1073,21 +1121,22 @@ a {
   }
 
   .btn1 {
-    margin-right: 13px;
+    margin-right: 15px;
+    margin-left: 15px;
   }
 
   .btn2 {
     margin-top: 12px;
   }
 
-  /*footer */
+  /*footer metions légales */
 
   .footb {
-    margin: 0;
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-
+    width: 100%;
   }
 
   .ml {
@@ -1096,6 +1145,11 @@ a {
     flex-wrap: wrap;
     margin: 0;
     width: 100%;
+  }
+  .ml a{
+    margin-left: 10px;
+    color: white;
+    text-decoration: none;
   }
 
   .ml ul {

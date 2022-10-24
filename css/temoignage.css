@@ -574,7 +574,7 @@ h4 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  background-image: url(/images/imagesbg/flou.jpg);
+  background-image: url(/images/imagesbg/flou3.jpg);
   backdrop-filter: blur(8px);
   background-size: cover;
   width: 100%;
@@ -626,16 +626,8 @@ h4 {
   flex-direction: row;
   width: 100%;
 }
-.fboutons div{
-  text-decoration: none;
-  font-weight: bold;
-}
-.btnb div{
+a.btnb{
   margin-left: 320px;
-  margin-top: 40px;
-}
-.btnb a{
-  margin-left: 0;
   text-decoration: none;
   width: 180px;
 }
@@ -643,6 +635,7 @@ h4 {
   text-decoration: none;
   font-weight: bold;
   height: min-content;
+  margin-top: 40px;
 }
 
 .btnb p {
@@ -653,8 +646,6 @@ h4 {
   padding: 7px 20px 7px 20px;
   text-align: center;
   border-radius: 6px;
-  margin-left: 320px;
-  margin-top: 40px;
   box-shadow: 0px 0px 5px lightslategray;
 }
 
@@ -669,13 +660,11 @@ h4 {
   padding: 7px 20px 7px 20px;
   text-align: center;
   border-radius: 6px;
-  margin-left: 30px;
-  margin-top: 40px;
   box-shadow: 0px 0px 5px lightslategray;
 }
-.btnv a{
-  margin-left: 20em;
+.btnv{
   width: 280px;
+  margin-left: 30px;
 }
 .btnv p:hover {
   box-shadow: 0px 0px 6px white;
@@ -705,6 +694,7 @@ h4 {
   margin-left: 280px;
   font-weight: bold;
   margin-top: 26px;
+  padding-left: 0;
 }
 .realisation{
   color: white;
@@ -946,6 +936,7 @@ h4 {
 }
 .qsn1{
   margin: 0;
+  margin-left: 10px;
 }
 .qsn2{
   margin: 0 0 0 5px;
@@ -959,6 +950,7 @@ h4 {
 .fboutons{
   margin: auto;
   width: auto;
+  display: block;
 }
 .fboutons p{
   margin: 40px  5px 50px 0;
@@ -967,6 +959,9 @@ h4 {
 }
 .btnb{
   margin-left: auto;
+}
+.fboutons p{
+  margin: 0;
 }
 /*footer 2*/
 
@@ -987,7 +982,7 @@ h4 {
    margin: 5px  0  0 0;
    text-align: left;
  }
- .ml li{
+ .footb .ml li{
    margin: 0;
  }
  .realisation{
@@ -1048,10 +1043,9 @@ main div.conteneur-temoignage .article-child{
 }
 /* btn article */
 .liens-temoignages{
-  padding-top: 5em;
+  padding-top: 1em;
   flex-direction: column;
-  padding-right: 0%;
-  padding-left: auto;
+  padding-right: 0;
 }
 .liens-temoignages a{
   margin: 0;
