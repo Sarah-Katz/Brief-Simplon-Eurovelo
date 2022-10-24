@@ -437,7 +437,7 @@ main {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  background-image: url(/images/imagesbg/flou.jpg);
+  background-image: url(/images/imagesbg/flou3.jpg);
   backdrop-filter: blur(8px);
   background-size: cover;
   width: 100%;
