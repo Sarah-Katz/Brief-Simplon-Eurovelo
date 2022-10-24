@@ -28,7 +28,9 @@ fetch("http://195.14.105.123:1337/api/etapes?populate=*")
     .then(function (value) {
         let etapes = value.data
         carte(etapes)
+        setButtons(etapes)
         createButtonNext(etapes)
+        createButtonPrecedent(etapes)
         // console.log(etapes)
     })
     .catch(function (err) {
@@ -117,26 +119,32 @@ function reset() {
 
 
 // Génération boutons précedents/suivant
-
-
-function createButtonNext() {
-    const download = document.getElementsByClassName(".download")
-    console.log(download)
-    const etapeSuivante = document.createElement("a");
-    etapeSuivante.id = "etapeSuivante";
-    etapeSuivante.href = url + e.target.options.etape.attributes.gpx.data.attributes.url;
-    download.appendChild(etapeSuivante)
+function setButtons(e) {
+    let etapeId = e.options.etapeId
+    console.log(etapeId)
 }
 
+function createButtonNext() {
+    let download = document.querySelector(".download");
+    let etapeSuivante = document.createElement("a");
+    let iconeSuivante = document.createElement("img");
+    etapeSuivante.id = "etapeSuivante";
+    etapeSuivante.innerText = "Etape suivante";
+    iconeSuivante.src = "images/icon/suivant.png";
+    iconeSuivante.style.cssText = "padding-left: 5px;";
+    download.appendChild(etapeSuivante);
+    etapeSuivante.appendChild(iconeSuivante);
+}
 
-
-
-
-
-
-// function createButtonNext(e) {
-//     const etapeSuivante = document.createElement("a");
-//     etapeSuivante.id = "etapeSuivante";
-//     etapeSuivante.href = url + e.target.options.etape.attributes.gpx.data.attributes.url;
-//     document.body.insertBefore(etapeSuivante, gpxDownload);
-// }
+function createButtonPrecedent() {
+    let download = document.querySelector(".download");
+    let etapePrecedente = document.createElement("a");
+    let iconePrecedente = document.createElement("img");
+    etapePrecedente.id = "etapePrecedente";
+    etapePrecedente.innerText = "Etape précédente";
+    etapePrecedente.style.cssText = "order: -1;";
+    iconePrecedente.src = "images/icon/precedent.png";
+    iconePrecedente.style.cssText = "order: -1; padding-right: 5px;";
+    download.appendChild(etapePrecedente);
+    etapePrecedente.appendChild(iconePrecedente);
+}

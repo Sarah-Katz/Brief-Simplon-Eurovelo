@@ -57,7 +57,7 @@ body {
 /* Bouton download */
 .download {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     background-color: #fff;
     position: fixed;
     width: 41vw;
