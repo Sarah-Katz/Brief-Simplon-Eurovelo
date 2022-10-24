@@ -267,6 +267,7 @@ form {
   font-weight: 600;
   font-size: 0.875rem;
   margin-left: 0%;
+  color: #fff;
 }
 
 #accueil {
@@ -633,12 +634,12 @@ a.btnb {
 }
 
 .suggestions a,
-ul {
+.suggestions ul {
   padding: 0;
 }
 
 .suggestions a,
-li {
+.suggestions li {
   color: #585858;
 }
 
@@ -652,7 +653,7 @@ li {
 }
 
 .conseils a,
-li {
+.conseils li {
   color: #585858;
 }
 
@@ -806,6 +807,9 @@ ul {
   #header_ordi {
     display: none;
   }
+  #lien{
+    display: none;
+  }
 
   .nav-container {
     display: block;
@@ -863,6 +867,8 @@ ul {
 
   #es_pro {
     margin-left: 8%;
+    color: #fff;
+    text-decoration: none;
   }
 
   .h2nav {
@@ -887,7 +893,10 @@ ul {
     margin-bottom: 5%;
     font-size: 180%;
   }
-
+  .liennav a{   
+    color: #fff;
+    text-decoration: none;
+  }
 
   .checkbox {
     position: absolute;
@@ -925,6 +934,7 @@ ul {
   form {
     display: inline-block;
     margin-left: 10%;
+    width: 80%;
   }
 
   form p {
@@ -990,6 +1000,8 @@ ul {
     justify-content: space-around;
     align-items: center;
     margin: 0%;
+    text-decoration: none;
+    color: white;
 
   }
 
