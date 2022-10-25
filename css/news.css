@@ -224,6 +224,7 @@ body {
     font-weight: 600;
     font-size: 0.875rem;
     margin-left: 0%;
+    color: #fff;
   }
   #accueil{
     margin-left: 1%;
@@ -584,6 +585,10 @@ body {
   /*Header*/
 
   #header_ordi {
+    display: none;
+  }
+
+  #lien{
     display: none;
   }
 
