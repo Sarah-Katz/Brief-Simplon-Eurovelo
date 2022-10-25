@@ -453,7 +453,7 @@ html{
   height: 70px;
   background-color: black;
 }
-.ml li,a{
+.ml li,.ml a{
   text-decoration: none;
   color: white;
   display: inline;
