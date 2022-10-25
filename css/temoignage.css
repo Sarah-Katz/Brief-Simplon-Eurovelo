@@ -248,6 +248,17 @@ body {
     display: none;
   }
 
+  /* fleche pour remmonter en version mobile */
+  .flechemobile{
+    position: fixed;
+    bottom: 2%;
+    right: 8%;
+    display: none;
+    z-index: 99;
+  }
+  .flechemobile img{
+    width: 2em;
+  }
 /* main */
 
   main{
@@ -940,6 +951,12 @@ a.btnb{
     width: 100%;
     margin: auto;
     text-align: justify;
+  }
+
+  /* fleche pour remmonter en version mobile */
+  
+  .flechemobile{
+    display: block;
   }
 
   /*Footer 1*/
