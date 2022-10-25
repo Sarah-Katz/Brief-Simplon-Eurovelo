@@ -738,6 +738,24 @@ html{
     margin-left: 5px;
     margin-right: 5px;
 }
+.liennav a{
+  color: #fff;
+  text-decoration: none;
+}
+#es_pro{
+  color: #fff;
+  text-decoration: none;
+}
+.carnet_espace{
+  color: #fff;
+  text-decoration: none;
+}
+form{
+  color: #fff;
+}
+.email::placeholder{
+  color: #fff;
+}
 
 #lien{
   display: none;
