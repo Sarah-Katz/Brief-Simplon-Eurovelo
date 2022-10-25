@@ -24,7 +24,7 @@ fetch("http://195.14.105.123:1337/api/news/" + recup + "?populate=*")
             eltTitre.classList.add('Titre');
 
             let eltImage = document.querySelector('.timage');
-            eltImage.style.cssText = 'background:url(' +(url + value.data.attributes.ImageBack.data.attributes.url) + ') no-repeat;'
+            eltImage.style.cssText += 'background:url(' +(url + value.data.attributes.ImageBack.data.attributes.url) + ') no-repeat;'
             eltImage.classList.add('image');
 
             let eltTitre2 = document.createElement('h2')

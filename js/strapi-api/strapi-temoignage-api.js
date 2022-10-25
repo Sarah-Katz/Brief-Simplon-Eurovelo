@@ -1,4 +1,7 @@
-let url = 'http://195.14.105.123:1337'
+url = 'http://195.14.105.123:1337'
+
+
+/* Formulaire avis */
 
 
 /*temoignage */
@@ -106,4 +109,3 @@ fetch("http://195.14.105.123:1337/api/avis?populate=*")
 .catch(function (err) {
 
 });
-
