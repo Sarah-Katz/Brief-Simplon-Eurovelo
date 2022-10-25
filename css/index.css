@@ -1247,12 +1247,25 @@ ul {
 
 @media screen and (max-width:1080px){
 
-#head{
-  width: 100vw;
+ /*Header*/
+ .haut-droite{
+  width: 45%;
 }
-nav{
-  width: 100vw;
+.haut-gauche{
+  width: 55%;
 }
+#label{
+  display: none;
+}
+#Newsletter{
+  display: inline;
+}
+/*Main*/
+
+section{
+  width: 75%;
+}
+
 .slider div h2{
   margin-top: 70vh;
 }
@@ -1351,6 +1364,12 @@ footer{
 
 
 .realisation{
-  margin: 0;
+  margin: 2.2% 0 0 26%;
 }
+.footb ul{
+  margin: 5% 0 0 0;
+  padding: 0;
+}
+
+
 }
