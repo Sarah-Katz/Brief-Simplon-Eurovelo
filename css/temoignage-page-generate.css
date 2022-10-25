@@ -47,7 +47,7 @@ html{
     #label{
       margin-left: 10%;
     }
-    #email {
+    .email {
       background-color: rgba(0, 0, 0, 0.2);
       border: none;
       border-radius: 5px 0 0 5px;
@@ -58,7 +58,7 @@ html{
       color: #fff;
       margin-left: 1%;
     }
-    #email::placeholder{
+    .email::placeholder{
       color: #fff;
     }
     .submit {
@@ -220,6 +220,7 @@ html{
       font-weight: 600;
       font-size: 0.875rem;
       margin-left: 0%;
+      color: #fff;
     }
     #accueil{
       margin-left: 1%;
@@ -453,7 +454,7 @@ html{
   height: 70px;
   background-color: black;
 }
-.ml li,a{
+.ml li,.ml a{
   text-decoration: none;
   color: white;
   display: inline;
@@ -731,6 +732,24 @@ html{
       padding-bottom: 5%;
       margin-left: 5px;
       margin-right: 5px;
+  }
+  .liennav a{
+    color: #fff;
+    text-decoration: none;
+  }
+  #es_pro{
+    color: #fff;
+    text-decoration: none;
+  }
+  .carnet_espace{
+    color: #fff;
+    text-decoration: none;
+  }
+  form{
+    color: #fff;
+  }
+  .email::placeholder{
+    color: #fff;
   }
   /* Footer qui sommes nous */
 

@@ -1,3 +1,6 @@
+html{
+  scroll-behavior: smooth;
+}
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -224,6 +227,7 @@ body {
     font-weight: 600;
     font-size: 0.875rem;
     margin-left: 0%;
+    color: #fff;
   }
   #accueil{
     margin-left: 1%;
@@ -238,6 +242,20 @@ body {
     font-size: 0.8rem;
   }
 
+  #Newsletter{
+    display: none;
+  }
+ /* fleche pour remmonter en version mobile */
+ .flechemobile{
+  position: fixed;
+  bottom: 2%;
+  right: 8%;
+  display: none;
+  z-index: 99;
+}
+.flechemobile img{
+  width: 2em;
+}
   /* main*/
 .blanc{
   height: 8em;
@@ -268,58 +286,59 @@ body {
 
 .conteneur{
   display: flex;
-  padding-left: 18%;
-  padding-right: 18%;
+  width: 60%;
+  margin: auto;
   flex-wrap: wrap;
-	gap: 4%;
+	gap: 1.5%;
   justify-content: space-between;
   padding-bottom: 2%;
 }
 
 .article-child{
-  flex: 25%;
+  flex: 31%;
   position: relative;
   text-align: center;
   margin-bottom: 3%;
   overflow: hidden;
-  transition: .3s;
-  border-radius: 3%;
+  transition: .4s;
+  border-radius: 0.9%;
 }
-
 .article-child:hover{
   box-shadow: 4px 4px 4px rgb(75, 75, 75);
-  transition: .3s
+  transition: .4s
 }
 
 .article-child img{
   width: 100%;
   height: 100%;
-  transition: .3s;
-  border-radius: 3%;
+  transition: .4s;
+  border-radius: 0.9%;
 }
 
 .article-child h4{
-    color: rgb(23, 21, 21);
-    font-size: 14px;
-    position: absolute;
-    left: 18%;
-    right: 18%;
-    color: white;
-    top: 73%;
-    font-size: 18px;
-    transition: 0.3s;
-    text-shadow: 1px 1px 2px #007c74;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255);
+  transition: .5s;
+  font-weight: bolder;
+  font-size: 22px;
+  background: rgb(255, 175, 16,0.8);
+  width: 100%;
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 
 .article-child:hover img{
   filter: blur(6px);
-  transition: .3s;
+  transition: .4s;
   transform: scale(1.2);
 }
 
 .article-child:hover h4{
   top: 65%;
-  transition: 0.3s;
+  transition: 0.4s;
  }
  
   /*Footer*/
@@ -433,10 +452,11 @@ body {
     flex: 1;
 }
 .presentation ul{
-    padding: 0;
+    margin-left: 10px;
 }
-.presentation a,li{
+.presentation a, .presentation li{
     color: black;
+
 }
 .suggestions {
     line-height: 22px;
@@ -445,7 +465,7 @@ body {
 .suggestions a,ul{
     padding: 0;
 }
-.suggestions a,li{
+.suggestions a, .suggestions li{
     color: #585858;
 }
 .conseils{
@@ -541,7 +561,7 @@ body {
     width: 100%;
     background-color: black;
 }
-.ml li,a{
+.ml li,.ml a{
     text-decoration: none;
     color: white;
     display: inline;
@@ -577,13 +597,136 @@ body {
     margin-bottom: auto;}
 
 
-/*Responsive*/
+  /*Responsive tablette*/
+
+
+  @media screen and (max-width:1080px) {
+
+    /*Header*/
+    .haut-droite{
+      width: 45%;
+    }
+    .haut-gauche{
+      width: 55%;
+    }
+    #label{
+      display: none;
+    }
+    #Newsletter{
+      display: inline;
+    }
+    /*main*/
+    main{
+      margin-top: 2%;
+    }
+    .conteneur{
+      width: 90%;
+    }
+    
+    
+.headfoot{
+  margin: 0 2% 0 2%;
+  vertical-align: middle;
+}
+.qsn1{
+  margin: 0;
+}
+.logog{
+  margin-top: 1%;
+}
+.logod{
+  margin-top: 1px;
+}
+.fcontenu{
+  width: 100vw;
+  margin: 0;
+  flex-wrap: wrap;
+}
+.quisommesnous h3{
+  margin: 0 3% 0 3%;
+}
+.quisommesnous p{
+  margin: 0 3% 0 3%;
+  width: 160%
+}
+.fboutons{
+  width: 100vw;
+  justify-content: space-around;
+  margin: 0;
+}
+.fboutons a{
+  margin: auto;
+}
+footer{
+  width: 100vw;
+}
+.footh{
+  width: 100vw;
+}
+.footm1{
+  margin: 0;
+  width: 100vw;
+  justify-content: space-between;
+}
+.presentation li{
+  margin: 0 10% 0 3%;
+}
+.suggestions{
+  margin-left: 15%;
+}
+.conseils{
+  margin-left: 15%;
+}
+.footm2{
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.veloacc{
+  margin: 1% 1% 1% 1.5%;
+}
+.velotext h4{
+  margin: 0;
+}
+.velotext{
+  padding: 0;
+  margin: 2.5% 1% 0 0;
+  width: 89vw;
+}
+.boutons{
+  margin: auto;
+}
+.btn2 p{
+  margin: 0;
+}
+.btn1 {
+  margin: 0 10% 0 0;
+}
+.btn2{
+  margin: 0 0 0 0;
+}
+
+
+.realisation{
+  margin: 2.2% 0 0 26%;
+}
+.footb ul{
+  margin: 5% 0 0 0;
+  padding: 0;
+}
+
+    
+  }
+/*Responsive téléphone*/
 
 @media screen and (max-width:480px) {
 
   /*Header*/
 
   #header_ordi {
+    display: none;
+  }
+
+  #lien{
     display: none;
   }
 
@@ -652,14 +795,17 @@ body {
     margin-top: -15%;
     margin-left: 5%;
   }
-
-
-
+  
   #navm_ul {
     margin: 0;
     margin-top: 15vh;
     margin-left: -3vw;
     padding: 0;
+  }
+
+  .navm a{
+    color: white;
+    text-decoration: none;
   }
 
   .liennav {
@@ -809,7 +955,12 @@ body {
     margin: auto;
     text-align: justify;
   }
-
+   
+  /* fleche pour remmonter en version mobile */
+  
+   .flechemobile{
+    display: block;
+  }
   /* slider */
 
   .slider {
@@ -827,15 +978,22 @@ body {
   /*NEWS */
 
    .conteneur{
-    padding-left: 6%;
-    padding-right: 6%;
+    margin: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 370px;
    }
 
   .article-child{
     flex: 100%;
-    margin-bottom: 10%;
+    height: auto;
+    margin-bottom: 7%;
   }
 
+  .article-child a img{
+    width: 370px;
+    height: 100%;
+  }
   .article-child h4{
     font-size: 24px;
     margin-top: 1%;
