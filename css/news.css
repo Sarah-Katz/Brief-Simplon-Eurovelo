@@ -299,16 +299,18 @@ body {
 }
 
 .article-child h4{
-    color: rgb(23, 21, 21);
-    font-size: 14px;
     position: absolute;
-    left: 18%;
-    right: 18%;
-    color: white;
-    top: 73%;
-    font-size: 18px;
-    transition: 0.3s;
-    text-shadow: 1px 1px 2px #007c74;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255);
+  transition: .5s;
+  font-weight: bolder;
+  font-size: 22px;
+  background: rgb(255, 175, 16,0.8);
+  width: 100%;
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 
 .article-child:hover img{
