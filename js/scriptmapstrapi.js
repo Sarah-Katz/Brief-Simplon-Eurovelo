@@ -20,6 +20,8 @@ let url = 'http://195.14.105.123:1337'
 let etapes = null
 let etapeSuivante = document.getElementById("etapeSuivante")
 let etapePrecedente = document.getElementById("etapePrecedente")
+let next = null
+let previous = null
 
 // Chargement des données
 fetch("http://195.14.105.123:1337/api/etapes?populate=*")
@@ -32,7 +34,8 @@ fetch("http://195.14.105.123:1337/api/etapes?populate=*")
         etapes = value.data
         // console.log(etapes)
         carte(etapes)
-        setButtons()
+        clicSuivant()
+        clicPrecedent()
     })
     .catch(function (err) {
         //Une erreur est survenue
@@ -40,14 +43,20 @@ fetch("http://195.14.105.123:1337/api/etapes?populate=*")
 
 // Création des tracés et fonctions de clics
 function carte(etapes) {
+    let isFirst = null
+    let isLast = null
+    let i = 0
     for (let etape of etapes) {
-        new L.GPX(url + etape.attributes.gpx.data.attributes.url, {
+            isFirst = (i == 0)
+            isLast = (i == etapes.length - 1)
+        etape.gpx = new L.GPX(url + etape.attributes.gpx.data.attributes.url, {
             async: true, marker_options: {
-                startIconUrl: 'images/carte/wpt.png',
+                startIconUrl: (isFirst) ? "images/carte/start.png" : "images/carte/wpt.png",
+                // startIconUrl: 'images/carte/wpt.png',
                 iconSize: [25, 25],
                 iconAnchor: [12, 12],
                 shadowSize: [0, 0],
-                endIconUrl: 'images/carte/wpt.png',
+                endIconUrl: (isLast) ? "images/carte/stop.png" : 'images/carte/wpt.png',
                 shadowUrl: 'images/carte/pin-shadow.png',
             },
             etape: etape,
@@ -69,8 +78,7 @@ function carte(etapes) {
                     lastTrackClicked.setStyle({ color: '#f59c00' })
                 }
                 lastTrackClicked = e.target
-                // console.log(lastTrackClicked)
-                setArticle(e)
+                setArticle(etape)
             }).on('mouseover mousemove', function (e) {
                 if (mouseoverToggle == true) {
                     this.setStyle({
@@ -87,7 +95,8 @@ function carte(etapes) {
                         color: '#f59c00'
                     })
                 }
-            });
+            })
+        i++
     }
     const bouton = document.getElementById("bouton");
     bouton.addEventListener('click', function () {
@@ -95,22 +104,24 @@ function carte(etapes) {
     })
 }
 // Modification de la fiche article
-function setArticle(e) {
-    titreEtape.innerHTML = e.target.options.etape.attributes.name;
-    texteEtape.innerHTML = e.target.options.etape.attributes.texteEtape;
-    distance.innerHTML = e.target.options.etape.attributes.distance;
-    montee.innerHTML = e.target.options.etape.attributes.montee;
-    descente.innerHTML = e.target.options.etape.attributes.descente;
-    image.src = url + e.target.options.etape.attributes.img.data.attributes.url;
-    gpxDownload.href = url + e.target.options.etape.attributes.gpx.data.attributes.url;
+function setArticle(etape) {
+    titreEtape.innerHTML = etape.attributes.name;
+    texteEtape.innerHTML = etape.attributes.texteEtape;
+    distance.innerHTML = etape.attributes.distance;
+    montee.innerHTML = etape.attributes.montee;
+    descente.innerHTML = etape.attributes.descente;
+    image.src = url + etape.attributes.img.data.attributes.url;
+    gpxDownload.href = url + etape.attributes.gpx.data.attributes.url;
     setButtons()
 }
 // Retour au tracé complet
 function reset() {
-    map.setView([50.79067, 2.24964], 9);
+    map.setView([50.8, 2.6], 9);
     mouseoutToggle = true;
     mouseoverToggle = true;
-    lastTrackClicked.setStyle({ color: '#f59c00' });
+    if (lastTrackClicked != null) {
+        lastTrackClicked.setStyle({ color: '#f59c00' });
+    }
     titreEtape.innerHTML = "Eurovélo - Hauts de france";
     distance.innerHTML = "217,4km";
     montee.innerHTML = "1090m";
@@ -122,8 +133,23 @@ function reset() {
     setButtonPrevious(false)
 }
 
+// Clic des boutons
+function trackChange(x) {
+    map.fitBounds(x.gpx.getBounds());
+    x.gpx.setStyle({
+        color: 'blue'
+    })
+    mouseoverToggle = false
+    mouseoutToggle = false
+    if (lastTrackClicked != null) {
+        lastTrackClicked.setStyle({ color: '#f59c00' })
+    }
+    setArticle(x)
+    lastTrackClicked = x.gpx
+    setButtons()
+}
 
-// Génération boutons précedents/suivant
+// Génération boutons précedent/suivant
 function setButtons() {
     if (lastTrackClicked == null) {
         return;
@@ -152,3 +178,42 @@ function setButtonPrevious(visible) {
     etapePrecedente.style.display = (visible == true) ? "flex" : "none";
 }
 
+// Fonctions des boutons précedent/suivant
+function clicSuivant() {
+    etapeSuivante.addEventListener('click', event => {
+        event.preventDefault()
+        nextTrack();
+    });
+}
+
+function clicPrecedent() {
+    etapePrecedente.addEventListener('click', event => {
+        event.preventDefault()
+        previousTrack();
+    });
+}
+
+function nextTrack() {
+    console.log("nextTrack")
+    let i = 0
+    for (let etape of etapes) {
+        if (etape.attributes.etapeId == lastTrackClicked.options.etape.attributes.etapeId) {
+            next = etapes[i + 1]
+            trackChange(next)
+            return;
+        }
+        i++
+    }
+}
+
+function previousTrack() {
+    let i = 0
+    for (let etape of etapes) {
+        if (etape.attributes.etapeId == lastTrackClicked.options.etape.attributes.etapeId) {
+            previous = etapes[i - 1]
+            trackChange(previous)
+            return;
+        }
+        i++
+    }
+}

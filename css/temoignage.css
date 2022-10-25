@@ -248,6 +248,17 @@ body {
     display: none;
   }
 
+  /* fleche pour remmonter en version mobile */
+  .flechemobile{
+    position: fixed;
+    bottom: 2%;
+    right: 8%;
+    display: none;
+    z-index: 99;
+  }
+  .flechemobile img{
+    width: 2em;
+  }
 /* main */
 
   main{
@@ -392,6 +403,9 @@ body {
 .article-child:nth-child(2){
   flex: 0 0 32%;
 }
+.article-child:nth-child(2) .image{
+  width: 100%;
+}
 .article-child .image{
   width: 370px;
   height: 370px;
@@ -399,7 +413,7 @@ body {
 }
 
 .article-child:nth-child(3) .image{
-     width: 770px;
+     width: 100%;
      height: 370px;
 }
 
@@ -414,11 +428,14 @@ h4 {
   top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
+  color: rgb(255, 255, 255);
   transition: .5s;
   font-weight: bolder;
   font-size: 22px;
-  text-shadow: 1px 1px 2px #007c74;
+  background: rgb(255, 175, 16,0.8);
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .article-child:hover h4{
@@ -916,6 +933,12 @@ a.btnb{
     text-align: justify;
   }
 
+  /* fleche pour remmonter en version mobile */
+  
+  .flechemobile{
+    display: block;
+  }
+
   /*Footer 1*/
 
 .headfoot{
@@ -1028,8 +1051,13 @@ main div.conteneur-temoignage .article-child{
   width: 370px;
   height: auto;
 }
+.article-child:nth-child(2) .image{
+  width: 370px;
+  height: auto;
+}
 .article-child .lien h4{
   top:65%;
+  width: 370px;
 }
 /* btn article */
 .liens-temoignages{
@@ -1056,3 +1084,133 @@ div.conteneur-avis .avis-child{
 }
 
 }
+
+/* Version ipad paysage */
+
+@media screen and (max-width:1080px){
+
+  /*Header*/
+  .haut-droite{
+   width: 45%;
+ }
+ .haut-gauche{
+   width: 55%;
+ }
+ #label{
+   display: none;
+ }
+ #Newsletter{
+   display: inline;
+ }
+ /* main */
+ /* article */
+  .conteneur-temoignage{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .conteneur-temoignage .article-child:nth-child(4){
+    flex: 31%;
+  }
+  .conteneur-temoignage .article-child:nth-child(5){
+    flex: 31%;
+  }
+  .conteneur-temoignage .article-child:nth-child(6){
+    flex: 31%;
+  }
+  /* avis */
+  .conteneur-avis{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+ /* footer */
+ .headfoot{
+   margin: 0 2% 0 2%;
+   vertical-align: middle;
+ }
+ .qsn1{
+   margin: 0;
+ }
+ .logog{
+   margin-top: 1%;
+ }
+ .logod{
+   margin-top: 1px;
+ }
+ .fcontenu{
+   width: 100vw;
+   margin: 0;
+   flex-wrap: wrap;
+ }
+ .quisommesnous h3{
+   margin: 0 3% 0 3%;
+ }
+ .quisommesnous p{
+   margin: 0 3% 0 3%;
+   width: 100vw;
+ }
+ .fboutons{
+   width: 100vw;
+   justify-content: space-around;
+   margin: 0;
+ }
+ .fboutons a{
+   margin: auto;
+ }
+ footer{
+   width: 100vw;
+ }
+ .footh{
+   width: 100vw;
+ }
+ .footm1{
+   margin: 0;
+   width: 100vw;
+   justify-content: space-between;
+ }
+ .presentation li{
+   margin: 0 10% 0 3%;
+ }
+ .suggestions{
+   margin-left: 15%;
+ }
+ .conseils{
+   margin-left: 15%;
+ }
+ .footm2{
+   flex-wrap: wrap;
+   justify-content: space-between;
+ }
+ .veloacc{
+   margin: 1% 1% 1% 1.5%;
+ }
+ .velotext h4{
+   margin: 0;
+ }
+ .velotext{
+   padding: 0;
+   margin: 2.5% 1% 0 0;
+   width: 89vw;
+ }
+ .boutons{
+   margin: auto;
+ }
+ .btn2 p{
+   margin: 0;
+ }
+ .btn1 {
+   margin: 0 10% 0 0;
+ }
+ .btn2{
+   margin: 0 0 0 0;
+ }
+ .realisation{
+   margin: 2.2% 0 0 26%;
+ }
+ .footb ul{
+   margin: 5% 0 0 0;
+   padding: 0;
+ }
+ 
+ 
+ }
