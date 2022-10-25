@@ -17,7 +17,7 @@ body {
 
 #texteEtape {
     padding: 0 15px 0 15px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .description {
@@ -26,6 +26,7 @@ body {
     justify-content: space-between;
     width: 40vw;
     height: 87vh;
+    line-height: 1.5;
 }
 
 .infos {
@@ -60,14 +61,13 @@ body {
     justify-content: space-around;
     background-color: #fff;
     position: fixed;
-    width: 41vw;
-    margin-left: -1vw;
+    width: 40vw;
     bottom: 0px;
     left: 0px;
     box-shadow: 0 0 10px black;
 }
 
-.download a, .download p {
+.download a {
     display: flex;
     align-items: center;
     color: #007c74;
@@ -76,7 +76,7 @@ body {
     font-family: Poppins, sans-serif;
 }
 
-.download a img, .download p img {
+.download a img {
     width: 40px;
 }
 
@@ -93,10 +93,12 @@ body {
 #etapeSuivante {
     display: none;
 }
+
 #iconeSuivante {
     padding-left: 5px;
     order: 1;
 }
+
 /* Fin bouton download */
 /* Bouton retour */
 #bouton {
@@ -135,6 +137,7 @@ body {
 .leaflet-popup-tip {
     background-color: hsla(176, 100%, 24%, 0.8);
 }
+
 /* Fin style carte */
 /*Header*/
 
@@ -179,7 +182,8 @@ form {
     color: black;
     width: 100%;
 }
-#label{
+
+#label {
     margin-left: 10%;
 }
 
@@ -442,10 +446,11 @@ form {
         top: 0;
     }
 
-    .navm form{
+    .navm form {
         color: #fff;
     }
-    .email::placeholder{
+
+    .email::placeholder {
         color: #fff;
     }
 
@@ -588,7 +593,8 @@ form {
         text-decoration: none;
         color: white;
     }
-    .eurovelo{
+
+    .eurovelo {
         padding-bottom: 5%;
         margin-left: 5px;
         margin-right: 5px;
@@ -609,7 +615,7 @@ form {
         z-index: 0;
         align-self: flex-end;
         width: 100vw;
-        height: 29vh;
+        height: 29vh !important;
         top: 65px;
         border-bottom: solid black 2px;
     }
@@ -623,7 +629,7 @@ form {
         align-self: flex-end;
         justify-content: space-between;
         width: 100vw;
-        height: 60vh;
+        height: 60vh !important;
         bottom: 3vh;
     }
 
@@ -675,5 +681,64 @@ form {
         background-color: rgba(255, 255, 255, 0.3);
         border-radius: 50%;
     }
+
     /* Fin du bouton retour */
+}
+
+@media screen and (max-width:1080px) {
+    #titreEtape {
+        margin: 5px;
+    }
+
+    #map {
+        height: 84vh;
+    }
+
+    .description {
+        height: 84vh;
+    }
+
+    .download {
+        font-size: 14px;
+    }
+
+    .download a img {
+        width: 20px;
+    }
+
+    #texteEtape {
+        margin: 0;
+    }
+
+    /* Bouton retour */
+    #bouton {
+        position: fixed;
+        left: 390px;
+        top: 138px;
+        width: 30px;
+        background-color: hsla(176, 100%, 24%, 0.3);
+        border-radius: 50%;
+    }
+
+    #bouton:hover {
+        background-color: hsla(176, 100%, 24%, 0.7);
+        border-radius: 50%;
+    }
+    /* Fin du bouton retour */
+    /*Header*/
+    .haut-droite {
+        width: 45%;
+    }
+
+    .haut-gauche {
+        width: 55%;
+    }
+
+    #label {
+        display: none;
+    }
+
+    #Newsletter {
+        display: inline;
+    }
 }

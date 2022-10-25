@@ -53,8 +53,8 @@ function carte(etapes) {
             async: true, marker_options: {
                 startIconUrl: (isFirst) ? "images/carte/start.png" : "images/carte/wpt.png",
                 // startIconUrl: 'images/carte/wpt.png',
-                iconSize: [25, 25],
-                iconAnchor: [12, 12],
+                iconSize: [16, 16],
+                iconAnchor: [8, 8],
                 shadowSize: [0, 0],
                 endIconUrl: (isLast) ? "images/carte/stop.png" : 'images/carte/wpt.png',
                 shadowUrl: 'images/carte/pin-shadow.png',
