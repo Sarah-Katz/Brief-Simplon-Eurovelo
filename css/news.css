@@ -660,14 +660,17 @@ body {
     margin-top: -15%;
     margin-left: 5%;
   }
-
-
-
+  
   #navm_ul {
     margin: 0;
     margin-top: 15vh;
     margin-left: -3vw;
     padding: 0;
+  }
+
+  .navm a{
+    color: white;
+    text-decoration: none;
   }
 
   .liennav {
