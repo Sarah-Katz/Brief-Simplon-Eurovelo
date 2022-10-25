@@ -221,6 +221,7 @@ html{
     font-weight: 600;
     font-size: 0.875rem;
     margin-left: 0%;
+    color: #fff;
   }
   #accueil{
     margin-left: 1%;
@@ -736,6 +737,10 @@ html{
     padding-bottom: 5%;
     margin-left: 5px;
     margin-right: 5px;
+}
+
+#lien{
+  display: none;
 }
 
 /*Footer 1*/
