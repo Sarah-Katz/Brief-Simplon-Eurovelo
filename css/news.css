@@ -619,6 +619,10 @@ body {
     main{
       margin-top: 2%;
     }
+    .conteneur{
+      width: 90%;
+    }
+    
   }
 /*Responsive téléphone*/
 
