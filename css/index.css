@@ -407,8 +407,8 @@ main {
   font-size: 26px;
   font-weight: bolder;
   background: rgb(255, 175, 16,0.8);
-  padding: 5px;
-  border-radius: 10px;
+  width: 100%;
+  
 }
 
 .imgnew:hover p {

@@ -1054,8 +1054,13 @@ main div.conteneur-temoignage .article-child{
   width: 370px;
   height: auto;
 }
+.article-child:nth-child(2) .image{
+  width: 370px;
+  height: auto;
+}
 .article-child .lien h4{
   top:65%;
+  width: 370px;
 }
 /* btn article */
 .liens-temoignages{
