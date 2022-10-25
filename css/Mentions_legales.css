@@ -238,6 +238,9 @@ body {
     margin-left: 5px;
     font-size: 0.8rem;
   }
+  #Newsletter{
+    display: none;
+  }
 
   /*Main*/
   main{
@@ -573,7 +576,31 @@ body {
     margin-bottom: auto;
   }
 
-  /*Responsive*/
+  /*Responsive tablette*/
+
+
+@media screen and (max-width:1080px) {
+
+  /*Header*/
+  .haut-droite{
+    width: 45%;
+  }
+  .haut-gauche{
+    width: 55%;
+  }
+  #label{
+    display: none;
+  }
+  #Newsletter{
+    display: inline;
+  }
+  /*Main*/
+  main{
+    margin-top: 20%;
+  }
+}
+
+/*Responsive téléphone*/
 
 @media screen and (max-width:480px) {
 
