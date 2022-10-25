@@ -848,6 +848,9 @@ form{
     margin: auto;
     width: 80%;
   }
+  .fond{
+    display: none;
+  }
 
   /*footer*/
   .headfoot{
