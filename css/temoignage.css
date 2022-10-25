@@ -392,6 +392,9 @@ body {
 .article-child:nth-child(2){
   flex: 0 0 32%;
 }
+.article-child:nth-child(2) .image{
+  width: 100%;
+}
 .article-child .image{
   width: 370px;
   height: 370px;
@@ -399,7 +402,7 @@ body {
 }
 
 .article-child:nth-child(3) .image{
-     width: 770px;
+     width: 100%;
      height: 370px;
 }
 
@@ -419,8 +422,9 @@ h4 {
   font-weight: bolder;
   font-size: 22px;
   background: rgb(255, 175, 16,0.8);
-  padding: 5px;
-  border-radius: 10px;
+  width: 100%;
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 
 .article-child:hover h4{
