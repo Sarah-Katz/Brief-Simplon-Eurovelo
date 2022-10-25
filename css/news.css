@@ -435,10 +435,11 @@ body {
     flex: 1;
 }
 .presentation ul{
-    padding: 0;
+    margin-left: 10px;
 }
-.presentation a,li{
+.presentation a, .presentation li{
     color: black;
+
 }
 .suggestions {
     line-height: 22px;
@@ -447,7 +448,7 @@ body {
 .suggestions a,ul{
     padding: 0;
 }
-.suggestions a,li{
+.suggestions a, .suggestions li{
     color: #585858;
 }
 .conseils{
