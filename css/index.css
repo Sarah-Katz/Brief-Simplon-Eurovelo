@@ -1285,6 +1285,9 @@ main{
   margin: 0 2% 0 2%;
   vertical-align: middle;
 }
+
+/* footer */
+
 .qsn1{
   margin: 0;
 }
@@ -1334,6 +1337,7 @@ footer{
 .conseils{
   margin-left: 15%;
 }
+/* footer milieu 2 */
 .footm2{
   flex-wrap: wrap;
   justify-content: space-between;
@@ -1362,6 +1366,7 @@ footer{
   margin: 0 0 0 0;
 }
 
+/* footer mentions légales */
 
 .realisation{
   margin: 2.2% 0 0 26%;

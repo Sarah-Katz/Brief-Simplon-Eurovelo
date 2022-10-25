@@ -738,6 +738,24 @@ html{
     margin-left: 5px;
     margin-right: 5px;
 }
+.liennav a{
+  color: #fff;
+  text-decoration: none;
+}
+#es_pro{
+  color: #fff;
+  text-decoration: none;
+}
+.carnet_espace{
+  color: #fff;
+  text-decoration: none;
+}
+form{
+  color: #fff;
+}
+.email::placeholder{
+  color: #fff;
+}
 
 #lien{
   display: none;
@@ -806,4 +824,120 @@ html{
  .logofvt{
    margin-left: 0px;
  }
+}
+@media screen and (max-width:1080px) {
+
+  /*Header*/
+  .haut-droite{
+    width: 45%;
+  }
+  .haut-gauche{
+    width: 55%;
+  }
+  #label{
+    display: none;
+  }
+  #Newsletter{
+    display: inline;
+  }
+
+  /*Main*/
+
+  .article-child .Texte{
+    padding: 0%;
+    margin: auto;
+    width: 80%;
+  }
+
+  /*footer*/
+  .headfoot{
+    margin: 0 2% 0 2%;
+    vertical-align: middle;
+  }
+  .qsn1{
+    margin: 0;
+  }
+  .logog{
+    margin-top: 1%;
+  }
+  .logod{
+    margin-top: 1px;
+  }
+  .fcontenu{
+    width: 100vw;
+    margin: 0;
+    flex-wrap: wrap;
+  }
+  .quisommesnous h3{
+    margin: 0 3% 0 3%;
+  }
+  .quisommesnous p{
+    margin: 0 3% 0 3%;
+    width: 160%
+  }
+  .fboutons{
+    width: 100vw;
+    justify-content: space-around;
+    margin: 0;
+  }
+  .fboutons a{
+    margin: auto;
+  }
+  footer{
+    width: 100vw;
+  }
+  .footh{
+    width: 100vw;
+  }
+  .footm1{
+    margin: 0;
+    width: 100vw;
+    justify-content: space-between;
+  }
+  .presentation li{
+    margin: 0 10% 0 3%;
+  }
+  .suggestions{
+    margin-left: 15%;
+  }
+  .conseils{
+    margin-left: 15%;
+  }
+  .footm2{
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .veloacc{
+    margin: 1% 1% 1% 1.5%;
+  }
+  .velotext h4{
+    margin: 0;
+  }
+  .velotext{
+    padding: 0;
+    margin: 2.5% 1% 0 0;
+    width: 89vw;
+  }
+  .boutons{
+    margin: auto;
+  }
+  .btn2 p{
+    margin: 0;
+  }
+  .btn1 {
+    margin: 0 10% 0 0;
+  }
+  .btn2{
+    margin: 0 0 0 0;
+  }
+  
+  
+  .realisation{
+    margin: 2.2% 0 0 26%;
+  }
+  .footb ul{
+    margin: 5% 0 0 0;
+    padding: 0;
+  }
+
 }
