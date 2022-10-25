@@ -3,7 +3,7 @@ html{
   }
   body {
       margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: 'Roboto', sans-serif;
       background-color: gray;
     }
   
@@ -460,7 +460,7 @@ html{
   height: 70px;
   background-color: black;
 }
-.ml li,a{
+.ml li, .ml a{
   text-decoration: none;
   color: white;
   display: inline;
@@ -468,7 +468,7 @@ html{
 }
 .ml ul{
   font-size: 12px;
-  margin-left: 280px;
+  margin-left: 240px;
   font-weight: bold;
   margin-top: 26px;
 }
