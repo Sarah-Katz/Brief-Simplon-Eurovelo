@@ -47,8 +47,8 @@ function carte(etapes) {
     let isLast = null
     let i = 0
     for (let etape of etapes) {
-            isFirst = (i == 0)
-            isLast = (i == etapes.length - 1)
+        isFirst = (i == 0)
+        isLast = (i == etapes.length - 1)
         etape.gpx = new L.GPX(url + etape.attributes.gpx.data.attributes.url, {
             async: true, marker_options: {
                 startIconUrl: (isFirst) ? "images/carte/start.png" : "images/carte/wpt.png",
@@ -103,6 +103,7 @@ function carte(etapes) {
         reset()
     })
 }
+
 // Modification de la fiche article
 function setArticle(etape) {
     titreEtape.innerHTML = etape.attributes.name;
@@ -114,6 +115,7 @@ function setArticle(etape) {
     gpxDownload.href = url + etape.attributes.gpx.data.attributes.url;
     setButtons()
 }
+
 // Retour au tracé complet
 function reset() {
     map.setView([50.8, 2.6], 9);
@@ -133,21 +135,6 @@ function reset() {
     setButtonPrevious(false)
 }
 
-// Clic des boutons
-function trackChange(x) {
-    map.fitBounds(x.gpx.getBounds());
-    x.gpx.setStyle({
-        color: 'blue'
-    })
-    mouseoverToggle = false
-    mouseoutToggle = false
-    if (lastTrackClicked != null) {
-        lastTrackClicked.setStyle({ color: '#f59c00' })
-    }
-    setArticle(x)
-    lastTrackClicked = x.gpx
-    setButtons()
-}
 
 // Génération boutons précedent/suivant
 function setButtons() {
@@ -216,4 +203,20 @@ function previousTrack() {
         }
         i++
     }
+}
+
+// Clic des boutons
+function trackChange(x) {
+    map.fitBounds(x.gpx.getBounds());
+    x.gpx.setStyle({
+        color: 'blue'
+    })
+    mouseoverToggle = false
+    mouseoutToggle = false
+    if (lastTrackClicked != null) {
+        lastTrackClicked.setStyle({ color: '#f59c00' })
+    }
+    setArticle(x)
+    lastTrackClicked = x.gpx
+    setButtons()
 }
