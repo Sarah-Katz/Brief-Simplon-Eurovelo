@@ -274,7 +274,17 @@ header {
   margin-left: 1%;
 }
 
-
+  /* fleche pour remmonter en version mobile */
+  .flechemobile{
+    position: fixed;
+    bottom: 2%;
+    right: 8%;
+    display: none;
+    z-index: 99;
+  }
+  .flechemobile img{
+    width: 2em;
+  }
 
 /*main*/
 
@@ -1050,6 +1060,12 @@ ul {
     text-align: justify;
   }
 
+   /* fleche pour remmonter en version mobile */
+  
+   .flechemobile{
+    display: block;
+  }
+  
   /* slider */
 
   .slider {

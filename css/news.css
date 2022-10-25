@@ -436,10 +436,11 @@ body {
     flex: 1;
 }
 .presentation ul{
-    padding: 0;
+    margin-left: 10px;
 }
-.presentation a,li{
+.presentation a, .presentation li{
     color: black;
+
 }
 .suggestions {
     line-height: 22px;
@@ -448,7 +449,7 @@ body {
 .suggestions a,ul{
     padding: 0;
 }
-.suggestions a,li{
+.suggestions a, .suggestions li{
     color: #585858;
 }
 .conseils{
@@ -659,14 +660,17 @@ body {
     margin-top: -15%;
     margin-left: 5%;
   }
-
-
-
+  
   #navm_ul {
     margin: 0;
     margin-top: 15vh;
     margin-left: -3vw;
     padding: 0;
+  }
+
+  .navm a{
+    color: white;
+    text-decoration: none;
   }
 
   .liennav {
