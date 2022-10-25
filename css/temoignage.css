@@ -1123,6 +1123,10 @@ div.conteneur-avis .avis-child{
    display: inline;
  }
  /* main */
+ /* fleche ancrage titre */
+ #flechelink{
+  display: none;
+ }
  /* article */
   .conteneur-temoignage{
     padding-left: 5%;
