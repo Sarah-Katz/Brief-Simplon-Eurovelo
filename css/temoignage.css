@@ -512,7 +512,8 @@ h4 {
 }
 
 .conteneur-avis .avis-child{
-  flex: 25%;
+  /* flex: 25%;  NE PAS TOUCHER */ 
+  width: 25%;
   background-color: #f4f4f4;
   padding: 2%;
   margin-bottom: 2%;
@@ -556,27 +557,6 @@ h4 {
   line-height: 20px;
   font-weight: 600;
 }
-
-.bas{
-  display: flex;
-  justify-content: space-between;
-  margin: 2%;
-  margin-top: 0;
-}
-
-.bas-right{
-  color: #007c74;
-  cursor: pointer;
-  font-size: 14px;
-  font-weight: bold;
-}
-
-.bas-left{
-  color: #585858;
-  font-size: 16px;
-  font-weight: 700;
-}
-
   /*Footer haut*/
 
 .footh{

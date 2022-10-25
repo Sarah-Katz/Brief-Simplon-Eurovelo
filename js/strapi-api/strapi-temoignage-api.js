@@ -1,9 +1,35 @@
 url = 'http://195.14.105.123:1337'
 
-
 /* Formulaire avis */
+const form = document.getElementById('form');
+let Titre = document.getElementById('Titre')
+let Personne = document.getElementById('Personne')
+let Titre2 = document.getElementById('Titre2')
+let Avis = document.getElementById('Avis')
+let date = document.getElementById('date')
 
+form.addEventListener('submit', function (e) {
+    e.preventDefault();
 
+    fetch("http://195.14.105.123:1337/api/avis", {
+        method: "POST",
+        headers: new Headers({'content-type': 'application/json'}),
+        body: JSON.stringify({
+            "data": {
+            'Titre': Titre.value,
+           'Personne': Personne.value,
+            'Titre2' : Titre2.value,
+            'Avis' : Avis.value,
+            'date' : date.value, 
+            } 
+        })
+    }
+    )
+        .then(res => res.json())
+        .then(data => console.log(data))
+        .then(err => console.log(err))
+
+})
 /*temoignage */
 
 fetch("http://195.14.105.123:1337/api/articles?populate=*")
@@ -13,25 +39,24 @@ fetch("http://195.14.105.123:1337/api/articles?populate=*")
         }
     })
     .then(function (value) {
-                                  
-        let eltConteneur = document.querySelector('.conteneur-temoignage')   
-        for (let article of value.data)
-        {   
+
+        let eltConteneur = document.querySelector('.conteneur-temoignage')
+        for (let article of value.data) {
             let eltArticle = document.createElement('article');
             eltConteneur.appendChild(eltArticle);
             eltArticle.classList.add('article-child');
-             //console.log(article);
+            //console.log(article);
 
             let articleId = article.id
             let eltLien = document.createElement('a')
             eltArticle.appendChild(eltLien)
             eltLien.classList.add('lien')
-            eltLien.href = 'temoignage-page-generate.html?id='+ articleId
+            eltLien.href = 'temoignage-page-generate.html?id=' + articleId
 
             let eltImage = document.createElement('img');
             eltLien.appendChild(eltImage);
             eltImage.src = url + article.attributes.Image.data.attributes.url;
-           // console.log(eltImage)
+            // console.log(eltImage)
             eltImage.classList.add('image');
 
             let eltTitre = document.createElement('h4')
@@ -46,66 +71,50 @@ fetch("http://195.14.105.123:1337/api/articles?populate=*")
 
     });
 
-    /*avis*/
+/*avis*/
 
 fetch("http://195.14.105.123:1337/api/avis?populate=*")
-.then(function (res) {
-    if (res.ok) {
-        return res.json();
-    }
-})
-.then(function (value) {
-                              
-    let eltConteneur = document.querySelector('.conteneur-avis')   
-    for (let avis of value.data)
-    {   
-        let eltArticle = document.createElement('article');
-        eltConteneur.appendChild(eltArticle);
-        eltArticle.classList.add('avis-child');
-        console.log(avis);
+    .then(function (res) {
+        if (res.ok) {
+            return res.json();
+        }
+    })
+    .then(function (value) {
 
-        let eltDate = document.createElement('p')
-        eltArticle.appendChild(eltDate);
-        eltDate.innerText = avis.attributes.date;
-        eltDate.classList.add('date');
+        let eltConteneur = document.querySelector('.conteneur-avis')
+        for (let avis of value.data) {
+            let eltArticle = document.createElement('article');
+            eltConteneur.appendChild(eltArticle);
+            eltArticle.classList.add('avis-child');
+            console.log(avis);
 
-        let eltTitreAvis = document.createElement('h5')
-        eltArticle.appendChild(eltTitreAvis);
-        eltTitreAvis.innerText = avis.attributes.Titre;
-        eltTitreAvis.classList.add('Avis-titre');
+            let eltDate = document.createElement('p')
+            eltArticle.appendChild(eltDate);
+            eltDate.innerText = avis.attributes.date;
+            eltDate.classList.add('date');
 
-        let eltPersonne = document.createElement('p')
-        eltArticle.appendChild(eltPersonne);
-        eltPersonne.innerText = avis.attributes.Personne;
-        eltPersonne.classList.add('personne');
+            let eltTitreAvis = document.createElement('h5')
+            eltArticle.appendChild(eltTitreAvis);
+            eltTitreAvis.innerText = avis.attributes.Titre;
+            eltTitreAvis.classList.add('Avis-titre');
 
-        let eltTitre2 = document.createElement('h5')
-        eltArticle.appendChild(eltTitre2);
-        eltTitre2.innerText = avis.attributes.Titre2;
-        eltTitre2.classList.add('Avis-titre2');
+            let eltPersonne = document.createElement('p')
+            eltArticle.appendChild(eltPersonne);
+            eltPersonne.innerText = avis.attributes.Personne;
+            eltPersonne.classList.add('personne');
 
-        let eltTexte = document.createElement('p')
-        eltArticle.appendChild(eltTexte);
-        eltTexte.innerText = avis.attributes.Avis;
-        eltTexte.classList.add('Texte-Avis');
-       
-        let eltBas = document.createElement('div');
-        eltArticle.appendChild(eltBas);
-        eltBas.classList.add('bas');   
-        
-        let eltBasLeft = document.createElement('p');
-        eltBas.appendChild(eltBasLeft);
-        eltBasLeft.innerText = '0 réponse';
-        eltBasLeft.classList.add('bas-left');
+            let eltTitre2 = document.createElement('h5')
+            eltArticle.appendChild(eltTitre2);
+            eltTitre2.innerText = avis.attributes.Titre2;
+            eltTitre2.classList.add('Avis-titre2');
 
-        let eltBasRight = document.createElement('p');
-        eltBas.appendChild(eltBasRight);
-        eltBasRight.innerText = 'LIRE';
-        eltBasRight.classList.add('bas-right');
+            let eltTexte = document.createElement('p')
+            eltArticle.appendChild(eltTexte);
+            eltTexte.innerText = avis.attributes.Avis;
+            eltTexte.classList.add('Texte-Avis');
+        }
 
-    }
+    })
+    .catch(function (err) {
 
-})
-.catch(function (err) {
-
-});
+    });
