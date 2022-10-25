@@ -1,6 +1,6 @@
 url = 'http://195.14.105.123:1337'
 
-/* Formulaire avis */
+/* Formulaire avis  */
 const form = document.getElementById('form');
 let Titre = document.getElementById('Titre')
 let Personne = document.getElementById('Personne')
@@ -18,7 +18,6 @@ form.addEventListener('submit', function (e) {
             "data": {
             'Titre': Titre.value,
            'Personne': Personne.value,
-            'Titre2' : Titre2.value,
             'Avis' : Avis.value,
             'date' : date.value, 
             } 
@@ -29,7 +28,7 @@ form.addEventListener('submit', function (e) {
         .then(data => console.log(data))
         .then(err => console.log(err))
 
-})
+}) 
 /*temoignage */
 
 fetch("http://195.14.105.123:1337/api/articles?populate=*")
@@ -102,11 +101,6 @@ fetch("http://195.14.105.123:1337/api/avis?populate=*")
             eltArticle.appendChild(eltPersonne);
             eltPersonne.innerText = avis.attributes.Personne;
             eltPersonne.classList.add('personne');
-
-            let eltTitre2 = document.createElement('h5')
-            eltArticle.appendChild(eltTitre2);
-            eltTitre2.innerText = avis.attributes.Titre2;
-            eltTitre2.classList.add('Avis-titre2');
 
             let eltTexte = document.createElement('p')
             eltArticle.appendChild(eltTexte);

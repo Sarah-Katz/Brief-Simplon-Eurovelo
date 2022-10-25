@@ -522,7 +522,6 @@ h4 {
   padding-left: 19%;
   padding-right: 19%;
   flex-wrap: wrap;
-	gap: 5%;
   background-color: rgb(255, 255, 255);
   padding-top: 3%;
   padding-bottom: 3%;
@@ -535,6 +534,7 @@ h4 {
   padding: 2%;
   margin-bottom: 2%;
   padding-top: 1%;
+  margin-left: 3%;
 }
 
 .conteneur-avis .date{
@@ -573,6 +573,70 @@ h4 {
   color: #585858;
   line-height: 20px;
   font-weight: 600;
+  overflow: hidden;
+}
+
+.valider input{
+    font-size: 1em;
+    background-color: black;
+    padding: 10px;
+    margin: auto;
+    border-radius: 2px;
+    color: white;
+    text-decoration: none;
+}
+
+.valider{
+  text-align: center;
+}
+
+/* FORMULAIRE AVIS */
+.avis-formulaire{
+  background-color: white;
+  width: 100%;
+  padding-bottom: 3%;
+}
+
+#form{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: #007c74;
+  border-radius: 20px;
+  width: 40%;
+  box-shadow: -3px 3px 8px lightslategray;
+  padding: 3%;
+}
+
+#form input{
+  margin-bottom: 2%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+TEXTAREA{
+  margin-bottom: 2%;
+  padding-bottom: 10%;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+#form label{
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+
+#form .texte-formulaire{
+  text-align: center;
+}
+
+#form legend{
+  margin-bottom: 5%;
+  text-align: center;
+  font-size: 30px;
 }
   /*Footer haut*/
 
@@ -725,11 +789,152 @@ a.btnb{
   margin-top: auto;
   margin-bottom: auto;}
 
+/* Version ipad paysage */
 
+@media screen and (max-width:1080px){
+
+  /*Header*/
+  .haut-droite{
+   width: 45%;
+ }
+ .haut-gauche{
+   width: 55%;
+ }
+ #label{
+   display: none;
+ }
+ #Newsletter{
+   display: inline;
+ }
+ /* main */
+ /* fleche ancrage titre */
+ #flechelink{
+  display: none;
+ }
+ /* article */
+  .conteneur-temoignage{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .conteneur-temoignage .article-child:nth-child(4){
+    flex: 31%;
+  }
+  .conteneur-temoignage .article-child:nth-child(5){
+    flex: 31%;
+  }
+  .conteneur-temoignage .article-child:nth-child(6){
+    flex: 31%;
+  }
+  /* avis */
+  .conteneur-avis{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+ /* footer */
+ .headfoot{
+   margin: 0 2% 0 2%;
+   vertical-align: middle;
+ }
+ .qsn1{
+   margin: 0;
+ }
+ .logog{
+   margin-top: 1%;
+ }
+ .logod{
+   margin-top: 1px;
+ }
+ .fcontenu{
+   width: 100vw;
+   margin: 0;
+   flex-wrap: wrap;
+ }
+ .quisommesnous h3{
+   margin: 0 3% 0 3%;
+ }
+ .quisommesnous p{
+   margin: 0 3% 0 3%;
+   width: 100vw;
+ }
+ .fboutons{
+   width: 100vw;
+   justify-content: space-around;
+   margin: 0;
+ }
+ .fboutons a{
+   margin: auto;
+ }
+ footer{
+   width: 100vw;
+ }
+ .footh{
+   width: 100vw;
+ }
+ .footm1{
+   margin: 0;
+   width: 100vw;
+   justify-content: space-between;
+ }
+ .presentation li{
+   margin: 0 10% 0 3%;
+ }
+ .suggestions{
+   margin-left: 15%;
+ }
+ .conseils{
+   margin-left: 15%;
+ }
+ .footm2{
+   flex-wrap: wrap;
+   justify-content: space-between;
+ }
+ .veloacc{
+   margin: 1% 1% 1% 1.5%;
+ }
+ .velotext h4{
+   margin: 0;
+ }
+ .velotext{
+   padding: 0;
+   margin: 2.5% 1% 0 0;
+   width: 89vw;
+ }
+ .boutons{
+   margin: auto;
+ }
+ .btn2 p{
+   margin: 0;
+ }
+ .btn1 {
+   margin: 0 10% 0 0;
+ }
+ .btn2{
+   margin: 0 0 0 0;
+ }
+ .realisation{
+   margin: 2.2% 0 0 26%;
+ }
+ .footb ul{
+   margin: 5% 0 0 0;
+   padding: 0;
+ }
+ 
+ }
 
   /*Responsive*/
 
 @media screen and (max-width:480px){
+
+  .conteneur-temoignage .article-child:nth-child(4){
+    flex: 100%;
+  }
+  .conteneur-temoignage .article-child:nth-child(5){
+    flex: 100%;
+  }
+  .conteneur-temoignage .article-child:nth-child(6){
+    flex: 100%;
+  }
 
   /*Header*/
   
@@ -933,6 +1138,20 @@ a.btnb{
     text-align: justify;
   }
 
+  /*avis */
+
+  .avis-child{
+    margin: 3%;
+  }
+
+  /*avis Formulaire*/
+  #form{
+     width: 80%;
+     margin: auto;
+     padding-right: 15%;
+     margin-top: 5%;
+  }
+
   /* fleche pour remmonter en version mobile */
   
   .flechemobile{
@@ -1080,141 +1299,7 @@ div.conteneur-avis{
   padding: 0;
 }
 div.conteneur-avis .avis-child{
-  flex: 100%;
+  width: 100%;
 }
 
 }
-
-/* Version ipad paysage */
-
-@media screen and (max-width:1080px){
-
-  /*Header*/
-  .haut-droite{
-   width: 45%;
- }
- .haut-gauche{
-   width: 55%;
- }
- #label{
-   display: none;
- }
- #Newsletter{
-   display: inline;
- }
- /* main */
- /* fleche ancrage titre */
- #flechelink{
-  display: none;
- }
- /* article */
-  .conteneur-temoignage{
-    padding-left: 5%;
-    padding-right: 5%;
-  }
-  .conteneur-temoignage .article-child:nth-child(4){
-    flex: 31%;
-  }
-  .conteneur-temoignage .article-child:nth-child(5){
-    flex: 31%;
-  }
-  .conteneur-temoignage .article-child:nth-child(6){
-    flex: 31%;
-  }
-  /* avis */
-  .conteneur-avis{
-    padding-left: 5%;
-    padding-right: 5%;
-  }
-
- /* footer */
- .headfoot{
-   margin: 0 2% 0 2%;
-   vertical-align: middle;
- }
- .qsn1{
-   margin: 0;
- }
- .logog{
-   margin-top: 1%;
- }
- .logod{
-   margin-top: 1px;
- }
- .fcontenu{
-   width: 100vw;
-   margin: 0;
-   flex-wrap: wrap;
- }
- .quisommesnous h3{
-   margin: 0 3% 0 3%;
- }
- .quisommesnous p{
-   margin: 0 3% 0 3%;
-   width: 100vw;
- }
- .fboutons{
-   width: 100vw;
-   justify-content: space-around;
-   margin: 0;
- }
- .fboutons a{
-   margin: auto;
- }
- footer{
-   width: 100vw;
- }
- .footh{
-   width: 100vw;
- }
- .footm1{
-   margin: 0;
-   width: 100vw;
-   justify-content: space-between;
- }
- .presentation li{
-   margin: 0 10% 0 3%;
- }
- .suggestions{
-   margin-left: 15%;
- }
- .conseils{
-   margin-left: 15%;
- }
- .footm2{
-   flex-wrap: wrap;
-   justify-content: space-between;
- }
- .veloacc{
-   margin: 1% 1% 1% 1.5%;
- }
- .velotext h4{
-   margin: 0;
- }
- .velotext{
-   padding: 0;
-   margin: 2.5% 1% 0 0;
-   width: 89vw;
- }
- .boutons{
-   margin: auto;
- }
- .btn2 p{
-   margin: 0;
- }
- .btn1 {
-   margin: 0 10% 0 0;
- }
- .btn2{
-   margin: 0 0 0 0;
- }
- .realisation{
-   margin: 2.2% 0 0 26%;
- }
- .footb ul{
-   margin: 5% 0 0 0;
-   padding: 0;
- }
- 
- 
- }
