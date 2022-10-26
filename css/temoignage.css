@@ -913,8 +913,11 @@ a.btnb{
  .btn2{
    margin: 0 0 0 0;
  }
+ .footb .ml li{
+  margin: 0;
+}
  .realisation{
-   margin: 2.2% 0 0 26%;
+    margin: 2.2% 1% 0 25%;
  }
  .footb ul{
    margin: 5% 0 0 0;
@@ -1109,6 +1112,15 @@ a.btnb{
     left: 320px;
     position: relative;
     padding: 2px;
+  }
+
+  .carnet_espace {
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0%;
+
   }
   .eurovelo{
     padding-bottom: 5%;

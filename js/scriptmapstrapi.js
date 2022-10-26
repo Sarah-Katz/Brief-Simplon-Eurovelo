@@ -63,7 +63,7 @@ function carte(etapes) {
             polyline_options: {
                 color: '#f59c00',
                 opacity: 1,
-                weight: 9,
+                weight: 5,
                 lineCap: 'round'
             },
         }).addTo(map)
