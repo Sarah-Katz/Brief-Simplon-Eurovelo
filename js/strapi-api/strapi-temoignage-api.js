@@ -33,8 +33,8 @@ form.addEventListener('submit', function (e) {
         .then(res => res.json())
         .then(function (data) {
             console.log('toto');
-           // alert('Merci ' + Personne.value + ' de votre avis')
-          //  window.location.reload()
+           alert('Merci ' + Personne.value + ' de votre avis')
+           window.location.reload()
         })
         .then(err => console.log(err))
 

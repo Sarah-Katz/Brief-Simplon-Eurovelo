@@ -11,7 +11,6 @@ fetch("http://195.14.105.123:1337/api/articles/" + recup + "?populate=*")
         return res.json();
 }
 })     .then(function(value){
-     console.log(value);
 
         let eltConteneur = document.querySelector('.conteneur')
         let eltArticle = document.createElement('article');
