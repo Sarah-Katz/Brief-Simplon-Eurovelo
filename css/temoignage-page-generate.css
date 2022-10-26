@@ -248,100 +248,116 @@ html{
     display: none;
   }
 
-    /* main */
+/* main */
 
-  main{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
+main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
 }
+
 /* section .timage img ils l'ont fait */
 .timage {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 100%;
-    background-size: 70%;
-  }
-  .timage div{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 50vh;
-    align-items: center;
-    margin: auto;
-    margin-top: 40vh;
-    color: #fff;
-    font-size: 4em;
-    font-weight: 700;
-  }
-  .timage div a{
-    z-index: 0;
-  }
-  .timage div a img{
-    width: 1em;
-    transform:rotate(90deg);
-  }
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  background-size: 70%;
+}
+
+.timage .image {
+  position: relative;
+  top: 0;
+  z-index: -1;
+}
+
+.timage div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 50vh;
+  width: 100%;
+  align-items: center;
+  margin: auto;
+  margin-top: 40vh;
+  color: #fff;
+  font-size: 4em;
+  font-weight: 700;
+  position: absolute;
+}
+
+.timage div a {
+  z-index: 0;
+}
+
+.timage div a img {
+  width: 1em;
+  transform: rotate(90deg);
+}
 
 /* section .aventure  */
 
-  .aventure{
-    width: 100%;
-    text-align: center;
-    background-color: #fff;
-  }
-  .aventure div{
-    width: 50%;
-    margin: auto;
-  }
-  .aventure h2{
-    margin-top: 10%;
-    font-size: 2.6em;
-    font-weight: 300;
-  }
-   .aventure h2 span{
-    color:#007c74;
-  }
-  .aventure p{
-    color: #585858;
-    line-height: 1.5em;
-    font-size: 1.1em;
-    font-weight: 500;
-  }
+.aventure {
+  width: 100%;
+  text-align: center;
+  background-color: #fff;
+}
+
+.aventure div {
+  width: 50%;
+  margin: auto;
+}
+
+.aventure h2 {
+  margin-top: 10%;
+  font-size: 2.6em;
+  font-weight: 300;
+}
+
+.aventure h2 span {
+  color: #007c74;
+}
+
+.aventure p {
+  color: #585858;
+  line-height: 1.5em;
+  font-size: 1.1em;
+  font-weight: 500;
+}
 
 /* Avis */
-.conteneur{
+.conteneur {
   background-color: #fff;
   padding-bottom: 3%;
 }
 
-.Titre{
+.Titre {
   text-shadow: 1px 1px 2px #007c74;
 }
 
-.article-child .Titre2{
-    text-align: center;
-    font-size: 42px;
-    padding-top: 1%;
+.article-child .Titre2 {
+  text-align: center;
+  font-size: 42px;
+  padding-top: 1%;
 }
 
-.article-child .Texte{
-    padding-left: 25%;
-    padding-right: 25%;
-    text-align: center;
-    margin-bottom: 3%;
-    line-height: 25px;
+.article-child .Texte {
+  padding-left: 25%;
+  padding-right: 25%;
+  text-align: center;
+  margin-bottom: 3%;
+  line-height: 25px;
 }
 
-.Div-avis{
+.Div-avis {
   display: flex;
   margin-left: 20%;
   margin-right: 20%;
 }
 
-.Div-avis p{
+.Div-avis p {
   position: absolute;
   background-color: rgb(255, 175, 16);
   width: 28%;
@@ -350,19 +366,19 @@ html{
   border-radius: 5px;
   line-height: 25px;
   color: white;
-  box-shadow: 1px 1px 3px  #262626;
+  box-shadow: 1px 1px 3px #262626;
 
 }
 
-.Div-avis img{
+.Div-avis img {
   position: relative;
 }
 
 
 
-  /*Footer haut*/
+/*Footer haut*/
 
-.footh{
+.footh {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -373,16 +389,19 @@ html{
   height: 350px;
   overflow: hidden;
 }
+
 .qsn1 {
   width: 65px;
   height: 65px;
   margin-top: 40px;
 }
+
 .qsn2 {
   height: 65px;
   margin-left: 11px;
 }
-.headfoot{
+
+.headfoot {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -391,38 +410,46 @@ html{
   align-items: center;
   justify-content: space-between;
 }
-.logod img{
+
+.logod img {
   width: 25px;
   margin-right: 5px;
-  
+
 }
-.fcontenu{
+
+.fcontenu {
   display: flex;
   flex-direction: row;
   width: 100%;
   margin-left: 300px;
   margin-right: 300px;
 }
-.fcontenu p{
+
+.fcontenu p {
   line-height: 28px;
   font-weight: bold;
 }
-.quisommesnous{
+
+.quisommesnous {
   width: 60%;
 }
-.quisommesnous h3{
+
+.quisommesnous h3 {
   font-size: 1.8em;
 }
-.fboutons{
+
+.fboutons {
   display: flex;
   flex-direction: row;
   width: 100%;
 }
-a.btnb{
+
+a.btnb {
   margin-left: 320px;
   text-decoration: none;
   width: 180px;
 }
+
 .fboutons a {
   text-decoration: none;
   font-weight: bold;
@@ -444,6 +471,7 @@ a.btnb{
 .btnb p:hover {
   box-shadow: 0px 0px 6px #007c74;
 }
+
 .btnv p {
   color: white;
   background-color: #007c74;
@@ -454,41 +482,47 @@ a.btnb{
   border-radius: 6px;
   box-shadow: 0px 0px 5px lightslategray;
 }
-.btnv{
+
+.btnv {
   width: 280px;
   margin-left: 30px;
 }
+
 .btnv p:hover {
   box-shadow: 0px 0px 6px white;
 }
 
 /* footer mentions légales */
 
-.footb{
+.footb {
   display: flex;
   width: 100%;
   background-color: black;
 }
-.footb .ml a{
+
+.footb .ml a {
   text-decoration: none;
   color: white;
   display: inline;
   margin-left: 10px;
 }
-.footb .ml li{
+
+.footb .ml li {
   text-decoration: none;
   color: white;
   display: inline;
   margin-left: 10px;
 }
-.ml ul{
+
+.ml ul {
   font-size: 12px;
   margin-left: 280px;
   font-weight: bold;
   margin-top: 26px;
   padding-left: 0;
 }
-.realisation{
+
+.realisation {
   color: white;
   font-size: 12px;
   font-weight: bold;
@@ -497,201 +531,272 @@ a.btnb{
   margin-left: 740px;
   margin-right: 10px;
 }
-.logofvt img{
+
+.logofvt img {
   width: 145px;
 }
-.logofvt{
+
+.logofvt {
   margin-top: auto;
   margin-bottom: auto;
 }
-.simplon img{
- width: 90px;
+
+.simplon img {
+  width: 90px;
 }
-.simplon{
+
+.simplon {
   margin-top: auto;
-  margin-bottom: auto;}
+  margin-bottom: auto;
+}
 
 
 
-  /*Responsive tablette*/
+/*Responsive tablette*/
 
 
 @media screen and (max-width:1080px) {
 
+  /* Titre et image article */
+  .timage .image {
+    width: 100%;
+  }
+
+  .timage h2 {
+    position: relative;
+    top: -150px;
+  }
+
   /*Header*/
-  .haut-droite{
+  .haut-droite {
     width: 45%;
   }
-  .haut-gauche{
+
+  .haut-gauche {
     width: 55%;
   }
-  #label{
+
+  #label {
     display: none;
   }
-  #Newsletter{
+
+  #Newsletter {
     display: inline;
   }
+
   /*Main*/
-  
-  .article-child .Texte{
+
+  .article-child .Texte {
     padding: 0%;
     margin: auto;
     width: 80%;
   }
-  .fond{
+
+  .fond {
     display: none;
   }
-  .Div-avis{
+
+  .Div-avis {
     flex-wrap: wrap;
     margin: auto;
   }
 
-  .Div-avis img{
+  .Div-avis img {
     width: 80%;
     margin: auto;
   }
 
-  .Div-avis p{
+  .Div-avis p {
     position: static;
     margin: auto;
     width: 74%;
     margin-top: 1%;
   }
-   /* footer */
- .headfoot{
-  margin: 0 2% 0 2%;
-  vertical-align: middle;
-}
-.qsn1{
-  margin: 0;
-}
-.logog{
-  margin-top: 1%;
-}
-.logod{
-  margin-top: 1px;
-}
-.fcontenu{
-  width: 100vw;
-  margin: 0;
-  flex-wrap: wrap;
-}
-.quisommesnous h3{
-  margin: 0 3% 0 3%;
-}
-.quisommesnous p{
-  margin: 0 3% 0 3%;
-  width: 100vw;
-}
-.fboutons{
-  width: 100vw;
-  justify-content: space-around;
-  margin: 0;
-}
-.fboutons a{
-  margin: auto;
-}
-footer{
-  width: 100vw;
-}
-.footh{
-  width: 100vw;
-}
-.footm1{
-  margin: 0;
-  width: 100vw;
-  justify-content: space-between;
-}
-.presentation li{
-  margin: 0 10% 0 3%;
-}
-.suggestions{
-  margin-left: 15%;
-}
-.conseils{
-  margin-left: 15%;
-}
-.footm2{
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.veloacc{
-  margin: 1% 1% 1% 1.5%;
-}
-.velotext h4{
-  margin: 0;
-}
-.velotext{
-  padding: 0;
-  margin: 2.5% 1% 0 0;
-  width: 89vw;
-}
-.boutons{
-  margin: auto;
-}
-.btn2 p{
-  margin: 0;
-}
-.btn1 {
-  margin: 0 10% 0 0;
-}
-.btn2{
-  margin: 0 0 0 0;
-}
-.footb .ml li{
- margin: 0;
-}
-.realisation{
-   margin: 2.2% 1% 0 25%;
-}
-.footb ul{
-  margin: 5% 0 0 0;
-  padding: 0;
-}
+
+  /* footer */
+  .headfoot {
+    margin: 0 2% 0 2%;
+    vertical-align: middle;
   }
 
+  .qsn1 {
+    margin: 0;
+  }
 
-   /*Responsive téléphone*/
+  .logog {
+    margin-top: 1%;
+  }
+
+  .logod {
+    margin-top: 1px;
+  }
+
+  .fcontenu {
+    width: 100vw;
+    margin: 0;
+    flex-wrap: wrap;
+  }
+
+  .quisommesnous h3 {
+    margin: 0 3% 0 3%;
+  }
+
+  .quisommesnous p {
+    margin: 0 3% 0 3%;
+    width: 100vw;
+  }
+
+  .fboutons {
+    width: 100vw;
+    justify-content: space-around;
+    margin: 0;
+  }
+
+  .fboutons a {
+    margin: auto;
+  }
+
+  footer {
+    width: 100vw;
+  }
+
+  .footh {
+    width: 100vw;
+  }
+
+  .footm1 {
+    margin: 0;
+    width: 100vw;
+    justify-content: space-between;
+  }
+
+  .presentation li {
+    margin: 0 10% 0 3%;
+  }
+
+  .suggestions {
+    margin-left: 15%;
+  }
+
+  .conseils {
+    margin-left: 15%;
+  }
+
+  .footm2 {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .veloacc {
+    margin: 1% 1% 1% 1.5%;
+  }
+
+  .velotext h4 {
+    margin: 0;
+  }
+
+  .velotext {
+    padding: 0;
+    margin: 2.5% 1% 0 0;
+    width: 89vw;
+  }
+
+  .boutons {
+    margin: auto;
+  }
+
+  .btn2 p {
+    margin: 0;
+  }
+
+  .btn1 {
+    margin: 0 10% 0 0;
+  }
+
+  .btn2 {
+    margin: 0 0 0 0;
+  }
+
+  .footb .ml li {
+    margin: 0;
+  }
+
+  .realisation {
+    margin: 2.2% 1% 0 25%;
+  }
+
+  .footb ul {
+    margin: 5% 0 0 0;
+    padding: 0;
+  }
+}
+
+
+/*Responsive téléphone*/
 
 @media screen and (max-width:480px) {
 
+  /* main */
+  main .timage {
+    height: 50vh;
+  }
+
+  .timage .image {
+    width: 100%;
+  }
+
+  .timage h2 {
+    position: relative;
+    top: 150px;
+  }
+
+  main .timage div {
+    margin: auto;
+    font-size: 2em;
+    height: 0;
+  }
+
+  main .timage div img {
+    display: none;
+  }
+
   /* Actu */
-.conteneur{
-  background-color: rgb(255, 255, 255);
-}
+  .conteneur {
+    background-color: rgb(255, 255, 255);
+  }
 
-.Titre{
-  text-align: center;
-  font-size: 40px;
-}
+  .Titre {
+    text-align: center;
+    font-size: 40px;
+  }
 
-.article-child .Texte{
+  .article-child .Texte {
     padding-left: 5%;
     padding-right: 5%;
-}
+  }
 
-.Div-avis{
-  display: flex;
-  flex-direction: column;
-  margin-left: 5%;
-  margin-right: 5%;
-}
+  .Div-avis {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
 
-.Div-avis p{
-  position: initial;
-  background-color: #f59c00;
-  width: 90%;
-  border-radius: 5px;
-  line-height: 25px;
-  margin-left: 2%;
-  color: white;
-  box-shadow: 1px 1px 3px  #262626;
-}
+  .Div-avis p {
+    position: initial;
+    background-color: #f59c00;
+    width: 90%;
+    border-radius: 5px;
+    line-height: 25px;
+    margin-left: 2%;
+    color: white;
+    box-shadow: 1px 1px 3px #262626;
+  }
 
-.Div-avis img{
-  position: static;
-  width: 100%;
-}
+  .Div-avis img {
+    position: static;
+    width: 100%;
+  }
 
   /*Header*/
 
@@ -886,100 +991,123 @@ footer{
 
   }
 
-  #lien{
-      display: none;
+  #lien {
+    display: none;
   }
 
-  .eurovelo{
-      padding-bottom: 5%;
-      margin-left: 5px;
-      margin-right: 5px;
+  .eurovelo {
+    padding-bottom: 5%;
+    margin-left: 5px;
+    margin-right: 5px;
   }
-  .liennav a{
+
+  .liennav a {
     color: #fff;
     text-decoration: none;
   }
-  #es_pro{
+
+  #es_pro {
     color: #fff;
     text-decoration: none;
   }
-  .carnet_espace{
+
+  .carnet_espace {
     color: #fff;
     text-decoration: none;
   }
-  form{
+
+  form {
     color: #fff;
   }
-  .email::placeholder{
+
+  .email::placeholder {
     color: #fff;
   }
+
   /*Footer 1*/
 
-.headfoot{
-  margin: 50px 0 0 0;
-}
-.fcontenu{
-  margin: 0;
-}
-.qsn1{
-  margin: 0;
-  margin-left: 10px;
-}
-.qsn2{
-  margin: 0 0 0 5px;
-}
-.logod{
-  margin-right: 5px;
-}
-.quisommesnous{
-  display: none;
-}
-.fboutons{
-  margin: auto;
-  width: auto;
-  display: block;
-}
-.fboutons p{
-  margin: 40px  5px 50px 0;
-  width: auto;
-  font-size: 0.9em;
-}
-.btnb{
-  margin-left: auto;
-}
-.fboutons p{
-  margin: 0;
-  margin-bottom: 1em;
-}
-/*footer 2*/
+  .headfoot {
+    margin: 50px 0 0 0;
+  }
 
-.footb{
-  margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
- 
- }
- .ml{
-   display: flex;
-   flex-direction: row;
-   flex-wrap: wrap;
-   margin: 0;
-   width: 100%;}
- .ml ul{
-   margin: 5px  0  0 0;
-   text-align: left;
- }
- .footb .ml li{
-   margin: 0;
- }
- .realisation{
-   margin: 23px 5px 0 10px;
- }
- .simplon{
-   margin: 20px 0px 0px 5px;
- }
- .logofvt{
-   margin-left: 0px;
- }
+  .fcontenu {
+    margin: 0;
+  }
+
+  .qsn1 {
+    margin: 0;
+    margin-left: 10px;
+  }
+
+  .qsn2 {
+    margin: 0 0 0 5px;
+  }
+
+  .logod {
+    margin-right: 5px;
+  }
+
+  .quisommesnous {
+    display: none;
+  }
+
+  .fboutons {
+    margin: auto;
+    width: auto;
+    display: block;
+  }
+
+  .fboutons p {
+    margin: 40px 5px 50px 0;
+    width: auto;
+    font-size: 0.9em;
+  }
+
+  .btnb {
+    margin-left: auto;
+  }
+
+  .fboutons p {
+    margin: 0;
+    margin-bottom: 1em;
+  }
+
+  /*footer 2*/
+
+  .footb {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+  }
+
+  .ml {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+    width: 100%;
+  }
+
+  .ml ul {
+    margin: 5px 0 0 0;
+    text-align: left;
+  }
+
+  .footb .ml li {
+    margin: 0;
+  }
+
+  .realisation {
+    margin: 23px 5px 0 10px;
+  }
+
+  .simplon {
+    margin: 20px 0px 0px 5px;
+  }
+
+  .logofvt {
+    margin-left: 0px;
+  }
 }
