@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <link rel="stylesheet" href="css/normalize.css">
-    <link rel="shortcut icon" href="images/icon/vélo.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/temoignage.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="js/strapi-api/strapi-temoignage-api.js" defer></script>
-    <title>Ils l'ont fait</title>
+  <link rel="shortcut icon" href="images/icon/vélo.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/temoignage.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="js/strapi-api/strapi-temoignage-api.js" defer></script>
+  <title>Ils l'ont fait</title>
 </head>
+
 <body>
   <header id="header">
     <div id="header_ordi">
@@ -40,7 +42,8 @@
         </div>
       </div>
       <nav class="navigation">
-        <a href="map.html"><img src="images/icon/ed210af3-1631-4702-b9f0-dfdffbdfedc8.png" alt="logo eurovelo" class="euro"></a>
+        <a href="map.html"><img src="images/icon/ed210af3-1631-4702-b9f0-dfdffbdfedc8.png" alt="logo eurovelo"
+            class="euro"></a>
         <a href="index.html"><img src="images/Logo_EuroVelo_RGB-jpg.jpg" alt="logo eurovelo" class="eurovelo"></a>
         <ul>
           <li><a href="map.html">L'ITINERAIRE</a></li>
@@ -63,8 +66,9 @@
     <div id="header_telephone">
       <img src="images/icon/menu.png" alt="icon menu" id="menu">
 
-      <a href="index.html" id="logo_telephone"><img src="images/icon/ed210af3-1631-4702-b9f0-dfdffbdfedc8.png" alt="logo eurovelo"
-          class="eurovelo"><img src="images/Logo_EuroVelo_RGB-jpg.jpg" alt="logo eurovelo" class="eurovelo"></a>
+      <a href="index.html" id="logo_telephone"><img src="images/icon/ed210af3-1631-4702-b9f0-dfdffbdfedc8.png"
+          alt="logo eurovelo" class="eurovelo"><img src="images/Logo_EuroVelo_RGB-jpg.jpg" alt="logo eurovelo"
+          class="eurovelo"></a>
       <img src="images/icon/loupe.png" alt="icon de loupe" id="loupe2">
     </div>
 
@@ -106,19 +110,22 @@
     </div>
   </div>
 
-<!-- fleche pour remonter en version mobile -->
-<a href="#top" class="flechemobile"><img src="images/icon/top.png" alt=""></a>
+  <!-- fleche pour remonter en version mobile -->
+  <a href="#top" class="flechemobile"><img src="images/icon/top.png" alt=""></a>
 
-<main>
+  <main>
     <section class="timage">
-        <div><h2>Ils l'ont fait</h2>
+      <div>
+        <h2>Ils l'ont fait</h2>
         <a href="#flechelink" id="flechelink"><img src="images/icon/right-arrows.png" alt="fleche"></a>
       </div>
     </section>
     <section class="aventure">
-      <div><h2>Vos aventures en <span>témoignages !</span></h2>
-      <p>Inspiration, portrait de voyageurs ou pêche aux bons conseils, découvrez les récits de ses aventuriers à deux roues. Vous rentrez d'un périple à bicyclette ?</p>
-    </div>
+      <div>
+        <h2>Vos aventures en <span>témoignages !</span></h2>
+        <p>Inspiration, portrait de voyageurs ou pêche aux bons conseils, découvrez les récits de ses aventuriers à deux
+          roues. Vous rentrez d'un périple à bicyclette ?</p>
+      </div>
     </section>
 
     <!-- Temoignage API-->
@@ -127,47 +134,56 @@
     </div>
 
     <div class="liens-temoignages">
-      <a class="btnPt" href="#"><p>PROPOSER MON TÉMOIGNAGE</p></a>
-      <a class="btnTt" href="#"><p>TOUS LES TÉMOIGNAGES</p></a>
+      <a class="btnPt" href="#">
+        <p>PROPOSER MON TÉMOIGNAGE</p>
+      </a>
+      <a class="btnTt" href="#">
+        <p>TOUS LES TÉMOIGNAGES</p>
+      </a>
     </div>
 
-   <!-- Temoignage API-->
-   <!-- Avis API-->
-   <div class="avis-titre"><h2>Les derniers avis publiés !</h2>
-    <p>Les avis et commentaires de voyageurs à vélo sur nos parcours.
-      N'hésitez pas à déposer le votre sur les tracés que vous avez déjà parcourus !</p>
-  </div>
-   <div class="conteneur-avis">     
-   </div>
-   <!-- Avis API-->
-   <!-- Formulaire avis -->
-   <div class="avis-formulaire">
-     <form id="form"> 
-           <legend>Déposer votre avis</legend>
-           <label>Pseudonyme :</label><input type="text" name="Personne" id="Personne" required maxlength="30">
-           <label>Titre :</label><input type="text" name="Titre" id="Titre" required maxlength="30">
-           <label class='texte-formulaire'>Avis :</label> <TEXTAREA NAME="Zone" COLS="20" ROWS="5" name="Avis" id="Avis" maxlength="700" required></TEXTAREA>
-           <div class="valider">
-           <input type="submit" value="Envoyer" id="Envoie">
-          </div>
-     </form> 
+    <!-- Temoignage API-->
+    <!-- Avis API-->
+    <div class="avis-titre">
+      <h2>Les derniers avis publiés !</h2>
+      <p>Les avis et commentaires de voyageurs à vélo sur nos parcours.
+        N'hésitez pas à déposer le votre sur les tracés que vous avez déjà parcourus !</p>
     </div>
-   <!-- Formulaire avis-->
+    <div class="conteneur-avis">
+    </div>
+    <!-- Avis API-->
+    <!-- Formulaire avis -->
+    <div class="avis-formulaire">
+      <form id="form">
+        <legend>Déposer votre avis</legend>
+        <label>Pseudonyme :</label><input type="text" name="Personne" id="Personne" required maxlength="30">
+        <label>Titre :</label><input type="text" name="Titre" id="Titre" required maxlength="30">
+        <label class='texte-formulaire'>Avis :</label> <TEXTAREA NAME="Zone" COLS="20" ROWS="5" name="Avis" id="Avis"
+          maxlength="700" required></TEXTAREA>
+        <div class="valider">
+          <input type="submit" value="Envoyer" id="Envoie">
+        </div>
+      </form>
+    </div>
+    <!-- Formulaire avis-->
 
-</main>
-<footer>
-  <section class="footh">
-    <div class="headfoot">
-    <div class="logog">
-        <a href=""><img class="qsn1" src="images/icon/ed210af3-1631-4702-b9f0-dfdffbdfedc8.png" alt="qsn1"></a>
-        <a href="index.html"><img class="qsn2" src="images/Logo_EuroVelo_RGB-jpg.jpg" alt="qsn2"></a>
-    </div>
-    <div class="logod">
-        <a href="https://www.instagram.com/ecfeurovelo/?hl=fr" target="_blank"><img class="qsninsta" src="/images/icon/qsninstagram.png" alt="instagram"></a>
-        <a href="https://www.youtube.com/c/EuroVeloECF/videos" target="_blank"><img class="qsnyou" src="/images/icon/qsnyoutube.png" alt="youtube"></a>
-        <a href="https://www.facebook.com/EuroVelo" target="_blank"><img class="qsnfb" src="/images/icon/qsnfacebook.png" alt="facebook"></a>
-    </div>
-    </div>
+  </main>
+  <footer>
+    <section class="footh">
+      <div class="headfoot">
+        <div class="logog">
+          <a href=""><img class="qsn1" src="images/icon/ed210af3-1631-4702-b9f0-dfdffbdfedc8.png" alt="qsn1"></a>
+          <a href="index.html"><img class="qsn2" src="images/Logo_EuroVelo_RGB-jpg.jpg" alt="qsn2"></a>
+        </div>
+        <div class="logod">
+          <a href="https://www.instagram.com/ecfeurovelo/?hl=fr" target="_blank"><img class="qsninsta"
+              src="/images/icon/qsninstagram.png" alt="instagram"></a>
+          <a href="https://www.youtube.com/c/EuroVeloECF/videos" target="_blank"><img class="qsnyou"
+              src="/images/icon/qsnyoutube.png" alt="youtube"></a>
+          <a href="https://www.facebook.com/EuroVelo" target="_blank"><img class="qsnfb"
+              src="/images/icon/qsnfacebook.png" alt="facebook"></a>
+        </div>
+      </div>
       <div class="fcontenu">
         <div class="quisommesnous">
           <h3>Qui sommes-nous ?</h3>
@@ -184,24 +200,25 @@
           </a>
         </div>
       </div>
-  </section>
-  <div class="footb">
-    <div class="ml">
-      <ul>
-        <li><a href="">Presse </a></li>
-        <li><a href="">FAQ </a></li>
-        <li><a href="Mentions_legales.html">Mentions légales </a></li>
-        <li><a href="">Politique de confidentialité</a></li>
-        <li><a href="">Gestion des cookies</a></li>
-      </ul>
+    </section>
+    <div class="footb">
+      <div class="ml">
+        <ul>
+          <li><a href="">Presse </a></li>
+          <li><a href="">FAQ </a></li>
+          <li><a href="Mentions_legales.html">Mentions légales </a></li>
+          <li><a href="">Politique de confidentialité</a></li>
+          <li><a href="">Gestion des cookies</a></li>
+        </ul>
+      </div>
+      <div class="realisation">Réalisation</div>
+      <div class="simplon"><img src="images/icon/logo-simplon.png" alt="logosimplon"></div>
+      <div class="logofvt"><img src="images/icon/logoFVT.png" alt="francevelotourisme"></div>
     </div>
-    <div class="realisation">Réalisation</div>
-    <div class="simplon"><img src="images/icon/logo-simplon.png" alt="logosimplon"></div>
-    <div class="logofvt"><img src="images/icon/logoFVT.png" alt="francevelotourisme"></div>
-  </div>
-</footer>
+  </footer>
 
-<script src="js/header.js"></script>
+  <script src="js/header.js"></script>
 
 </body>
+
 </html>
