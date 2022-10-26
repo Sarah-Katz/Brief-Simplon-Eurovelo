@@ -601,7 +601,15 @@ a.btnb {
 /*responsive tablette */
 
 @media screen and (max-width:1080px) {
+  /* Titre et image article */
+  .timage .image {
+    width: 100%;
+  }
 
+  .timage h2 {
+    position: relative;
+    top: -100px;
+  }
   /*Header*/
   .haut-droite {
     width: 45%;
@@ -1130,6 +1138,17 @@ a.btnb {
   /* main */
   main .timage {
     height: 50vh;
+  }
+
+  .timage .image {
+    width: 100%;
+  }
+
+  .timage h2 {
+    position: relative;
+    top: 150px;
+    left: -12.5px;
+
   }
 
   main .timage div {
