@@ -244,6 +244,9 @@ html{
   #container_search{
     display: none;
   }
+  #Newsletter{
+    display: none;
+  }
 
     /* main */
 
