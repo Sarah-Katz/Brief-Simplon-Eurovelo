@@ -208,9 +208,6 @@ body {
     width: 100%;
     z-index: 1;
   }
-  #lien.cache{
-    display: none;
-  }
  
   #lien ol{
     padding: 0%;
