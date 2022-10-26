@@ -1,4 +1,4 @@
-#Brief 5: Développer le site de la partie Haut-de-France l'EuroVélo 5 !
+# Brief 5: Développer le site de la partie Haut-de-France l'EuroVélo 5 !
 
 
 ## Contexte du projet
@@ -39,3 +39,26 @@ Oral de présentation devant la promo
 
 Le lien vers le dépôt Github comprenant un versionning complet, clair et détaillé
 Présentation orale
+
+## Liste des tâches
+
+- Création du projet sur GitHub et gestion des collaborateurs
+- Rédaction README
+- Création de tableau Trello pour la gestion de projet
+- Répartition des tâches
+- Créations de maquettes
+- Structuration Sass
+- Codages des 5 pages HTML selon le modèle des site ECF existants :
+- Accueil
+- Infos pratiques
+- Itinéraires
+- News
+- Témoignages
+- Création de la barre de menu
+- Codage du CSS
+- Codage du responsive
+- Passage au validateur W3C
+- Création API
+- Création carte itinéraires
+- Création du contenu API
+- Tests de fonctionnalité
