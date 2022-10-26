@@ -210,10 +210,6 @@ body {
     position: fixed;
     width: 100%;
     z-index: 1;
-    background-color: rgb(207, 207, 207);
-  }
-  #lien.cache{
-    display: none;
   }
  
   #lien ol{
@@ -227,7 +223,7 @@ body {
     font-weight: 600;
     font-size: 0.875rem;
     margin-left: 0%;
-    color: #fff;
+    color: #007c74;
   }
   #accueil{
     margin-left: 1%;
@@ -235,7 +231,7 @@ body {
   
   #accueil::after{
     content: ">";
-    color: #fff;
+    color: #007c74;
     font-weight: 600;
     display: inline-block;
     margin-left: 5px;
