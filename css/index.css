@@ -247,32 +247,6 @@ header {
   display: none;
 }
 
-#lien {
-  display: block;
-  position: fixed;
-  width: 100%;
-  z-index: 1;
-}
-
-#lien.cache {
-  display: none;
-}
-
-#lien ol {
-  padding: 0%;
-}
-
-#lien li {
-  display: inline;
-}
-
-#lien li a {
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 0.875rem;
-  margin-left: 0%;
-  color: #fff;
-}
 
 #accueil {
   margin-left: 1%;
