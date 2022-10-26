@@ -32,7 +32,6 @@ fetch("http://195.14.105.123:1337/api/etapes?populate=*")
     })
     .then(function (value) {
         etapes = value.data
-        // console.log(etapes)
         carte(etapes)
         clicSuivant()
         clicPrecedent()
@@ -181,7 +180,6 @@ function clicPrecedent() {
 }
 
 function nextTrack() {
-    console.log("nextTrack")
     let i = 0
     for (let etape of etapes) {
         if (etape.attributes.etapeId == lastTrackClicked.options.etape.attributes.etapeId) {
