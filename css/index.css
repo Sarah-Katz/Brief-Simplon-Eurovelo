@@ -978,7 +978,7 @@ ul {
   /* footer mentions légales */
 
   .realisation {
-    margin: 2.2% 1% 0 25%;
+    margin: 2.2% 1% 0 2%;
   }
 
   .footb ul {
@@ -1230,7 +1230,7 @@ ul {
   }
 
   .descriptif p {
-    width: 100%;
+    width: 95%;
     margin: auto;
     text-align: justify;
   }
@@ -1301,6 +1301,7 @@ ul {
 
   .fboutons p {
     margin: 0;
+    margin-bottom: 1em;
     width: auto;
     font-size: 0.9em;
   }
@@ -1312,7 +1313,7 @@ ul {
     font-size: 1.3em;
     margin: 0;
     margin-left: 10px;
-
+    width: 350px;
   }
 
   .presentation {
@@ -1331,13 +1332,16 @@ ul {
 
   .conseils {
     line-height: 1.10;
+    margin: 0;
   }
+ 
 
   /* footer marque accueil vélo */
 
   .footm2 {
     margin: auto;
     flex-direction: column;
+    padding-top: 10px;
   }
 
   .veloacc {
