@@ -1109,6 +1109,15 @@ a.btnb{
     position: relative;
     padding: 2px;
   }
+
+  .carnet_espace {
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0%;
+
+  }
   .eurovelo{
     padding-bottom: 5%;
     margin-left: 5px;
