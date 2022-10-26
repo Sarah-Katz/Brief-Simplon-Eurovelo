@@ -16,7 +16,7 @@ body {
 }
 
 #texteEtape {
-    padding: 0 15px 0 15px;
+    padding: 0 15px 25px 15px;
     font-weight: 500;
 }
 
@@ -86,7 +86,7 @@ body {
 
 #etapePrecedente {
     order: -1;
-    display: none;
+    visibility: hidden;
     padding: 0 5px 0 5px;
 }
 
@@ -96,7 +96,7 @@ body {
 }
 
 #etapeSuivante {
-    display: none;
+    visibility: none;
     padding: 0 5px 0 5px;
 }
 
@@ -397,9 +397,70 @@ form {
 /* Fin header */
 
 /*Responsive*/
+@media screen and (max-width:1080px) {
+    #titreEtape {
+        margin: 5px;
+    }
+
+    #map {
+        height: 84vh;
+    }
+
+    .description {
+        height: 84vh;
+    }
+
+    .download {
+        font-size: 14px;
+    }
+
+    .download a img {
+        width: 20px;
+    }
+
+    #texteEtape {
+        margin-bottom: 10px;
+    }
+
+    /* Bouton retour */
+    #bouton {
+        position: fixed;
+        left: 390px;
+        top: 138px;
+        width: 30px;
+        background-color: hsla(176, 100%, 24%, 0.3);
+        border-radius: 50%;
+    }
+
+    #bouton:hover {
+        background-color: hsla(176, 100%, 24%, 0.7);
+        border-radius: 50%;
+    }
+    /* Fin du bouton retour */
+    /*Header*/
+    .haut-droite {
+        width: 45%;
+    }
+
+    .haut-gauche {
+        width: 55%;
+    }
+
+    #label {
+        display: none;
+    }
+
+    #Newsletter {
+        display: inline;
+    }
+}
+
 
 @media screen and (max-width:480px) {
 
+    #texteEtape {
+        margin-bottom: 10px;
+    }
     /*Header*/
 
     #header_ordi {
@@ -698,62 +759,4 @@ form {
     }
 
     /* Fin du bouton retour */
-}
-
-@media screen and (max-width:1080px) {
-    #titreEtape {
-        margin: 5px;
-    }
-
-    #map {
-        height: 84vh;
-    }
-
-    .description {
-        height: 84vh;
-    }
-
-    .download {
-        font-size: 14px;
-    }
-
-    .download a img {
-        width: 20px;
-    }
-
-    #texteEtape {
-        margin: 0;
-    }
-
-    /* Bouton retour */
-    #bouton {
-        position: fixed;
-        left: 390px;
-        top: 138px;
-        width: 30px;
-        background-color: hsla(176, 100%, 24%, 0.3);
-        border-radius: 50%;
-    }
-
-    #bouton:hover {
-        background-color: hsla(176, 100%, 24%, 0.7);
-        border-radius: 50%;
-    }
-    /* Fin du bouton retour */
-    /*Header*/
-    .haut-droite {
-        width: 45%;
-    }
-
-    .haut-gauche {
-        width: 55%;
-    }
-
-    #label {
-        display: none;
-    }
-
-    #Newsletter {
-        display: inline;
-    }
 }
