@@ -80,9 +80,14 @@ body {
     width: 40px;
 }
 
+#gpxDownload {
+    padding: 0 5px 0 5px;    
+}
+
 #etapePrecedente {
     order: -1;
     display: none;
+    padding: 0 5px 0 5px;
 }
 
 #iconePrecedente {
@@ -92,11 +97,17 @@ body {
 
 #etapeSuivante {
     display: none;
+    padding: 0 5px 0 5px;
 }
 
 #iconeSuivante {
     padding-left: 5px;
     order: 1;
+}
+
+#gpxDownload:hover, #etapeSuivante:hover, #etapePrecedente:hover {
+    background-color: #007c743d;
+
 }
 
 /* Fin bouton download */
