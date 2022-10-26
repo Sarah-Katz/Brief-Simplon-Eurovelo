@@ -47,10 +47,10 @@ Présentation orale
 - Répartition des tâches
 - Créations de maquettes
 - Codages des 4 pages HTML selon le site existant :
- 1. Accueil
- 2. Itinéraires
- 3. News
- 4. Témoignages
+    1. Accueil
+    2. Itinéraires
+    3. News
+    4. Témoignages
 - Création de la barre de menu
 - Codage du CSS
 - Codage du responsive
