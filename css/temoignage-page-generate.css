@@ -535,11 +535,20 @@ a.btnb{
     display: none;
   }
   .Div-avis{
-    margin-left: 15%;
+    flex-wrap: wrap;
+    margin: auto;
   }
+
+  .Div-avis img{
+    width: 80%;
+    margin: auto;
+  }
+
   .Div-avis p{
-    margin-left: 40%;
-    width: 30%;
+    position: static;
+    margin: auto;
+    width: 74%;
+    margin-top: 1%;
   }
    /* footer */
  .headfoot{
