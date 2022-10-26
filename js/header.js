@@ -3,10 +3,8 @@ window.onscroll = function() {myFunction()};
 function myFunction() {
   if (document.documentElement.scrollTop != 0) {
     document.getElementById("header").className = "cache";
-    document.getElementById("lien").className = "cache";
   } else {
     document.getElementById("header").className = "";
-    document.getElementById("lien").className = "";
   }
 }
 
