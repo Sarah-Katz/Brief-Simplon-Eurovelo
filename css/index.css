@@ -844,6 +844,11 @@ ul {
     display: inline;
   }
 
+    /* fleche pour remmonter en version mobile */
+  
+    .flechemobile{
+      display: block;
+    }
   /*Main*/
 
   section {
