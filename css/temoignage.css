@@ -807,11 +807,15 @@ a.btnb{
  #Newsletter{
    display: inline;
  }
+
+   /* fleche pour remmonter en version mobile */
+  
+   .flechemobile{
+    display: block;
+  }
  /* main */
- /* fleche ancrage titre */
- #flechelink{
-  display: none;
- }
+
+
  /* article */
   .conteneur-temoignage{
     padding-left: 5%;
@@ -1207,6 +1211,7 @@ a.btnb{
 }
 .fboutons p{
   margin: 0;
+  margin-bottom: 1em;
 }
 /*footer 2*/
 

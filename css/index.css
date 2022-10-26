@@ -247,32 +247,6 @@ header {
   display: none;
 }
 
-#lien {
-  display: block;
-  position: fixed;
-  width: 100%;
-  z-index: 1;
-}
-
-#lien.cache {
-  display: none;
-}
-
-#lien ol {
-  padding: 0%;
-}
-
-#lien li {
-  display: inline;
-}
-
-#lien li a {
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 0.875rem;
-  margin-left: 0%;
-  color: #fff;
-}
 
 #accueil {
   margin-left: 1%;
@@ -844,6 +818,11 @@ ul {
     display: inline;
   }
 
+    /* fleche pour remmonter en version tablette */
+  
+    .flechemobile{
+      display: block;
+    }
   /*Main*/
 
   section {
@@ -900,7 +879,7 @@ ul {
 
   .quisommesnous p {
     margin: 0 3% 0 3%;
-    width: 100vw;
+    width: 98vw;
   }
 
   .fboutons {
@@ -978,7 +957,7 @@ ul {
   /* footer mentions légales */
 
   .realisation {
-    margin: 2.2% 1% 0 25%;
+    margin: 2.2% 1% 0 20%;
   }
 
   .footb ul {
@@ -1230,7 +1209,7 @@ ul {
   }
 
   .descriptif p {
-    width: 100%;
+    width: 95%;
     margin: auto;
     text-align: justify;
   }
@@ -1301,6 +1280,7 @@ ul {
 
   .fboutons p {
     margin: 0;
+    margin-bottom: 1em;
     width: auto;
     font-size: 0.9em;
   }
@@ -1312,7 +1292,7 @@ ul {
     font-size: 1.3em;
     margin: 0;
     margin-left: 10px;
-
+    width: 350px;
   }
 
   .presentation {
@@ -1331,13 +1311,16 @@ ul {
 
   .conseils {
     line-height: 1.10;
+    margin: 0;
   }
+ 
 
   /* footer marque accueil vélo */
 
   .footm2 {
     margin: auto;
     flex-direction: column;
+    padding-top: 10px;
   }
 
   .veloacc {
