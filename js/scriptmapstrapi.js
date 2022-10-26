@@ -155,14 +155,14 @@ function setButtons() {
 
 function setButtonNext(visible) {
     if (visible == true) {
-        etapeSuivante.style.display = "flex"
+        etapeSuivante.style.visibility = "visible"
     } else {
-        etapeSuivante.style.display = "none"
+        etapeSuivante.style.visibility = "hidden"
     }
 }
 
 function setButtonPrevious(visible) {
-    etapePrecedente.style.display = (visible == true) ? "flex" : "none";
+    etapePrecedente.style.visibility = (visible == true) ? "visible" : "hidden";
 }
 
 // Fonctions des boutons précedent/suivant

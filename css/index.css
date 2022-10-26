@@ -248,31 +248,12 @@ header {
 }
 
 #lien {
-  display: block;
+  display: none;
   position: fixed;
   width: 100%;
   z-index: 1;
 }
 
-#lien.cache {
-  display: none;
-}
-
-#lien ol {
-  padding: 0%;
-}
-
-#lien li {
-  display: inline;
-}
-
-#lien li a {
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 0.875rem;
-  margin-left: 0%;
-  color: #fff;
-}
 
 #accueil {
   margin-left: 1%;
@@ -844,7 +825,7 @@ ul {
     display: inline;
   }
 
-    /* fleche pour remmonter en version tablette */
+    /* fleche pour remmonter en version mobile */
   
     .flechemobile{
       display: block;
@@ -905,7 +886,7 @@ ul {
 
   .quisommesnous p {
     margin: 0 3% 0 3%;
-    width: 98vw;
+    width: 100vw;
   }
 
   .fboutons {
@@ -983,7 +964,7 @@ ul {
   /* footer mentions légales */
 
   .realisation {
-    margin: 2.2% 1% 0 20%;
+    margin: 2.2% 1% 0 25%;
   }
 
   .footb ul {
