@@ -46,11 +46,7 @@ Présentation orale
 - Création de tableau Trello pour la gestion de projet
 - Répartition des tâches
 - Créations de maquettes
-- Codages des 4 pages HTML selon le site existant :
-&nbsp; Accueil
-&nbsp; Itinéraires
-&nbsp; News
-&nbsp; Témoignages
+- Codages des 4 pages HTML selon le site existant : Accueil, Itinéraires, News, Témoignages
 - Création de la barre de menu
 - Codage du CSS
 - Codage du responsive
