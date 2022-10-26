@@ -342,259 +342,323 @@ body {
  
   /*Footer*/
 
-.footh{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    background-image: url(/images/imagesbg/flou3.jpg);
-    backdrop-filter: blur(8px);
-    background-size: cover;
-    width: 100%;
+.footh {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-image: url(/images/imagesbg/flou3.jpg);
+  backdrop-filter: blur(8px);
+  background-size: cover;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
 }
+
 .qsn1 {
-    width: 65px;
-    height: 65px;
-    margin-top: 40px;
+  width: 65px;
+  height: 65px;
+  margin-top: 40px;
 }
+
 .qsn2 {
-    height: 65px;
-    margin-left: 11px;
+  height: 65px;
+  margin-left: 11px;
 }
-.headfoot{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    margin-left: 300px;
-    margin-right: 300px;
-    align-items: center;
-    justify-content: space-between;
+
+.headfoot {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-left: 300px;
+  margin-right: 300px;
+  align-items: center;
+  justify-content: space-between;
 }
-.logod img{
-    width: 25px;
-    margin-right: 5px;
-    
-}
-.fcontenu{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    margin-left: 300px;
-    margin-right: 300px;
-}
-.fcontenu p{
-    line-height: 28px;
-    font-weight: bold;
-}
-.quisommesnous{
-    width: 60%;
-}
-.quisommesnous h3{
-    font-size: 1.8em;
-}
-.fboutons{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-}
-.fboutons a{
-    text-decoration: none;
-    font-weight: bold;
-}
-.btnb p{
-    color: #007c74;
-    background-color: white;
-    width: 140px;
-    display:block;
-    padding: 7px 20px 7px 20px;
-    text-align:center;
-    border-radius: 6px;
-    margin-left: 320px;
-    margin-top: 40px;
-    box-shadow: 0px 0px 5px lightslategray;
-}
-.btnb p:hover{
-    box-shadow: 0px 0px 6px #007c74;
+
+.logod img {
+  width: 25px;
+  margin-right: 5px;
 
 }
-.btnv p{
-    color: white;
-    background-color: #007c74;
-    width: 240px;
-    display:block;
-    padding: 7px 20px 7px 20px;
-    text-align:center;
-    border-radius: 6px;
-    margin-left: 30px;
-    margin-top: 40px;
-    box-shadow: 0px 0px 5px lightslategray;
+
+.fcontenu {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-left: 300px;
+  margin-right: 300px;
 }
-.btnv p:hover{
-    box-shadow: 0px 0px 6px white;
+
+.fcontenu p {
+  line-height: 28px;
+  font-weight: bold;
+}
+
+.quisommesnous {
+  width: 60%;
+}
+
+.quisommesnous h3 {
+  font-size: 1.8em;
+}
+
+.fboutons {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+a.btnb {
+  margin-left: 320px;
+  text-decoration: none;
+  width: 180px;
+}
+
+.fboutons a {
+  text-decoration: none;
+  font-weight: bold;
+  height: min-content;
+  margin-top: 40px;
+}
+
+.btnb p {
+  color: #007c74;
+  background-color: white;
+  width: 140px;
+  display: block;
+  padding: 7px 20px 7px 20px;
+  text-align: center;
+  border-radius: 6px;
+  box-shadow: 0px 0px 5px lightslategray;
+}
+
+.btnb p:hover {
+  box-shadow: 0px 0px 6px #007c74;
+}
+
+.btnv p {
+  color: white;
+  background-color: #007c74;
+  width: 240px;
+  display: block;
+  padding: 7px 20px 7px 20px;
+  text-align: center;
+  border-radius: 6px;
+  box-shadow: 0px 0px 5px lightslategray;
+}
+
+.btnv {
+  width: 280px;
+  margin-left: 30px;
+}
+
+.btnv p:hover {
+  box-shadow: 0px 0px 6px white;
 }
 
 /* footer itinéraire */
 
-.footm1{
-    display: flex;
-    flex-direction: row;
-    background-color: white;
-    margin-left: 290px;
-    margin-right: 300px;
+.footm1 {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  margin-left: 290px;
+  margin-right: 300px;
 }
-.footm1 span{
-    color: black;
-    font-weight: bold;
-}
-.presentation{
-    line-height: 30px;
-    font-weight: bold;
-    flex: 1;
-}
-.presentation ul{
-    margin-left: 10px;
-}
-.presentation a, .presentation li{
-    color: black;
 
+.footm1 span {
+  color: black;
+  font-weight: bold;
 }
+
+.presentation {
+  line-height: 30px;
+  font-weight: bold;
+  flex: 1;
+  margin-left: 10px;
+}
+
+
+.presentation ul {
+  padding: 0;
+}
+
+.presentation a,
+.presentation li {
+  color: black;
+}
+
 .suggestions {
-    line-height: 22px;
-    flex: 1;
+  line-height: 22px;
+  flex: 1;
 }
-.suggestions a,ul{
-    padding: 0;
+
+.suggestions a,
+.suggestions ul {
+  padding: 0;
 }
-.suggestions a, .suggestions li{
-    color: #585858;
+
+.suggestions a,
+.suggestions li {
+  color: #585858;
 }
-.conseils{
-    line-height: 22px;
-    flex: 1;
+
+.conseils {
+  line-height: 22px;
+  flex: 1;
 }
-.conseils ul{
-    padding: 0;
+
+.conseils ul {
+  padding: 0;
 }
-.conseils a,li{
-    color: #585858;
+
+.conseils a,
+.conseils li {
+  color: #585858;
 }
-.footm1 a,ul{
-    text-decoration: none;
-    list-style: none;
+
+.footm1 a,
+ul {
+  text-decoration: none;
+  list-style: none;
 }
 
 /*footer Accueil Vélo */
 
-.footm2{
-    justify-content: space-around;
-    display: flex;
-    flex-direction: row;
-    background-color: #f4f4f4;
-    width: 100%;
+.footm2 {
+  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  background-color: #f4f4f4;
+  width: 100%;
 }
-.veloacc{
-    width: 5%;
-    margin-left: 330px;
-    margin-top: 40px;
+
+.veloacc {
+  width: 5%;
+  margin-left: 330px;
+  margin-top: 40px;
 }
-.veloacc img{
-    width: 49px;
-    height: 71px;
+
+.veloacc img {
+  width: 49px;
+  height: 71px;
 }
-.velotext{
-    width: 50%;
-    margin-top: 25px;
-    padding-left: 1%;
+
+.velotext {
+  width: 50%;
+  margin-top: 25px;
+  padding-left: 1%;
 }
-.velotext p{
-    line-height: 25px;
-    font-size: 0.9em;
-    color: #585858;
+
+.velotext p {
+  line-height: 25px;
+  font-size: 0.9em;
+  color: #585858;
 }
-.velotext h4{
-    font-size: 1em;
+
+.velotext h4 {
+  font-size: 1em;
 }
-.boutons{
-    display: flex;
-    align-items: center;
-    margin-right: 330px;
+
+.boutons {
+  display: flex;
+  align-items: center;
+  margin-right: 330px;
 }
-.btn1 p{
-    color: black;
-    background-color: white;
-    width: 150px;
-    display:block;
-    display: inline-block;
-    text-align:center;
-    border: 2px solid black;
-    border-radius: 6px;
-    box-shadow: 0px 0px 5px lightgray;
-    padding: 10px 20px;
+
+.btn1 p {
+  color: black;
+  background-color: white;
+  width: 150px;
+  display: block;
+  display: inline-block;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 6px;
+  box-shadow: 0px 0px 5px lightgray;
+  padding: 10px 20px;
 }
-.btn1 p:hover{
-    box-shadow: 0px 0px 6px gray;
+
+.btn1 p:hover {
+  box-shadow: 0px 0px 6px gray;
 }
-.btn2 p{
-    color: white;
-    background-color: black;
-    width: 250px;
-    display:block;
-    display: inline-block;
-    text-align:center;
-    border-radius: 6px;
-    box-shadow: 0px 0px 5px lightgray;
-    padding: 10px 20px;
-    margin-left: 30px;
+
+.btn2 p {
+  color: white;
+  background-color: black;
+  width: 250px;
+  display: block;
+  display: inline-block;
+  text-align: center;
+  border-radius: 6px;
+  box-shadow: 0px 0px 5px lightgray;
+  padding: 10px 20px;
+  margin-left: 30px;
 }
-.btn2 p:hover{
-    box-shadow: 0px 0px 6px gray;
+
+.btn2 p:hover {
+  box-shadow: 0px 0px 6px gray;
 }
-.boutons a{
-    text-decoration: none;
-    font-weight: bold;
+
+.boutons a {
+  text-decoration: none;
+  font-weight: bold;
 }
 
 /* footer mentions légales */
 
-.footb{
-    display: flex;
-    width: 100%;
-    background-color: black;
+.footb {
+  display: flex;
+  width: 100%;
+  background-color: black;
 }
-.ml li,.ml a{
-    text-decoration: none;
-    color: white;
-    display: inline;
-    margin-left: 10px;
-}
-.ml ul{
-    font-size: 12px;
-    margin-left: 280px;
-    font-weight: bold;
-    margin-top: 26px;
-}
-.realisation{
-    color: white;
-    font-size: 12px;
-    font-weight: bold;
-    margin-top: 25px;
-    margin-bottom: auto;
-    margin-left: 760px;
-    margin-right: 10px;
-}
-.logofvt img{
-    width: 145px;
-}
-.logofvt{
-    margin-top: auto;
-    margin-bottom: auto;
-}
-.simplon img{
-   width: 90px;
-}
-.simplon{
-    margin-top: auto;
-    margin-bottom: auto;}
 
+.ml li {
+  display: inline;
+  margin-left: 10px;
+}
+
+.ml a {
+  color: white;
+  text-decoration: none;
+  margin: 0;
+}
+
+.ml ul {
+  font-size: 12px;
+  margin-left: 280px;
+  font-weight: bold;
+  margin-top: 26px;
+  padding-left: 10px;
+}
+
+.realisation {
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 25px;
+  margin-bottom: auto;
+  margin-left: 760px;
+  margin-right: 10px;
+}
+
+.logofvt img {
+  width: 145px;
+}
+
+.logofvt {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.simplon img {
+  width: 90px;
+}
+
+.simplon {
+  margin-top: auto;
+  margin-bottom: auto;
+}
 
   /*Responsive tablette*/
 
@@ -622,95 +686,114 @@ body {
       width: 90%;
     }
     
-    
-.headfoot{
-  margin: 0 2% 0 2%;
-  vertical-align: middle;
-}
-.qsn1{
+/* footer */
+
+.qsn1 {
   margin: 0;
 }
-.logog{
+
+.logog {
   margin-top: 1%;
 }
-.logod{
+
+.logod {
   margin-top: 1px;
 }
-.fcontenu{
+
+.fcontenu {
   width: 100vw;
   margin: 0;
   flex-wrap: wrap;
 }
-.quisommesnous h3{
+
+.quisommesnous h3 {
   margin: 0 3% 0 3%;
 }
-.quisommesnous p{
+
+.quisommesnous p {
   margin: 0 3% 0 3%;
-  width: 160%
+  width: 98vw;
 }
-.fboutons{
+
+.fboutons {
   width: 100vw;
   justify-content: space-around;
   margin: 0;
 }
-.fboutons a{
+
+.fboutons a {
   margin: auto;
 }
-footer{
+
+footer {
   width: 100vw;
 }
-.footh{
+
+.footh {
   width: 100vw;
 }
-.footm1{
+
+.footm1 {
   margin: 0;
   width: 100vw;
   justify-content: space-between;
 }
-.presentation li{
+
+.presentation li {
   margin: 0 10% 0 3%;
 }
-.suggestions{
+
+.suggestions {
   margin-left: 15%;
 }
-.conseils{
+
+.conseils {
   margin-left: 15%;
 }
-.footm2{
+
+/* footer milieu 2 */
+.footm2 {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.veloacc{
+
+.veloacc {
   margin: 1% 1% 1% 1.5%;
 }
-.velotext h4{
+
+.velotext h4 {
   margin: 0;
 }
-.velotext{
+
+.velotext {
   padding: 0;
   margin: 2.5% 1% 0 0;
   width: 89vw;
 }
-.boutons{
+
+.boutons {
   margin: auto;
 }
-.btn2 p{
+
+.btn2 p {
   margin: 0;
 }
+
 .btn1 {
   margin: 0 10% 0 0;
 }
-.btn2{
+
+.btn2 {
   margin: 0 0 0 0;
 }
 
-.footb .ml li{
-  margin: 0;
+/* footer mentions légales */
+
+.realisation {
+  margin: 2.2% 1% 0 20%;
 }
-.realisation{
-  margin: 2.2% 1% 0 25%;
-}
-.footb ul{
+
+.footb ul {
   margin: 5% 0 0 0;
   padding: 0;
 }
@@ -1011,7 +1094,8 @@ footer{
   }
 
   .qsn1 {
-    margin: 0;
+    margin-left: 10px;
+    margin-top: auto;
   }
 
   .qsn2 {
@@ -1029,10 +1113,12 @@ footer{
   .fboutons {
     margin: auto;
     width: auto;
+    display: block;
   }
 
   .fboutons p {
-    margin: 40px 5px 50px 0;
+    margin: 0;
+    margin-bottom: 1em;
     width: auto;
     font-size: 0.9em;
   }
@@ -1043,11 +1129,13 @@ footer{
     flex-direction: column;
     font-size: 1.3em;
     margin: 0;
-
+    margin-left: 10px;
+    width: 350px;
   }
 
   .presentation {
     line-height: 1.1;
+    margin-left: 0;
   }
 
   .presentation li {
@@ -1061,13 +1149,16 @@ footer{
 
   .conseils {
     line-height: 1.10;
+    margin: 0;
   }
+ 
 
   /* footer marque accueil vélo */
 
   .footm2 {
     margin: auto;
     flex-direction: column;
+    padding-top: 10px;
   }
 
   .veloacc {
@@ -1090,21 +1181,22 @@ footer{
   }
 
   .btn1 {
-    margin-right: 13px;
+    margin-right: 15px;
+    margin-left: 15px;
   }
 
   .btn2 {
     margin-top: 12px;
   }
 
-  /*footer */
+  /*footer metions légales */
 
   .footb {
-    margin: 0;
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-
+    width: 100%;
   }
 
   .ml {
@@ -1115,9 +1207,16 @@ footer{
     width: 100%;
   }
 
+  .ml a {
+    margin-left: 10px;
+    color: white;
+    text-decoration: none;
+  }
+
   .ml ul {
     margin: 5px 0 0 0;
     text-align: left;
+    padding-left: 0;
   }
 
   .ml li {
