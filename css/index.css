@@ -1,6 +1,7 @@
-html{
+html {
   scroll-behavior: smooth;
 }
+
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
@@ -277,17 +278,18 @@ header {
   margin-left: 1%;
 }
 
-  /* fleche pour remmonter en version mobile */
-  .flechemobile{
-    position: fixed;
-    bottom: 2%;
-    right: 8%;
-    display: none;
-    z-index: 99;
-  }
-  .flechemobile img{
-    width: 2em;
-  }
+/* fleche pour remmonter en version mobile */
+.flechemobile {
+  position: fixed;
+  bottom: 2%;
+  right: 8%;
+  display: none;
+  z-index: 99;
+}
+
+.flechemobile img {
+  width: 2em;
+}
 
 /*main*/
 
@@ -419,9 +421,9 @@ main {
   transition: 0.5s;
   font-size: 26px;
   font-weight: bolder;
-  background: rgb(255, 175, 16,0.8);
+  background: rgb(255, 175, 16, 0.8);
   width: 100%;
-  
+
 }
 
 .imgnew:hover p {
@@ -474,7 +476,8 @@ main {
   color: white;
   text-decoration: none;
 }
-form{
+
+form {
   width: 330px;
 }
 
@@ -820,6 +823,172 @@ ul {
   margin-bottom: auto;
 }
 
+/* Version ipad paysage */
+
+@media screen and (max-width:1080px) {
+
+  /*Header*/
+  .haut-droite {
+    width: 45%;
+  }
+
+  .haut-gauche {
+    width: 55%;
+  }
+
+  #label {
+    display: none;
+  }
+
+  #Newsletter {
+    display: inline;
+  }
+
+  /*Main*/
+
+  section {
+    width: 75%;
+  }
+
+  .slider div h2 {
+    margin-top: 70vh;
+  }
+
+  main {
+    width: 100vw;
+  }
+
+  .conteneurcarte {
+    width: 100vw;
+    margin: auto;
+  }
+
+  .temoignages {
+    width: 100vw;
+    margin: auto;
+    margin-bottom: 5%;
+  }
+
+  .headfoot {
+    margin: 0 2% 0 2%;
+    vertical-align: middle;
+  }
+
+  /* footer */
+
+  .qsn1 {
+    margin: 0;
+  }
+
+  .logog {
+    margin-top: 1%;
+  }
+
+  .logod {
+    margin-top: 1px;
+  }
+
+  .fcontenu {
+    width: 100vw;
+    margin: 0;
+    flex-wrap: wrap;
+  }
+
+  .quisommesnous h3 {
+    margin: 0 3% 0 3%;
+  }
+
+  .quisommesnous p {
+    margin: 0 3% 0 3%;
+    width: 100vw;
+  }
+
+  .fboutons {
+    width: 100vw;
+    justify-content: space-around;
+    margin: 0;
+  }
+
+  .fboutons a {
+    margin: auto;
+  }
+
+  footer {
+    width: 100vw;
+  }
+
+  .footh {
+    width: 100vw;
+  }
+
+  .footm1 {
+    margin: 0;
+    width: 100vw;
+    justify-content: space-between;
+  }
+
+  .presentation li {
+    margin: 0 10% 0 3%;
+  }
+
+  .suggestions {
+    margin-left: 15%;
+  }
+
+  .conseils {
+    margin-left: 15%;
+  }
+
+  /* footer milieu 2 */
+  .footm2 {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .veloacc {
+    margin: 1% 1% 1% 1.5%;
+  }
+
+  .velotext h4 {
+    margin: 0;
+  }
+
+  .velotext {
+    padding: 0;
+    margin: 2.5% 1% 0 0;
+    width: 89vw;
+  }
+
+  .boutons {
+    margin: auto;
+  }
+
+  .btn2 p {
+    margin: 0;
+  }
+
+  .btn1 {
+    margin: 0 10% 0 0;
+  }
+
+  .btn2 {
+    margin: 0 0 0 0;
+  }
+
+  /* footer mentions légales */
+
+  .realisation {
+    margin: 2.2% 0 0 26%;
+  }
+
+  .footb ul {
+    margin: 5% 0 0 0;
+    padding: 0;
+  }
+
+
+}
+
 /*Responsive*/
 
 @media screen and (max-width:480px) {
@@ -829,7 +998,8 @@ ul {
   #header_ordi {
     display: none;
   }
-  #lien{
+
+  #lien {
     display: none;
   }
 
@@ -915,7 +1085,8 @@ ul {
     margin-bottom: 5%;
     font-size: 180%;
   }
-  .liennav a{   
+
+  .liennav a {
     color: #fff;
     text-decoration: none;
   }
@@ -958,7 +1129,8 @@ ul {
     margin-left: 10%;
     width: 80%;
   }
-  .conteneurcarte form select{
+
+  .conteneurcarte form select {
     margin-left: 8px;
   }
 
@@ -1063,12 +1235,12 @@ ul {
     text-align: justify;
   }
 
-   /* fleche pour remmonter en version mobile */
-  
-   .flechemobile{
+  /* fleche pour remmonter en version mobile */
+
+  .flechemobile {
     display: block;
   }
-  
+
   /* slider */
 
   .slider {
@@ -1241,140 +1413,4 @@ ul {
   .logofvt {
     margin-left: 0px;
   }
-}
-
-/* Version ipad paysage */
-
-@media screen and (max-width:1080px){
-
- /*Header*/
- .haut-droite{
-  width: 45%;
-}
-.haut-gauche{
-  width: 55%;
-}
-#label{
-  display: none;
-}
-#Newsletter{
-  display: inline;
-}
-/*Main*/
-
-section{
-  width: 75%;
-}
-
-.slider div h2{
-  margin-top: 70vh;
-}
-main{
-  width: 100vw;
-}
-.conteneurcarte{
-  width: 100vw;
-  margin: auto;
-}
-.temoignages{
-  width: 100vw;
-  margin: auto;
-  margin-bottom: 5%;
-}
-.headfoot{
-  margin: 0 2% 0 2%;
-  vertical-align: middle;
-}
-
-/* footer */
-
-.qsn1{
-  margin: 0;
-}
-.logog{
-  margin-top: 1%;
-}
-.logod{
-  margin-top: 1px;
-}
-.fcontenu{
-  width: 100vw;
-  margin: 0;
-  flex-wrap: wrap;
-}
-.quisommesnous h3{
-  margin: 0 3% 0 3%;
-}
-.quisommesnous p{
-  margin: 0 3% 0 3%;
-  width: 100vw;
-}
-.fboutons{
-  width: 100vw;
-  justify-content: space-around;
-  margin: 0;
-}
-.fboutons a{
-  margin: auto;
-}
-footer{
-  width: 100vw;
-}
-.footh{
-  width: 100vw;
-}
-.footm1{
-  margin: 0;
-  width: 100vw;
-  justify-content: space-between;
-}
-.presentation li{
-  margin: 0 10% 0 3%;
-}
-.suggestions{
-  margin-left: 15%;
-}
-.conseils{
-  margin-left: 15%;
-}
-/* footer milieu 2 */
-.footm2{
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.veloacc{
-  margin: 1% 1% 1% 1.5%;
-}
-.velotext h4{
-  margin: 0;
-}
-.velotext{
-  padding: 0;
-  margin: 2.5% 1% 0 0;
-  width: 89vw;
-}
-.boutons{
-  margin: auto;
-}
-.btn2 p{
-  margin: 0;
-}
-.btn1 {
-  margin: 0 10% 0 0;
-}
-.btn2{
-  margin: 0 0 0 0;
-}
-
-/* footer mentions légales */
-
-.realisation{
-  margin: 2.2% 0 0 26%;
-}
-.footb ul{
-  margin: 5% 0 0 0;
-  padding: 0;
-}
-
-
 }
