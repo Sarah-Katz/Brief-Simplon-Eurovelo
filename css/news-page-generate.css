@@ -332,7 +332,6 @@ main {
   font-size: 4em;
   font-weight: 700;
   position: absolute;
-  z-index: 1;
   left: 35px;
 }
 
@@ -344,7 +343,6 @@ main {
   width: 1em;
   transform: rotate(90deg);
 }
-
 /* section .aventure  */
 
 .aventure {
@@ -604,15 +602,7 @@ a.btnb {
 /*responsive tablette */
 
 @media screen and (max-width:1080px) {
-  /* Titre et image article */
-  .timage .image {
-    width: 100%;
-  }
 
-  .timage h2 {
-    position: relative;
-    top: -100px;
-  }
   /*Header*/
   .haut-droite {
     width: 45%;
@@ -630,6 +620,16 @@ a.btnb {
     display: inline;
   }
 
+  /* Titre et image article */
+  .timage .image {
+    width: 100%;
+  }
+
+  .timage h2 {
+    position: relative;
+    top: -150px;
+  }
+
   /*Main*/
 
   .article-child .Texte {
@@ -642,17 +642,17 @@ a.btnb {
     display: none;
   }
 
-  .Div-avis{
+  .Div-avis {
     flex-wrap: wrap;
     margin: auto;
   }
 
-  .Div-avis img{
+  .Div-avis img {
     width: 80%;
     margin: auto;
   }
 
-  .Div-avis p{
+  .Div-avis p {
     position: static;
     margin: auto;
     width: 74%;
