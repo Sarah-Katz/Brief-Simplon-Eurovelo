@@ -1,4 +1,7 @@
-### Contexte du projet
+#Brief 5: Développer le site de la partie Haut-de-France l'EuroVélo 5 !
+
+
+## Contexte du projet
 
 Porté par la Fédération européenne des cyclistes (ECF), le projet EuroVelo comporte 17 itinéraires cyclables européens répartis sur tout le continent. Les 17 itinéraires EuroVelo représentent 91 500 km (en tenant compte des portions d’itinéraires dupliqués), dont 45 000 km sont déjà développés et traversent 42 pays. La France est concernée par 10 EuroVelo, soit 8 806 km, réalisés à 92,5 % au 1er janvier 2021.
 
@@ -30,7 +33,7 @@ Présentation orale :
 
 ## Modalités d'évaluation
 
-    Oral de présentation devant la promo
+Oral de présentation devant la promo
 
 ## Livrables
 
