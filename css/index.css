@@ -247,6 +247,13 @@ header {
   display: none;
 }
 
+#lien {
+  display: none;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
 
 #accueil {
   margin-left: 1%;
@@ -818,7 +825,7 @@ ul {
     display: inline;
   }
 
-    /* fleche pour remmonter en version tablette */
+    /* fleche pour remmonter en version mobile */
   
     .flechemobile{
       display: block;
@@ -879,7 +886,7 @@ ul {
 
   .quisommesnous p {
     margin: 0 3% 0 3%;
-    width: 98vw;
+    width: 100vw;
   }
 
   .fboutons {
@@ -957,7 +964,7 @@ ul {
   /* footer mentions légales */
 
   .realisation {
-    margin: 2.2% 1% 0 20%;
+    margin: 2.2% 1% 0 2%;
   }
 
   .footb ul {
