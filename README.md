@@ -47,10 +47,10 @@ Présentation orale
 - Répartition des tâches
 - Créations de maquettes
 - Codages des 4 pages HTML selon le site existant :
-    1. Accueil
-    2. Itinéraires
-    3. News
-    4. Témoignages
+&nbsp;1. Accueil
+&nbsp;2. Itinéraires
+&nbsp;3. News
+&nbsp;4. Témoignages
 - Création de la barre de menu
 - Codage du CSS
 - Codage du responsive
@@ -62,8 +62,8 @@ Présentation orale
 
 ## Membres de l'équipe
 
-- Sarah Katz : Chef de projet
-- Thomas Lemay : cé lui k'il la fé le starpi
-- Thomas Baudrin : Développeur Inté
-- Nicolas Drapier : Développeur Inté
-- Fabien Fattore : Développeur Inté
+- **Sarah Katz** : Chef de projet
+- **Thomas Lemay** : cé lui k'il la fé le starpi
+- **Thomas Baudrin** : Développeur Inté
+- **Nicolas Drapier** : Développeur Inté
+- **Fabien Fattore** : Développeur Inté
