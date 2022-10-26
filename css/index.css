@@ -253,7 +253,9 @@ header {
   width: 100%;
   z-index: 1;
 }
-
+#Newsletter{
+  display: none;
+}
 
 #accueil {
   margin-left: 1%;

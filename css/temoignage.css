@@ -247,6 +247,9 @@ body {
   #container_search{
     display: none;
   }
+  #Newsletter{
+    display: none;
+  }
 
   /* fleche pour remmonter en version mobile */
   .flechemobile{
