@@ -380,6 +380,7 @@ main {
 
 .Titre {
   text-align: center;
+  text-shadow: 1px 1px 2px #007c74;
 }
 
 .article-child .Titre2 {
@@ -628,6 +629,23 @@ a.btnb {
 
   .fond {
     display: none;
+  }
+
+  .Div-avis{
+    flex-wrap: wrap;
+    margin: auto;
+  }
+
+  .Div-avis img{
+    width: 80%;
+    margin: auto;
+  }
+
+  .Div-avis p{
+    position: static;
+    margin: auto;
+    width: 74%;
+    margin-top: 1%;
   }
 
   /* footer */

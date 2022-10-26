@@ -314,6 +314,10 @@ html{
   padding-bottom: 3%;
 }
 
+.Titre{
+  text-shadow: 1px 1px 2px #007c74;
+}
+
 .article-child .Titre2{
     text-align: center;
     font-size: 42px;
@@ -353,17 +357,18 @@ html{
 
 
 
- /*Footer haut*/
+  /*Footer haut*/
 
- .footh{
+.footh{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  background-image: url(/images/imagesbg/flou.jpg);
+  background-image: url(/images/imagesbg/flou3.jpg);
   backdrop-filter: blur(8px);
   background-size: cover;
   width: 100%;
   height: 350px;
+  overflow: hidden;
 }
 .qsn1 {
   width: 65px;
@@ -410,39 +415,47 @@ html{
   flex-direction: row;
   width: 100%;
 }
-.fboutons a{
+a.btnb{
+  margin-left: 320px;
+  text-decoration: none;
+  width: 180px;
+}
+.fboutons a {
   text-decoration: none;
   font-weight: bold;
+  height: min-content;
+  margin-top: 40px;
 }
-.btnb p{
+
+.btnb p {
   color: #007c74;
   background-color: white;
   width: 140px;
-  display:block;
+  display: block;
   padding: 7px 20px 7px 20px;
-  text-align:center;
+  text-align: center;
   border-radius: 6px;
-  margin-left: 320px;
-  margin-top: 40px;
   box-shadow: 0px 0px 5px lightslategray;
 }
-.btnb p:hover{
-  box-shadow: 0px 0px 6px #007c74;
 
+.btnb p:hover {
+  box-shadow: 0px 0px 6px #007c74;
 }
-.btnv p{
+.btnv p {
   color: white;
   background-color: #007c74;
   width: 240px;
-  display:block;
+  display: block;
   padding: 7px 20px 7px 20px;
-  text-align:center;
+  text-align: center;
   border-radius: 6px;
-  margin-left: 30px;
-  margin-top: 40px;
   box-shadow: 0px 0px 5px lightslategray;
 }
-.btnv p:hover{
+.btnv{
+  width: 280px;
+  margin-left: 30px;
+}
+.btnv p:hover {
   box-shadow: 0px 0px 6px white;
 }
 
@@ -451,10 +464,15 @@ html{
 .footb{
   display: flex;
   width: 100%;
-  height: 70px;
   background-color: black;
 }
-.ml li,.ml a{
+.footb .ml a{
+  text-decoration: none;
+  color: white;
+  display: inline;
+  margin-left: 10px;
+}
+.footb .ml li{
   text-decoration: none;
   color: white;
   display: inline;
@@ -465,6 +483,7 @@ html{
   margin-left: 280px;
   font-weight: bold;
   margin-top: 26px;
+  padding-left: 0;
 }
 .realisation{
   color: white;
@@ -488,6 +507,7 @@ html{
 .simplon{
   margin-top: auto;
   margin-bottom: auto;}
+
 
 
   /*Responsive tablette*/
@@ -519,102 +539,112 @@ html{
     display: none;
   }
   .Div-avis{
-    margin-left: 15%;
+    flex-wrap: wrap;
+    margin: auto;
   }
+
+  .Div-avis img{
+    width: 80%;
+    margin: auto;
+  }
+
   .Div-avis p{
-    margin-left: 40%;
-    width: 30%;
-  }
-  /*FOOTER*/
-  .headfoot{
-    margin: 0 2% 0 2%;
-    vertical-align: middle;
-  }
-  .qsn1{
-    margin: 0;
-  }
-  .logog{
+    position: static;
+    margin: auto;
+    width: 74%;
     margin-top: 1%;
   }
-  .logod{
-    margin-top: 1px;
-  }
-  .fcontenu{
-    width: 100vw;
-    margin: 0;
-    flex-wrap: wrap;
-  }
-  .quisommesnous h3{
-    margin: 0 3% 0 3%;
-  }
-  .quisommesnous p{
-    margin: 0 3% 0 3%;
-    width: 160%
-  }
-  .fboutons{
-    width: 100vw;
-    justify-content: space-around;
-    margin: 0;
-  }
-  .fboutons a{
-    margin: auto;
-  }
-  footer{
-    width: 100vw;
-  }
-  .footh{
-    width: 100vw;
-  }
-  .footm1{
-    margin: 0;
-    width: 100vw;
-    justify-content: space-between;
-  }
-  .presentation li{
-    margin: 0 10% 0 3%;
-  }
-  .suggestions{
-    margin-left: 15%;
-  }
-  .conseils{
-    margin-left: 15%;
-  }
-  .footm2{
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  .veloacc{
-    margin: 1% 1% 1% 1.5%;
-  }
-  .velotext h4{
-    margin: 0;
-  }
-  .velotext{
-    padding: 0;
-    margin: 2.5% 1% 0 0;
-    width: 89vw;
-  }
-  .boutons{
-    margin: auto;
-  }
-  .btn2 p{
-    margin: 0;
-  }
-  .btn1 {
-    margin: 0 10% 0 0;
-  }
-  .btn2{
-    margin: 0 0 0 0;
-  }
-  
-  
-  .realisation{
-    margin: 2.2% 0 0 26%;
-  }
-  .footb ul{
-    margin: 5% 0 0 0;
-    padding: 0;
-  }
+   /* footer */
+ .headfoot{
+  margin: 0 2% 0 2%;
+  vertical-align: middle;
+}
+.qsn1{
+  margin: 0;
+}
+.logog{
+  margin-top: 1%;
+}
+.logod{
+  margin-top: 1px;
+}
+.fcontenu{
+  width: 100vw;
+  margin: 0;
+  flex-wrap: wrap;
+}
+.quisommesnous h3{
+  margin: 0 3% 0 3%;
+}
+.quisommesnous p{
+  margin: 0 3% 0 3%;
+  width: 100vw;
+}
+.fboutons{
+  width: 100vw;
+  justify-content: space-around;
+  margin: 0;
+}
+.fboutons a{
+  margin: auto;
+}
+footer{
+  width: 100vw;
+}
+.footh{
+  width: 100vw;
+}
+.footm1{
+  margin: 0;
+  width: 100vw;
+  justify-content: space-between;
+}
+.presentation li{
+  margin: 0 10% 0 3%;
+}
+.suggestions{
+  margin-left: 15%;
+}
+.conseils{
+  margin-left: 15%;
+}
+.footm2{
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.veloacc{
+  margin: 1% 1% 1% 1.5%;
+}
+.velotext h4{
+  margin: 0;
+}
+.velotext{
+  padding: 0;
+  margin: 2.5% 1% 0 0;
+  width: 89vw;
+}
+.boutons{
+  margin: auto;
+}
+.btn2 p{
+  margin: 0;
+}
+.btn1 {
+  margin: 0 10% 0 0;
+}
+.btn2{
+  margin: 0 0 0 0;
+}
+.footb .ml li{
+ margin: 0;
+}
+.realisation{
+   margin: 2.2% 1% 0 25%;
+}
+.footb ul{
+  margin: 5% 0 0 0;
+  padding: 0;
+}
   }
 
 
@@ -880,139 +910,73 @@ html{
   .email::placeholder{
     color: #fff;
   }
-  /* Footer qui sommes nous */
+  /*Footer 1*/
 
-  .headfoot {
-    margin: 50px 0 0 0;
-  }
+.headfoot{
+  margin: 50px 0 0 0;
+}
+.fcontenu{
+  margin: 0;
+}
+.qsn1{
+  margin: 0;
+  margin-left: 10px;
+}
+.qsn2{
+  margin: 0 0 0 5px;
+}
+.logod{
+  margin-right: 5px;
+}
+.quisommesnous{
+  display: none;
+}
+.fboutons{
+  margin: auto;
+  width: auto;
+  display: block;
+}
+.fboutons p{
+  margin: 40px  5px 50px 0;
+  width: auto;
+  font-size: 0.9em;
+}
+.btnb{
+  margin-left: auto;
+}
+.fboutons p{
+  margin: 0;
+  margin-bottom: 1em;
+}
+/*footer 2*/
 
-  .fcontenu {
-    margin: 0;
-  }
-
-  .qsn1 {
-    margin: 0;
-  }
-
-  .qsn2 {
-    margin: 0 0 0 5px;
-  }
-
-  .logod {
-    margin-right: 5px;
-  }
-
-  .quisommesnous {
-    display: none;
-  }
-
-  .fboutons {
-    margin: auto;
-    width: auto;
-  }
-
-  .fboutons p {
-    margin: 40px 5px 50px 0;
-    width: auto;
-    font-size: 0.9em;
-  }
-
-  /* footer présentation de l'itinéraire */
-
-  .footm1 {
-    flex-direction: column;
-    font-size: 1.3em;
-    margin: 0;
-
-  }
-
-  .presentation {
-    line-height: 1.1;
-  }
-
-  .presentation li {
-    margin: 0;
-  }
-
-  .suggestions {
-    margin: 0;
-    line-height: 1.10;
-  }
-
-  .conseils {
-    line-height: 1.10;
-  }
-
-  /* footer marque accueil vélo */
-
-  .footm2 {
-    margin: auto;
-    flex-direction: column;
-  }
-
-  .veloacc {
-    display: none;
-  }
-
-  .velotext {
-    margin: auto;
-    text-align: center;
-    width: 90%;
-  }
-
-  .boutons {
-    margin: 0 15px 20px 20px;
-  }
-
-  .boutons p {
-    margin: 0;
-    width: 110px;
-  }
-
-  .btn1 {
-    margin-right: 13px;
-  }
-
-  .btn2 {
-    margin-top: 12px;
-  }
-
-  /*footer */
-
-  .footb {
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-
-  }
-
-  .ml {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 0;
-    width: 100%;
-  }
-
-  .ml ul {
-    margin: 5px 0 0 0;
-    text-align: left;
-  }
-
-  .ml li {
-    margin: 0;
-  }
-
-  .realisation {
-    margin: 23px 5px 0 10px;
-  }
-
-  .simplon {
-    margin: 20px 0px 0px 5px;
-  }
-
-  .logofvt {
-    margin-left: 0px;
-  }
+.footb{
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+ 
+ }
+ .ml{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   margin: 0;
+   width: 100%;}
+ .ml ul{
+   margin: 5px  0  0 0;
+   text-align: left;
+ }
+ .footb .ml li{
+   margin: 0;
+ }
+ .realisation{
+   margin: 23px 5px 0 10px;
+ }
+ .simplon{
+   margin: 20px 0px 0px 5px;
+ }
+ .logofvt{
+   margin-left: 0px;
+ }
 }
