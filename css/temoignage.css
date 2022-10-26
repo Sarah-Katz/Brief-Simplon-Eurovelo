@@ -576,20 +576,6 @@ h4 {
   overflow: hidden;
 }
 
-.valider input{
-    font-size: 1em;
-    background-color: black;
-    padding: 10px;
-    margin: auto;
-    border-radius: 2px;
-    color: white;
-    text-decoration: none;
-}
-
-.valider{
-  text-align: center;
-}
-
 /* FORMULAIRE AVIS */
 .avis-formulaire{
   background-color: white;
@@ -603,9 +589,9 @@ h4 {
   flex-wrap: wrap;
   background-color: #007c74;
   border-radius: 20px;
-  width: 40%;
+  width: 20%;
   box-shadow: -3px 3px 8px lightslategray;
-  padding: 3%;
+  padding: 1%;
 }
 
 #form input{
@@ -617,8 +603,8 @@ h4 {
 TEXTAREA{
   margin-bottom: 2%;
   padding-bottom: 10%;
-  margin-left: 30%;
-  margin-right: 30%;
+  margin: auto;
+  width: 70%;
 }
 
 #form label{
@@ -637,6 +623,21 @@ TEXTAREA{
   margin-bottom: 5%;
   text-align: center;
   font-size: 30px;
+}
+
+.valider input{
+  font-size: 1em;
+  background-color: black;
+  padding: 10px;
+  margin: auto;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.valider{
+  text-align: center;
+  margin-top: 2%
 }
   /*Footer haut*/
 
@@ -912,6 +913,9 @@ a.btnb{
  .btn2{
    margin: 0 0 0 0;
  }
+ .footb .ml li{
+  margin: 0;
+}
  .realisation{
     margin: 2.2% 1% 0 25%;
  }

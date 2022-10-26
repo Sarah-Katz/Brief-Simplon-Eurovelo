@@ -683,9 +683,11 @@ footer{
   margin: 0 0 0 0;
 }
 
-
+.footb .ml li{
+  margin: 0;
+}
 .realisation{
-  margin: 2.2% 0 0 26%;
+  margin: 2.2% 1% 0 25%;;
 }
 .footb ul{
   margin: 5% 0 0 0;
