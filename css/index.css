@@ -818,7 +818,7 @@ ul {
     display: inline;
   }
 
-    /* fleche pour remmonter en version mobile */
+    /* fleche pour remmonter en version tablette */
   
     .flechemobile{
       display: block;
@@ -879,7 +879,7 @@ ul {
 
   .quisommesnous p {
     margin: 0 3% 0 3%;
-    width: 100vw;
+    width: 98vw;
   }
 
   .fboutons {
@@ -957,7 +957,7 @@ ul {
   /* footer mentions légales */
 
   .realisation {
-    margin: 2.2% 1% 0 2%;
+    margin: 2.2% 1% 0 20%;
   }
 
   .footb ul {

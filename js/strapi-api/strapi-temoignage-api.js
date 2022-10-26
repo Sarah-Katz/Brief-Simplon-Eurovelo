@@ -1,5 +1,12 @@
 url = 'http://195.14.105.123:1337'
 
+/* date */
+var d = new Date();
+var dateToday = d.getDate()+'/'+(d.getMonth()+1)+'/'+d.getFullYear()
+var hours = d.getHours() + ":" + d.getMinutes();
+var fullDate = dateToday+' - '+hours;
+console.log(fullDate);
+
 /* Formulaire avis  */
 const form = document.getElementById('form');
 let Titre = document.getElementById('Titre')
@@ -19,7 +26,7 @@ form.addEventListener('submit', function (e) {
             'Titre': Titre.value,
            'Personne': Personne.value,
             'Avis' : Avis.value,
-            'date' : date.value, 
+            'date' : fullDate, 
             } 
         })
     }
@@ -112,3 +119,5 @@ fetch("http://195.14.105.123:1337/api/avis?populate=*")
     .catch(function (err) {
 
     });
+
+
