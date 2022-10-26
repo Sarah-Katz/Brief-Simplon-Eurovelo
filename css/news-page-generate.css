@@ -322,6 +322,7 @@ main {
   flex-direction: column;
   justify-content: space-between;
   height: 50vh;
+  width: 100%;
   align-items: center;
   margin: auto;
   margin-top: 40vh;
@@ -329,7 +330,6 @@ main {
   font-size: 4em;
   font-weight: 700;
   position: absolute;
-  left: 35px;
 }
 
 .timage div a {
@@ -1147,8 +1147,6 @@ a.btnb {
   .timage h2 {
     position: relative;
     top: 150px;
-    left: -12.5px;
-
   }
 
   main .timage div {
