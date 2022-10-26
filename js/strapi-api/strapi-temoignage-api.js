@@ -5,7 +5,6 @@ var d = new Date();
 var dateToday = d.getDate()+'/'+(d.getMonth()+1)+'/'+d.getFullYear()
 var hours = d.getHours() + ":" + d.getMinutes();
 var fullDate = dateToday+' - '+hours;
-console.log(fullDate);
 
 /* Formulaire avis  */
 const form = document.getElementById('form');
@@ -20,22 +19,30 @@ form.addEventListener('submit', function (e) {
 
     fetch("http://195.14.105.123:1337/api/avis", {
         method: "POST",
-        headers: new Headers({'content-type': 'application/json'}),
+        headers: new Headers({ 'content-type': 'application/json' }),
         body: JSON.stringify({
             "data": {
-            'Titre': Titre.value,
-           'Personne': Personne.value,
-            'Avis' : Avis.value,
-            'date' : fullDate, 
-            } 
+                'Titre': Titre.value,
+                'Personne': Personne.value,
+                'Avis': Avis.value,
+                'date': fullDate,
+            }
         })
     }
     )
         .then(res => res.json())
-        .then(data => console.log(data))
+        .then(function (data) {
+            console.log('toto');
+            alert('Merci ' + Personne.value + ' de votre avis')
+            window.location.reload()
+        })
         .then(err => console.log(err))
 
 }) 
+
+
+
+
 /*temoignage */
 
 fetch("http://195.14.105.123:1337/api/articles?populate=*")
@@ -92,7 +99,6 @@ fetch("http://195.14.105.123:1337/api/avis?populate=*")
             let eltArticle = document.createElement('article');
             eltConteneur.appendChild(eltArticle);
             eltArticle.classList.add('avis-child');
-            console.log(avis);
 
             let eltDate = document.createElement('p')
             eltArticle.appendChild(eltDate);

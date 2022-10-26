@@ -86,7 +86,7 @@ body {
 
 #etapePrecedente {
     order: -1;
-    display: none;
+    visibility: hidden;
     padding: 0 5px 0 5px;
 }
 
@@ -96,7 +96,7 @@ body {
 }
 
 #etapeSuivante {
-    display: none;
+    visibility: none;
     padding: 0 5px 0 5px;
 }
 

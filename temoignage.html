@@ -143,11 +143,11 @@
    <div class="avis-formulaire">
      <form id="form"> 
            <legend>Déposer votre avis</legend>
-           <label>Pseudonyme :</label><input type="text" name="Personne" id="Personne" required>
-           <label>Titre :</label><input type="text" name="Titre" id="Titre" required>
+           <label>Pseudonyme :</label><input type="text" name="Personne" id="Personne" required maxlength="30">
+           <label>Titre :</label><input type="text" name="Titre" id="Titre" required maxlength="30">
            <label class='texte-formulaire'>Avis :</label> <TEXTAREA NAME="Zone" COLS="20" ROWS="5" name="Avis" id="Avis" maxlength="700" required></TEXTAREA>
            <div class="valider">
-           <input type="submit" value="Envoyer">
+           <input type="submit" value="Envoyer" id="Envoie">
           </div>
      </form> 
     </div>
