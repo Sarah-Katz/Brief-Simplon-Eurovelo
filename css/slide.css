@@ -44,7 +44,7 @@ body {
   transform: translateX(600px);
   transition: all 0.7s ease-in-out 0.3s;
 }
-
+/* style des boutons */
 .buttons button#next {
   position: absolute;
   top: 40%;
@@ -72,7 +72,7 @@ body {
   color: #333;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 480px) {
   .slide .content {
     bottom: -300px;
     left: 0;
