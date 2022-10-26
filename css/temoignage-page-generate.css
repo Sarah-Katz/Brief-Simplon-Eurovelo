@@ -314,6 +314,10 @@ html{
   padding-bottom: 3%;
 }
 
+.Titre{
+  text-shadow: 1px 1px 2px #007c74;
+}
+
 .article-child .Titre2{
     text-align: center;
     font-size: 42px;
