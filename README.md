@@ -22,7 +22,6 @@ Soutenance le 28/10/2022 devant la promo durant l'après-midi.
 Technologie web :
 - Passage au validateur sans erreurs.
 - Utilisation du HTML sémantique.
-- Utilisation de SASS et respect du modèle 7-1
 - Code correctement présenté (Indentation)
 - Javascript sans erreurs.
 - Utilisation de Strapi pour le backend et d'une api REST
@@ -47,13 +46,11 @@ Présentation orale
 - Création de tableau Trello pour la gestion de projet
 - Répartition des tâches
 - Créations de maquettes
-- Structuration Sass
-- Codages des 5 pages HTML selon le modèle des site ECF existants :
-- Accueil
-- Infos pratiques
-- Itinéraires
-- News
-- Témoignages
+- Codages des 4 pages HTML selon le site existant :
+ 1. Accueil
+ 2. Itinéraires
+ 3. News
+ 4. Témoignages
 - Création de la barre de menu
 - Codage du CSS
 - Codage du responsive
@@ -62,3 +59,11 @@ Présentation orale
 - Création carte itinéraires
 - Création du contenu API
 - Tests de fonctionnalité
+
+## Membres de l'équipe
+
+- Sarah Katz : Chef de projet
+- Thomas Lemay : cé lui k'il la fé le starpi
+- Thomas Baudrin : Développeur Inté
+- Nicolas Drapier : Développeur Inté
+- Fabien Fattore : Développeur Inté
