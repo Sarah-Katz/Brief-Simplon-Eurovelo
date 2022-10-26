@@ -838,6 +838,18 @@ a.btnb{
     padding-left: 5%;
     padding-right: 5%;
   }
+  /* avis-formulaire */
+  
+  .avis-formulaire{
+    background-color: white;
+    width: 100%;
+    padding-bottom: 3%;
+  }
+
+  #form{
+    width: 40%;
+  }
+  
 
  /* footer */
  .headfoot{
@@ -1165,11 +1177,13 @@ a.btnb{
   }
 
   /*avis Formulaire*/
+  .avis-formulaire{
+    width: 100%;
+  }
+
   #form{
-     width: 80%;
-     margin: auto;
-     padding-right: 15%;
-     margin-top: 5%;
+    width: 80%;
+    margin: auto;
   }
 
   /* fleche pour remmonter en version mobile */
