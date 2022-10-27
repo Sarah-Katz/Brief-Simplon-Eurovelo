@@ -1,10 +1,3 @@
-const slides = document.querySelectorAll('.slide');
-const next = document.querySelector('#next');
-const prev = document.querySelector('#prev');
-const auto = true; // Auto scroll
-const intervalTime = 4000;
-let slideInterval;
-
 
 /* strapi carrousels  Début */
  let url = 'http://195.14.105.123:1337'
@@ -46,6 +39,14 @@ let slideInterval;
     }); 
 
 /* strapi carrousels  Fin */
+
+/* Carrousel */
+
+const next = document.querySelector('#next');
+const prev = document.querySelector('#prev');
+const auto = true; // Auto scroll
+const intervalTime = 4000;
+let slideInterval;
 let eltCarrouselSelect = document.querySelector('.slider')
 
 const nextSlide = () => {
