@@ -404,10 +404,10 @@ body {
 }
 
 .article-child:nth-child(2){
-  flex: 0 0 31%;
+  flex: 0 0 31.50%;
 }
 .article-child:nth-child(2) .image{
-  width: 370px;
+  width: 100%;
 }
 .article-child .image{
   width: 370px;
