@@ -59,7 +59,7 @@ Présentation orale
 ## Membres de l'équipe
 
 - **Sarah Katz** : Chef de projet
-- **Thomas Lemay** : Dev Back-End
+- **Thomas Lemay** : Développeur Inté
 - **Thomas Baudrin** : Développeur Inté
 - **Nicolas Drapier** : Développeur Inté
 - **Fabien Fattore** : Développeur Inté
