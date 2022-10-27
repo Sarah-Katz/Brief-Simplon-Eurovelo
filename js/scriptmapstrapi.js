@@ -127,8 +127,8 @@ function reset() {
     distance.innerHTML = "217,4km";
     montee.innerHTML = "1090m";
     descente.innerHTML = "1071m";
-    texteEtape.innerHTML = "Les Hauts-de-France sont une région administrative du nord de la France, créée par la réforme territoriale de 2014. Résultat de la fusion du Nord-Pas-de-Calais et de la Picardie (elles-mêmes créées en 1972), elle s'est d'abord appelée provisoirement Nord-Pas-de-Calais-Picardie\,
-    Elle s'étend sur 31 806 km2 et compte cinq départements : l\'Aisne, le Nord, l\'Oise, le Pas-de-Calais et la Somme. Elle est présidée par Xavier Bertrand depuis le 4 janvier 2016 et son chef-lieu est Lille, principale ville de la région et auparavant déjà chef-lieu du Nord-Pas-de-Calais. Amiens, chef-lieu de l'ancienne Picardie, est la deuxième ville de la région.\
+    texteEtape.innerHTML = "Les Hauts-de-France sont une région administrative du nord de la France, créée par la réforme territoriale de 2014. Résultat de la fusion du Nord-Pas-de-Calais et de la Picardie (elles-mêmes créées en 1972), elle s'est d'abord appelée provisoirement Nord-Pas-de-Calais-Picardie\
+    Elle s\'étend sur 31 806 km2 et compte cinq départements : l\'Aisne, le Nord, l\'Oise, le Pas-de-Calais et la Somme. Elle est présidée par Xavier Bertrand depuis le 4 janvier 2016 et son chef-lieu est Lille, principale ville de la région et auparavant déjà chef-lieu du Nord-Pas-de-Calais. Amiens, chef-lieu de l\'ancienne Picardie, est la deuxième ville de la région.\
     La région est limitrophe de l\'Île-de-France située au sud, de la Normandie à l\'ouest et du Grand Est à l\'est. De plus, elle est frontalière de la Belgique sur toute sa partie nord-est, et est bordée par la Manche et la mer du Nord, à l\'ouest et au nord\
     Située au cœur de l\'Europe, avec 6 004 947 habitants en 2019, et une densité de population de 189 hab/km2, elle représente la 3e région la plus peuplée de France et la 2e la plus densément peuplée de France métropolitaine après l\'Île - de - France. ";
     image.src = "images/etapes/imageetape9.jpg";
