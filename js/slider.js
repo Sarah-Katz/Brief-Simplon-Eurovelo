@@ -20,11 +20,12 @@ let slideInterval;
 
         for (let slide of value.data) {
 
-               let eltCarrousel = document.createElement('div')
+             let eltCarrousel = document.createElement('div')
               eltCarrousels.appendChild(eltCarrousel)
               eltCarrousel.classList.add('slide')         
               eltCarrousel.style.cssText = 'background: url( ' + url + slide.attributes.Image.data.attributes.url + ' ) no-repeat center top/cover ';  
               eltCarrousels.firstElementChild.classList.add('current')
+              
               
               let eltTitre = document.createElement('h2')
               eltCarrousel.appendChild(eltTitre)
@@ -36,6 +37,7 @@ let slideInterval;
               let titreSpan = document.createElement('span')
               eltTitre.appendChild(titreSpan)
               titreSpan.innerHTML = 'Hauts-de-France'
+
         }
 
     })
@@ -44,6 +46,7 @@ let slideInterval;
     }); 
 
 /* strapi carrousels  Fin */
+let eltCarrouselSelect = document.querySelector('.slider')
 
 const nextSlide = () => {
   // Get current class
@@ -56,7 +59,7 @@ const nextSlide = () => {
     current.nextElementSibling.classList.add('current');
   } else {
     // Add current to start
-    slides[0].classList.add('current');
+    eltCarrouselSelect.firstElementChild.classList.add('current');
   }
   setTimeout(() => current.classList.remove('current'));
 };
@@ -72,7 +75,7 @@ const prevSlide = () => {
     current.previousElementSibling.classList.add('current');
   } else {
     // Add current to last
-    slides[slides.length - 1].classList.add('current');
+    eltCarrouselSelect.lastElementChild.classList.add('current');
   }
   setTimeout(() => current.classList.remove('current'));
 };
@@ -99,3 +102,4 @@ if (auto) {
   // temps entre les slides
   slideInterval = setInterval(nextSlide, intervalTime);
 }
+
