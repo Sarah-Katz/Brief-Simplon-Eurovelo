@@ -83,34 +83,3 @@ body {
     transform: translateY(-300px);
   }
 }
-
-
-
-/* Background Images du slider */
- 
-.slide:first-child {
-  background: url(/images/imagescarousel/image1.jpg) no-repeat
-    center top/cover;
-}
-.slide:nth-child(2) {
-  background: url(/images/imagescarousel/image2.jpg) no-repeat
-    center top/cover;
-}
-.slide:nth-child(3) {
-  background: url(/images/imagescarousel/image3.jpg) no-repeat
-    center top/cover;
-}
-.slide:nth-child(4) {
-  background: url(/images/imagescarousel/image4.jpg) no-repeat
-    center top/cover;
-}
-.slide:nth-child(5) {
-  background: url(/images/imagescarousel/image5.jpg) no-repeat
-    center top/cover;
-} 
-.slide:nth-child(6)  {
-  background: url(/images/imagescarousel/image6.jpg) no-repeat
-    center center/cover;
-}
-
-/* fin du slider */
