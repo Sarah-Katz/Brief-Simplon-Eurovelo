@@ -50,38 +50,38 @@ let slideInterval;
 let eltCarrouselSelect = document.querySelector('.slider')
 
 const nextSlide = () => {
-  // Get current class
+  // recuperer la class current
   const current = document.querySelector('.current');
-  // Remove current class
+  // Retirer la class current
   current.classList.remove('current');
-  // Check for next slide
+  // Vérifier la diapo suivante
   if (current.nextElementSibling) {
-    // Add current to next sibling
+    // Ajouter current à la prochaine diapo
     current.nextElementSibling.classList.add('current');
   } else {
-    // Add current to start
+    // Ajouter current au début
     eltCarrouselSelect.firstElementChild.classList.add('current');
   }
   setTimeout(() => current.classList.remove('current'));
 };
 
 const prevSlide = () => {
-  // Get current class
+  // recuperer la class current
   const current = document.querySelector('.current');
-  // Remove current class
+  // Retirer la class current
   current.classList.remove('current');
-  // Check for prev slide
+  // Vérifier la diapo précédente
   if (current.previousElementSibling) {
-    // Add current to prev sibling
+    // Ajouter current à la diapo précédente
     current.previousElementSibling.classList.add('current');
   } else {
-    // Add current to last
+    // Ajouter current à la fin
     eltCarrouselSelect.lastElementChild.classList.add('current');
   }
   setTimeout(() => current.classList.remove('current'));
 };
 
-// Button events
+// les bouttons
 next.addEventListener('click', e => {
   nextSlide();
   if (auto) {
