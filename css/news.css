@@ -293,7 +293,7 @@ body {
 }
 
 .article-child{
-  flex: 31%;
+  width: 31%;
   position: relative;
   text-align: center;
   margin-bottom: 3%;
